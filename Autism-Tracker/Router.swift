@@ -23,7 +23,7 @@ extension Router {
     var baseURL: String {
         switch self {
         case .getAllEvents, .createEvent, .getEvent:
-            return "https://herokuapp.com"
+            return "https://autism-tracker-server.appspot.com"
         }
     }
     
@@ -71,7 +71,7 @@ extension Router {
             dict[JSONKeys.trigger] = event.trigger
             dict[JSONKeys.resolution] = event.resolution
             dict[JSONKeys.additionalNotes] = event.additionalNotes
-            dict[JSONKeys.photoURL] = "NO URL"
+            dict[JSONKeys.photoURL] = "NO_URL"
             dict[JSONKeys.time] = time
             return dict
         default:
