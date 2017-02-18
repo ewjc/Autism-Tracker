@@ -8,15 +8,15 @@
 
 import UIKit
 
-class UploadEventView: UIViewController {
+class UploadNoteViewController: UIViewController {
     
-    // MARK : Properties
+    // MARK: - Instance Vars
     var photoTakingHelper: PhotoTakingHelper?
     let dateFunc = Date()
     let calendar = Calendar.current
     let formatter = DateFormatter()
     
-    // MARK : IBOutlets
+    // MARK: - Subviews
     @IBOutlet weak var dateLabel: UILabel!
     @IBOutlet weak var stressSlider: UISlider!
     @IBOutlet weak var activityLevelSlider: UISlider!
@@ -27,7 +27,7 @@ class UploadEventView: UIViewController {
     @IBOutlet weak var photoImage: UIImageView!
     
     
-    // MARK : IBActions
+    // MARK: - Subview Actions
     @IBAction func addPhotoBtnTapped(_ sender: Any) {
         print("Add image button tapped")
         photoTakingHelper = PhotoTakingHelper(viewController: self) { (image: UIImage?) in
@@ -37,20 +37,16 @@ class UploadEventView: UIViewController {
     
     @IBAction func trackEventBtnTapped(_ sender: Any) {
         
-        let event = Event()
-        event.mood = "happy"
-        event.time = dateLabel.text
-        event.photo = photoImage.image
-        event.physicalActivityLevel = Int(activityLevelSlider.value)
-        event.trigger = triggerTextField.text
-        event.resolution = resolutionTextField.text
-        event.stressLevel = Int(stressSlider.value)
-        event.additionalNotes = additionalNotesTextField.text
-        
-        EventService.createEvent(event: event) { (event: Event?, error: Error?) in
-            //
-        }
-        
+        let note = Note()
+        note.mood = "happy"
+        note.time = dateLabel.text
+        note.photo = photoImage.image
+        note.physicalActivityLevel = Int(activityLevelSlider.value)
+        note.trigger = triggerTextField.text
+        note.resolution = resolutionTextField.text
+        note.stressLevel = Int(stressSlider.value)
+        note.additionalNotes = additionalNotesTextField.text
+
         let alertMessage = "Your behavior has successfully been tracked!"
         let alert = UIAlertController(title: "Succes", message: alertMessage, preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))

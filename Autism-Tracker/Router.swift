@@ -10,10 +10,10 @@ import Alamofire
 
 enum Router {
     
-    // Events
-    case getAllEvents
-    case getEvent(id: String)
-    case createEvent(event: Event)
+    // Notes
+    case getAllNotes
+    case getNote(id: String)
+    case createNote(note: Note)
     
 }
 
@@ -22,7 +22,7 @@ extension Router {
     
     var baseURL: String {
         switch self {
-        case .getAllEvents, .createEvent, .getEvent:
+        case .getAllNotes, .createNote, .getNote:
             return "https://autism-tracker-server.appspot.com"
         }
     }
@@ -34,9 +34,9 @@ extension Router {
     
     var path: String {
         switch self {
-        case .getAllEvents, .createEvent:
+        case .getAllNotes, .createNote:
             return "/events"
-        case .getEvent(let id):
+        case .getNote(let id):
             return "/events\(id)"
         }
     }
@@ -48,9 +48,9 @@ extension Router {
     
     var method: Alamofire.HTTPMethod {
         switch self {
-        case .getAllEvents, .getEvent:
+        case .getAllNotes, .getNote:
             return .get
-        case .createEvent:
+        case .createNote:
             return .post
         }
     }
@@ -62,15 +62,15 @@ extension Router {
     
     var parameters: [String: Any]? {
         switch self {
-        case .createEvent(let event):
+        case .createNote(let note):
             var dict: [String: Any] = [:]
-            dict[JSONKeys.mood] = event.mood
-            dict[JSONKeys.stressLevel] = event.stressLevel
-            dict[JSONKeys.physicalActivityLevel] = event.physicalActivityLevel
-            dict[JSONKeys.selfHarmLevel] = event.selfHarmLevel
-            dict[JSONKeys.trigger] = event.trigger
-            dict[JSONKeys.resolution] = event.resolution
-            dict[JSONKeys.additionalNotes] = event.additionalNotes
+            dict[JSONKeys.mood] = note.mood
+            dict[JSONKeys.stressLevel] = note.stressLevel
+            dict[JSONKeys.physicalActivityLevel] = note.physicalActivityLevel
+            dict[JSONKeys.selfHarmLevel] = note.selfHarmLevel
+            dict[JSONKeys.trigger] = note.trigger
+            dict[JSONKeys.resolution] = note.resolution
+            dict[JSONKeys.additionalNotes] = note.additionalNotes
             dict[JSONKeys.photoURL] = "NO_URL"
             dict[JSONKeys.time] = time
             return dict

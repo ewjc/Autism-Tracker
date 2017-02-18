@@ -7,28 +7,34 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		018FAE2E1E5820FC0049F5E2 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 018FAE2D1E5820FC0049F5E2 /* Event.swift */; };
+		018FAE2E1E5820FC0049F5E2 /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = 018FAE2D1E5820FC0049F5E2 /* Note.swift */; };
 		018FAE301E5848DC0049F5E2 /* JSONKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 018FAE2F1E5848DC0049F5E2 /* JSONKeys.swift */; };
 		01D461201E581E0E00C25DC4 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01D4611F1E581E0E00C25DC4 /* Router.swift */; };
 		01D461231E581E6A00C25DC4 /* Provider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01D461221E581E6A00C25DC4 /* Provider.swift */; };
-		01D461261E581EA200C25DC4 /* EventService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01D461251E581EA200C25DC4 /* EventService.swift */; };
+		01D461261E581EA200C25DC4 /* NoteService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01D461251E581EA200C25DC4 /* NoteService.swift */; };
+		01E33EDD1E5862B700DA2C7D /* NoteTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01E33EDC1E5862B700DA2C7D /* NoteTableViewCell.swift */; };
+		01E33EDF1E5862C100DA2C7D /* NoteTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 01E33EDE1E5862C100DA2C7D /* NoteTableViewCell.xib */; };
+		01E33EE21E58659B00DA2C7D /* UIView+Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01E33EE11E58659B00DA2C7D /* UIView+Utilities.swift */; };
 		094355F71E581D5800C252F4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 094355F61E581D5800C252F4 /* AppDelegate.swift */; };
 		094355F91E581D5800C252F4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 094355F81E581D5800C252F4 /* ViewController.swift */; };
 		094355FC1E581D5800C252F4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 094355FA1E581D5800C252F4 /* Main.storyboard */; };
 		094355FE1E581D5800C252F4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 094355FD1E581D5800C252F4 /* Assets.xcassets */; };
 		094356011E581D5800C252F4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 094355FF1E581D5800C252F4 /* LaunchScreen.storyboard */; };
-		0943560A1E58264D00C252F4 /* UploadEventView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 094356091E58264D00C252F4 /* UploadEventView.swift */; };
+		0943560A1E58264D00C252F4 /* UploadEventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 094356091E58264D00C252F4 /* UploadEventViewController.swift */; };
 		0943560D1E582BB400C252F4 /* PhotoHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0943560C1E582BB400C252F4 /* PhotoHelper.swift */; };
-		09BE52E41E585A2F00A7C6A6 /* EventsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09BE52E31E585A2F00A7C6A6 /* EventsView.swift */; };
+		09BE52E41E585A2F00A7C6A6 /* NotesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09BE52E31E585A2F00A7C6A6 /* NotesViewController.swift */; };
 		FC506228A3AC336E1A33225F /* Pods_Autism_Tracker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C73195EB3246455E91E3824A /* Pods_Autism_Tracker.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		018FAE2D1E5820FC0049F5E2 /* Event.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
+		018FAE2D1E5820FC0049F5E2 /* Note.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
 		018FAE2F1E5848DC0049F5E2 /* JSONKeys.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONKeys.swift; sourceTree = "<group>"; };
 		01D4611F1E581E0E00C25DC4 /* Router.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		01D461221E581E6A00C25DC4 /* Provider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Provider.swift; sourceTree = "<group>"; };
-		01D461251E581EA200C25DC4 /* EventService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventService.swift; sourceTree = "<group>"; };
+		01D461251E581EA200C25DC4 /* NoteService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoteService.swift; sourceTree = "<group>"; };
+		01E33EDC1E5862B700DA2C7D /* NoteTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoteTableViewCell.swift; sourceTree = "<group>"; };
+		01E33EDE1E5862C100DA2C7D /* NoteTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NoteTableViewCell.xib; sourceTree = "<group>"; };
+		01E33EE11E58659B00DA2C7D /* UIView+Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Utilities.swift"; sourceTree = "<group>"; };
 		094355F31E581D5800C252F4 /* Autism-Tracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Autism-Tracker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		094355F61E581D5800C252F4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		094355F81E581D5800C252F4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -36,9 +42,9 @@
 		094355FD1E581D5800C252F4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		094356001E581D5800C252F4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		094356021E581D5800C252F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		094356091E58264D00C252F4 /* UploadEventView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UploadEventView.swift; sourceTree = "<group>"; };
+		094356091E58264D00C252F4 /* UploadEventViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UploadEventViewController.swift; sourceTree = "<group>"; };
 		0943560C1E582BB400C252F4 /* PhotoHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoHelper.swift; sourceTree = "<group>"; };
-		09BE52E31E585A2F00A7C6A6 /* EventsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventsView.swift; sourceTree = "<group>"; };
+		09BE52E31E585A2F00A7C6A6 /* NotesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotesViewController.swift; sourceTree = "<group>"; };
 		4F2586110B3851C22E62261F /* Pods-Autism-Tracker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Autism-Tracker.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Autism-Tracker/Pods-Autism-Tracker.debug.xcconfig"; sourceTree = "<group>"; };
 		A3CDC8437534C6C0083A680D /* Pods-Autism-Tracker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Autism-Tracker.release.xcconfig"; path = "Pods/Target Support Files/Pods-Autism-Tracker/Pods-Autism-Tracker.release.xcconfig"; sourceTree = "<group>"; };
 		C73195EB3246455E91E3824A /* Pods_Autism_Tracker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Autism_Tracker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -69,7 +75,7 @@
 		01D461211E581E5D00C25DC4 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				018FAE2D1E5820FC0049F5E2 /* Event.swift */,
+				018FAE2D1E5820FC0049F5E2 /* Note.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -77,9 +83,34 @@
 		01D461241E581E9700C25DC4 /* Services */ = {
 			isa = PBXGroup;
 			children = (
-				01D461251E581EA200C25DC4 /* EventService.swift */,
+				01D461251E581EA200C25DC4 /* NoteService.swift */,
 			);
 			name = Services;
+			sourceTree = "<group>";
+		};
+		01E33EDA1E58615B00DA2C7D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				01E33EDC1E5862B700DA2C7D /* NoteTableViewCell.swift */,
+				01E33EDE1E5862C100DA2C7D /* NoteTableViewCell.xib */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		01E33EDB1E58616400DA2C7D /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				0943560C1E582BB400C252F4 /* PhotoHelper.swift */,
+			);
+			name = Helpers;
+			sourceTree = "<group>";
+		};
+		01E33EE01E58653100DA2C7D /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				01E33EE11E58659B00DA2C7D /* UIView+Utilities.swift */,
+			);
+			name = Extensions;
 			sourceTree = "<group>";
 		};
 		094355EA1E581D5800C252F4 = {
@@ -106,8 +137,10 @@
 				01D4611E1E581E0500C25DC4 /* Networking */,
 				01D461241E581E9700C25DC4 /* Services */,
 				01D461211E581E5D00C25DC4 /* Models */,
-				0943560B1E582B9000C252F4 /* Photo Helper */,
-				094356081E58261700C252F4 /* Views */,
+				01E33EDA1E58615B00DA2C7D /* Views */,
+				094356081E58261700C252F4 /* Controllers */,
+				01E33EDB1E58616400DA2C7D /* Helpers */,
+				01E33EE01E58653100DA2C7D /* Extensions */,
 				094355F61E581D5800C252F4 /* AppDelegate.swift */,
 				094355FA1E581D5800C252F4 /* Main.storyboard */,
 				094355FD1E581D5800C252F4 /* Assets.xcassets */,
@@ -117,22 +150,14 @@
 			path = "Autism-Tracker";
 			sourceTree = "<group>";
 		};
-		094356081E58261700C252F4 /* Views */ = {
+		094356081E58261700C252F4 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
 				094355F81E581D5800C252F4 /* ViewController.swift */,
-				094356091E58264D00C252F4 /* UploadEventView.swift */,
-				09BE52E31E585A2F00A7C6A6 /* EventsView.swift */,
+				094356091E58264D00C252F4 /* UploadEventViewController.swift */,
+				09BE52E31E585A2F00A7C6A6 /* NotesViewController.swift */,
 			);
-			name = Views;
-			sourceTree = "<group>";
-		};
-		0943560B1E582B9000C252F4 /* Photo Helper */ = {
-			isa = PBXGroup;
-			children = (
-				0943560C1E582BB400C252F4 /* PhotoHelper.swift */,
-			);
-			name = "Photo Helper";
+			name = Controllers;
 			sourceTree = "<group>";
 		};
 		553581135CE1D847EE83EA41 /* Pods */ = {
@@ -187,7 +212,7 @@
 				TargetAttributes = {
 					094355F21E581D5800C252F4 = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = 37UFE54W7P;
+						DevelopmentTeam = 44VHEK9HHH;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -215,6 +240,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				01E33EDF1E5862C100DA2C7D /* NoteTableViewCell.xib in Resources */,
 				094356011E581D5800C252F4 /* LaunchScreen.storyboard in Resources */,
 				094355FE1E581D5800C252F4 /* Assets.xcassets in Resources */,
 				094355FC1E581D5800C252F4 /* Main.storyboard in Resources */,
@@ -277,13 +303,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				01D461231E581E6A00C25DC4 /* Provider.swift in Sources */,
-				09BE52E41E585A2F00A7C6A6 /* EventsView.swift in Sources */,
+				01E33EDD1E5862B700DA2C7D /* NoteTableViewCell.swift in Sources */,
+				09BE52E41E585A2F00A7C6A6 /* NotesViewController.swift in Sources */,
 				018FAE301E5848DC0049F5E2 /* JSONKeys.swift in Sources */,
-				0943560A1E58264D00C252F4 /* UploadEventView.swift in Sources */,
+				0943560A1E58264D00C252F4 /* UploadEventViewController.swift in Sources */,
+				01E33EE21E58659B00DA2C7D /* UIView+Utilities.swift in Sources */,
 				094355F91E581D5800C252F4 /* ViewController.swift in Sources */,
 				01D461201E581E0E00C25DC4 /* Router.swift in Sources */,
-				01D461261E581EA200C25DC4 /* EventService.swift in Sources */,
-				018FAE2E1E5820FC0049F5E2 /* Event.swift in Sources */,
+				01D461261E581EA200C25DC4 /* NoteService.swift in Sources */,
+				018FAE2E1E5820FC0049F5E2 /* Note.swift in Sources */,
 				0943560D1E582BB400C252F4 /* PhotoHelper.swift in Sources */,
 				094355F71E581D5800C252F4 /* AppDelegate.swift in Sources */,
 			);
@@ -407,7 +435,7 @@
 			baseConfigurationReference = 4F2586110B3851C22E62261F /* Pods-Autism-Tracker.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 37UFE54W7P;
+				DEVELOPMENT_TEAM = 44VHEK9HHH;
 				INFOPLIST_FILE = "Autism-Tracker/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.tawpy.Autism-Tracker";
@@ -421,7 +449,7 @@
 			baseConfigurationReference = A3CDC8437534C6C0083A680D /* Pods-Autism-Tracker.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 37UFE54W7P;
+				DEVELOPMENT_TEAM = 44VHEK9HHH;
 				INFOPLIST_FILE = "Autism-Tracker/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.tawpy.Autism-Tracker";

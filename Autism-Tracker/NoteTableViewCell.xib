@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1217" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="165" id="Xtt-FT-DNG" customClass="NoteTableViewCell" customModule="Autism_Tracker" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="442" height="165"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Xtt-FT-DNG" id="a5B-2E-6q8">
+                <rect key="frame" x="0.0" y="0.0" width="442" height="165"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="WLX-8N-KhA">
+                        <rect key="frame" x="16" y="16" width="44" height="44"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="44" id="H9r-ug-2Sn"/>
+                            <constraint firstAttribute="width" constant="44" id="Uo4-cK-D8X"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Happy" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gPV-Hx-U7v">
+                        <rect key="frame" x="68" y="27.5" width="52.5" height="21.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                        <color key="textColor" red="0.22352941176470587" green="0.22352941176470587" blue="0.22352941176470587" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qEA-2C-C4C">
+                        <rect key="frame" x="16" y="68" width="410" height="42.5"/>
+                        <attributedString key="attributedText">
+                            <fragment content="These are some notes about the interaction and everything that might be useful to know.">
+                                <attributes>
+                                    <color key="NSColor" red="0.22352941179999999" green="0.22352941179999999" blue="0.22352941179999999" alpha="1" colorSpace="calibratedRGB"/>
+                                    <font key="NSFont" metaFont="system" size="16"/>
+                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="4" tighteningFactorForTruncation="0.0"/>
+                                </attributes>
+                            </fragment>
+                        </attributedString>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nicholas Swift" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pkl-GH-qEC">
+                        <rect key="frame" x="16" y="126" width="92.5" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.46665382290000001" green="0.46439945659999998" blue="0.46890818919999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="January 14th, 2017" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fK1-7b-zjz">
+                        <rect key="frame" x="124" y="126" width="122.5" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.46665382290000001" green="0.46439945659999998" blue="0.46890818919999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="gPV-Hx-U7v" firstAttribute="leading" secondItem="WLX-8N-KhA" secondAttribute="trailing" constant="8" id="47Q-ep-Kyv"/>
+                    <constraint firstItem="gPV-Hx-U7v" firstAttribute="centerY" secondItem="WLX-8N-KhA" secondAttribute="centerY" id="5PJ-M6-NjY"/>
+                    <constraint firstItem="pkl-GH-qEC" firstAttribute="leading" secondItem="a5B-2E-6q8" secondAttribute="leadingMargin" constant="8" id="E7P-MS-dMf"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="pkl-GH-qEC" secondAttribute="bottom" constant="14" id="Fdc-vd-Fic"/>
+                    <constraint firstItem="WLX-8N-KhA" firstAttribute="leading" secondItem="a5B-2E-6q8" secondAttribute="leadingMargin" constant="8" id="J37-pJ-Ymx"/>
+                    <constraint firstItem="qEA-2C-C4C" firstAttribute="top" secondItem="WLX-8N-KhA" secondAttribute="bottom" constant="8" id="a8L-ZF-lGM"/>
+                    <constraint firstItem="pkl-GH-qEC" firstAttribute="top" secondItem="qEA-2C-C4C" secondAttribute="bottom" constant="15.5" id="f2R-ES-8hQ"/>
+                    <constraint firstItem="qEA-2C-C4C" firstAttribute="leading" secondItem="a5B-2E-6q8" secondAttribute="leadingMargin" constant="8" id="f41-gY-4jA"/>
+                    <constraint firstItem="fK1-7b-zjz" firstAttribute="leading" secondItem="pkl-GH-qEC" secondAttribute="trailing" constant="16" id="jom-h7-Tx3"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="qEA-2C-C4C" secondAttribute="trailing" constant="8" id="oGl-DZ-tho"/>
+                    <constraint firstItem="WLX-8N-KhA" firstAttribute="top" secondItem="a5B-2E-6q8" secondAttribute="topMargin" constant="8" id="ogf-mu-usg"/>
+                    <constraint firstItem="fK1-7b-zjz" firstAttribute="centerY" secondItem="pkl-GH-qEC" secondAttribute="centerY" id="pVc-NQ-2Uy"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="dateLabel" destination="fK1-7b-zjz" id="oO0-Ab-Tev"/>
+                <outlet property="moodLabel" destination="gPV-Hx-U7v" id="LBg-EP-c2j"/>
+                <outlet property="notesLabel" destination="qEA-2C-C4C" id="T7B-3u-xZg"/>
+                <outlet property="pictureImageView" destination="WLX-8N-KhA" id="La6-7e-j77"/>
+                <outlet property="usernameLabel" destination="pkl-GH-qEC" id="fhN-UY-lMX"/>
+            </connections>
+            <point key="canvasLocation" x="-72" y="-24.5"/>
+        </tableViewCell>
+    </objects>
+</document>

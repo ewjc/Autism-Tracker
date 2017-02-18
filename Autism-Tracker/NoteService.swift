@@ -1,5 +1,5 @@
 //
-//  EventService.swift
+//  NoteService.swift
 //  Autism-Tracker
 //
 //  Created by Nicholas Swift on 2/17/17.
@@ -8,12 +8,12 @@
 
 import Alamofire
 
-class EventService {
+class NoteService {
     
-    // MARK: - Get All Events
-    static func getAllEvents(completion: @escaping (([Event]?, Error?) -> Void)) {
+    // MARK: - Get All Notes
+    static func getAllNotes(completion: @escaping (([Note]?, Error?) -> Void)) {
         
-        Provider.request(route: .getAllEvents) { (data: Any?, error: Error?) in
+        Provider.request(route: .getAllNotes) { (data: Any?, error: Error?) in
             
             // Error
             if let error = error {
@@ -28,22 +28,22 @@ class EventService {
             }
             
             // Create all the public gists
-            var events: [Event] = []
-            for eventData in data {
-                if let event = Event(data: eventData) {
-                    events.append(event)
+            var notes: [Note] = []
+            for noteData in data {
+                if let note = Note(data: noteData) {
+                    notes.append(note)
                 }
             }
 
             // Complete
-            completion(events, nil)
+            completion(notes, nil)
         }
     }
     
-    // MARK: - Get Event
-    static func getEvent(id: String, completion: @escaping ((Event?, Error?) -> Void)) {
+    // MARK: - Get Note
+    static func getNote(id: String, completion: @escaping ((Note?, Error?) -> Void)) {
         
-        Provider.request(route: .getEvent(id: id)) { (data: Any?, error: Error?) in
+        Provider.request(route: .getNote(id: id)) { (data: Any?, error: Error?) in
             
             // Error
             if let error = error {
@@ -57,18 +57,18 @@ class EventService {
                 return
             }
             
-            // Create event
-            let event = Event(data: data)
+            // Create note
+            let note = Note(data: data)
             
             // Complete
-            completion(event, nil)
+            completion(note, nil)
         }
     }
     
-    // MARK: - Create Event
-    static func createEvent(event: Event, completion: @escaping ((Event?, Error?) -> Void)) {
+    // MARK: - Create Note
+    static func createNote(note: Note, completion: @escaping ((Note?, Error?) -> Void)) {
         
-        Provider.request(route: .createEvent(event: event)) { (data: Any?, error: Error?) in
+        Provider.request(route: .createNote(note: note)) { (data: Any?, error: Error?) in
             
             // Error
             if let error = error {
@@ -82,11 +82,11 @@ class EventService {
                 return
             }
             
-            // Create returned event
-            let event = Event(data: data)
+            // Create returned note
+            let note = Note(data: data)
             
             // Complete
-            completion(event, nil)
+            completion(note, nil)
         }
     }
     

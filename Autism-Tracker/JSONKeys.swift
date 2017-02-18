@@ -13,7 +13,7 @@ struct JSONKeys {
     // MARK: - General
     static let id = "id"
     
-    // MARK: - Event
+    // MARK: - Note
     static let mood = "mood"
     static let stressLevel = "stress_level"
     
