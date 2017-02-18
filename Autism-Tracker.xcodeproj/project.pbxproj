@@ -20,7 +20,7 @@
 		094355FC1E581D5800C252F4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 094355FA1E581D5800C252F4 /* Main.storyboard */; };
 		094355FE1E581D5800C252F4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 094355FD1E581D5800C252F4 /* Assets.xcassets */; };
 		094356011E581D5800C252F4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 094355FF1E581D5800C252F4 /* LaunchScreen.storyboard */; };
-		0943560A1E58264D00C252F4 /* UploadEventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 094356091E58264D00C252F4 /* UploadEventViewController.swift */; };
+		0943560A1E58264D00C252F4 /* NewNoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 094356091E58264D00C252F4 /* NewNoteViewController.swift */; };
 		0943560D1E582BB400C252F4 /* PhotoHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0943560C1E582BB400C252F4 /* PhotoHelper.swift */; };
 		09BE52E41E585A2F00A7C6A6 /* NotesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09BE52E31E585A2F00A7C6A6 /* NotesViewController.swift */; };
 		FC506228A3AC336E1A33225F /* Pods_Autism_Tracker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C73195EB3246455E91E3824A /* Pods_Autism_Tracker.framework */; };
@@ -42,7 +42,7 @@
 		094355FD1E581D5800C252F4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		094356001E581D5800C252F4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		094356021E581D5800C252F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		094356091E58264D00C252F4 /* UploadEventViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UploadEventViewController.swift; sourceTree = "<group>"; };
+		094356091E58264D00C252F4 /* NewNoteViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewNoteViewController.swift; sourceTree = "<group>"; };
 		0943560C1E582BB400C252F4 /* PhotoHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoHelper.swift; sourceTree = "<group>"; };
 		09BE52E31E585A2F00A7C6A6 /* NotesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotesViewController.swift; sourceTree = "<group>"; };
 		4F2586110B3851C22E62261F /* Pods-Autism-Tracker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Autism-Tracker.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Autism-Tracker/Pods-Autism-Tracker.debug.xcconfig"; sourceTree = "<group>"; };
@@ -154,7 +154,7 @@
 			isa = PBXGroup;
 			children = (
 				094355F81E581D5800C252F4 /* ViewController.swift */,
-				094356091E58264D00C252F4 /* UploadEventViewController.swift */,
+				094356091E58264D00C252F4 /* NewNoteViewController.swift */,
 				09BE52E31E585A2F00A7C6A6 /* NotesViewController.swift */,
 			);
 			name = Controllers;
@@ -306,7 +306,7 @@
 				01E33EDD1E5862B700DA2C7D /* NoteTableViewCell.swift in Sources */,
 				09BE52E41E585A2F00A7C6A6 /* NotesViewController.swift in Sources */,
 				018FAE301E5848DC0049F5E2 /* JSONKeys.swift in Sources */,
-				0943560A1E58264D00C252F4 /* UploadEventViewController.swift in Sources */,
+				0943560A1E58264D00C252F4 /* NewNoteViewController.swift in Sources */,
 				01E33EE21E58659B00DA2C7D /* UIView+Utilities.swift in Sources */,
 				094355F91E581D5800C252F4 /* ViewController.swift in Sources */,
 				01D461201E581E0E00C25DC4 /* Router.swift in Sources */,

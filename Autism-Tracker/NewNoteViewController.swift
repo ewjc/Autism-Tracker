@@ -8,7 +8,7 @@
 
 import UIKit
 
-class UploadNoteViewController: UIViewController {
+class NewNoteViewController: UIViewController {
     
     // MARK: - Instance Vars
     var photoTakingHelper: PhotoTakingHelper?
@@ -17,7 +17,6 @@ class UploadNoteViewController: UIViewController {
     let formatter = DateFormatter()
     
     // MARK: - Subviews
-    @IBOutlet weak var dateLabel: UILabel!
     @IBOutlet weak var stressSlider: UISlider!
     @IBOutlet weak var activityLevelSlider: UISlider!
     @IBOutlet weak var selfHarmSlider: UISlider!
@@ -28,6 +27,10 @@ class UploadNoteViewController: UIViewController {
     
     
     // MARK: - Subview Actions
+    @IBAction func cancelBarButtonAction(_ sender: Any) {
+        dismiss(animated: true, completion: nil)
+        dismiss(animated: true, completion: nil)
+    }
     @IBAction func addPhotoBtnTapped(_ sender: Any) {
         print("Add image button tapped")
         photoTakingHelper = PhotoTakingHelper(viewController: self) { (image: UIImage?) in
@@ -39,7 +42,6 @@ class UploadNoteViewController: UIViewController {
         
         let note = Note()
         note.mood = "happy"
-        note.time = dateLabel.text
         note.photo = photoImage.image
         note.physicalActivityLevel = Int(activityLevelSlider.value)
         note.trigger = triggerTextField.text
@@ -67,7 +69,7 @@ class UploadNoteViewController: UIViewController {
         if components.hour! > 12 {
             components.hour = components.hour! - 12
         }
-        dateLabel.text = ("Date: \(result) at \(components.hour!):\(components.minute!)")
+//        dateLabel.text = ("Date: \(result) at \(components.hour!):\(components.minute!)")
         
     }
 

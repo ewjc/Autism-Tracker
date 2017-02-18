@@ -11,7 +11,7 @@ import UIKit
 class Note {
     
     // MARK: - Instace Vars
-    var id: String!
+    var id: Int!
     
     var mood: String!
     var stressLevel: Int!
@@ -31,8 +31,7 @@ class Note {
         
     }
     
-    init(id: String, mood: String, stressLevel: Int, physicalActivityLevel: Int, selfHarmLevel: Int, trigger: String, resolution: String, additionalNotes: String, photo: UIImage, time: String) {
-        self.id = id
+    init(mood: String, stressLevel: Int, physicalActivityLevel: Int, selfHarmLevel: Int, trigger: String, resolution: String, additionalNotes: String, photo: UIImage, time: String) {
         self.mood = mood
         self.stressLevel = stressLevel
         self.physicalActivityLevel = physicalActivityLevel
@@ -45,10 +44,16 @@ class Note {
     }
     
     init?(data: [String: Any]) {
-        
-        // TODO: Add stuff
-        print("Hello")
-        
+        self.id = data[JSONKeys.id] as! Int
+        self.mood = data[JSONKeys.mood] as! String
+        self.stressLevel = data[JSONKeys.stressLevel] as! Int
+        self.physicalActivityLevel = data[JSONKeys.physicalActivityLevel] as! Int
+        self.selfHarmLevel = data[JSONKeys.selfHarmLevel] as! Int
+        self.trigger = data[JSONKeys.trigger] as! String
+        self.resolution = data[JSONKeys.resolution] as! String
+        self.additionalNotes = data[JSONKeys.additionalNotes] as! String
+//        self.photo = data[JSONKeys.photo]
+        self.time = data[JSONKeys.time] as! String
     }
     
 }
