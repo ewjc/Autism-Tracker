@@ -66,7 +66,7 @@ class EventService {
     }
     
     // MARK: - Create Event
-    func createEvent(completion: @escaping ((Event?, Error?) -> Void)) {
+    func createEvent(id: String, mood: String, stressLevel: Int, physicalActivityLevel: Int, selfHarmLevel: Int, trigger: String, resolution: String, additionalNotes: String, photo: Data, time: String, completion: @escaping ((Event?, Error?) -> Void)) {
         
         Provider.request(route: .createEvent) { (data: Any?, error: Error?) in
             
