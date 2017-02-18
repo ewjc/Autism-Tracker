@@ -13,7 +13,6 @@ class EventService {
     func getAllEvents() {
         
         Provider.request(route: .getAllEvents) { (data: Any?, error: Error?) in
-            
             // Do shit
         }
         
@@ -21,11 +20,17 @@ class EventService {
     
     func getEvent(id: String) {
         
-        
+        Provider.request(route: .getEvent(id: id)) { (data: Any?, error: Error?) in
+            // do shit
+        }
         
     }
     
     func createEvent() {
+        
+        Provider.request(route: .createEvent) { (data: Any?, error: Error?) in
+            // do shit
+        }
         
     }
     
