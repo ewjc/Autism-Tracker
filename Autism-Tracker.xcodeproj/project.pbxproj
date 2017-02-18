@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		013143FF1E58D5340021720D /* Child.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 013143FD1E58D5340021720D /* Child.storyboard */; };
+		013144011E58D5F70021720D /* CareGiver.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 013144001E58D5F70021720D /* CareGiver.storyboard */; };
+		013144041E58D61E0021720D /* Therapist.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 013144021E58D61E0021720D /* Therapist.storyboard */; };
+		013144071E58D7A00021720D /* CareGiverNotesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 013144061E58D7A00021720D /* CareGiverNotesViewController.swift */; };
+		016A72F81E58D99D00AF046D /* CareGiverNewNoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016A72F71E58D99D00AF046D /* CareGiverNewNoteViewController.swift */; };
+		016A72FA1E58DA3900AF046D /* CareGiverNoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016A72F91E58DA3900AF046D /* CareGiverNoteViewController.swift */; };
 		018FAE2E1E5820FC0049F5E2 /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = 018FAE2D1E5820FC0049F5E2 /* Note.swift */; };
 		018FAE301E5848DC0049F5E2 /* JSONKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 018FAE2F1E5848DC0049F5E2 /* JSONKeys.swift */; };
 		01D461201E581E0E00C25DC4 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01D4611F1E581E0E00C25DC4 /* Router.swift */; };
@@ -27,6 +33,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		013143FE1E58D5340021720D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Child.storyboard; sourceTree = "<group>"; };
+		013144001E58D5F70021720D /* CareGiver.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = CareGiver.storyboard; sourceTree = "<group>"; };
+		013144031E58D61E0021720D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Therapist.storyboard; sourceTree = "<group>"; };
+		013144061E58D7A00021720D /* CareGiverNotesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CareGiverNotesViewController.swift; sourceTree = "<group>"; };
+		016A72F71E58D99D00AF046D /* CareGiverNewNoteViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CareGiverNewNoteViewController.swift; sourceTree = "<group>"; };
+		016A72F91E58DA3900AF046D /* CareGiverNoteViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CareGiverNoteViewController.swift; sourceTree = "<group>"; };
 		018FAE2D1E5820FC0049F5E2 /* Note.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
 		018FAE2F1E5848DC0049F5E2 /* JSONKeys.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONKeys.swift; sourceTree = "<group>"; };
 		01D4611F1E581E0E00C25DC4 /* Router.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
@@ -62,6 +74,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		013144051E58D78B0021720D /* CareGiver */ = {
+			isa = PBXGroup;
+			children = (
+				013144061E58D7A00021720D /* CareGiverNotesViewController.swift */,
+				016A72F71E58D99D00AF046D /* CareGiverNewNoteViewController.swift */,
+				016A72F91E58DA3900AF046D /* CareGiverNoteViewController.swift */,
+			);
+			name = CareGiver;
+			sourceTree = "<group>";
+		};
 		01D4611E1E581E0500C25DC4 /* Networking */ = {
 			isa = PBXGroup;
 			children = (
@@ -143,6 +165,9 @@
 				01E33EE01E58653100DA2C7D /* Extensions */,
 				094355F61E581D5800C252F4 /* AppDelegate.swift */,
 				094355FA1E581D5800C252F4 /* Main.storyboard */,
+				013143FD1E58D5340021720D /* Child.storyboard */,
+				013144001E58D5F70021720D /* CareGiver.storyboard */,
+				013144021E58D61E0021720D /* Therapist.storyboard */,
 				094355FD1E581D5800C252F4 /* Assets.xcassets */,
 				094355FF1E581D5800C252F4 /* LaunchScreen.storyboard */,
 				094356021E581D5800C252F4 /* Info.plist */,
@@ -153,6 +178,7 @@
 		094356081E58261700C252F4 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				013144051E58D78B0021720D /* CareGiver */,
 				094355F81E581D5800C252F4 /* ViewController.swift */,
 				094356091E58264D00C252F4 /* NewNoteViewController.swift */,
 				09BE52E31E585A2F00A7C6A6 /* NotesViewController.swift */,
@@ -240,7 +266,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				013144041E58D61E0021720D /* Therapist.storyboard in Resources */,
 				01E33EDF1E5862C100DA2C7D /* NoteTableViewCell.xib in Resources */,
+				013144011E58D5F70021720D /* CareGiver.storyboard in Resources */,
+				013143FF1E58D5340021720D /* Child.storyboard in Resources */,
 				094356011E581D5800C252F4 /* LaunchScreen.storyboard in Resources */,
 				094355FE1E581D5800C252F4 /* Assets.xcassets in Resources */,
 				094355FC1E581D5800C252F4 /* Main.storyboard in Resources */,
@@ -302,6 +331,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				016A72F81E58D99D00AF046D /* CareGiverNewNoteViewController.swift in Sources */,
+				016A72FA1E58DA3900AF046D /* CareGiverNoteViewController.swift in Sources */,
 				01D461231E581E6A00C25DC4 /* Provider.swift in Sources */,
 				01E33EDD1E5862B700DA2C7D /* NoteTableViewCell.swift in Sources */,
 				09BE52E41E585A2F00A7C6A6 /* NotesViewController.swift in Sources */,
@@ -310,6 +341,7 @@
 				01E33EE21E58659B00DA2C7D /* UIView+Utilities.swift in Sources */,
 				094355F91E581D5800C252F4 /* ViewController.swift in Sources */,
 				01D461201E581E0E00C25DC4 /* Router.swift in Sources */,
+				013144071E58D7A00021720D /* CareGiverNotesViewController.swift in Sources */,
 				01D461261E581EA200C25DC4 /* NoteService.swift in Sources */,
 				018FAE2E1E5820FC0049F5E2 /* Note.swift in Sources */,
 				0943560D1E582BB400C252F4 /* PhotoHelper.swift in Sources */,
@@ -320,6 +352,22 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		013143FD1E58D5340021720D /* Child.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				013143FE1E58D5340021720D /* Base */,
+			);
+			name = Child.storyboard;
+			sourceTree = "<group>";
+		};
+		013144021E58D61E0021720D /* Therapist.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				013144031E58D61E0021720D /* Base */,
+			);
+			name = Therapist.storyboard;
+			sourceTree = "<group>";
+		};
 		094355FA1E581D5800C252F4 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
