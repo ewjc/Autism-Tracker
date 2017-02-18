@@ -98,11 +98,11 @@
 		094355F51E581D5800C252F4 /* Autism-Tracker */ = {
 			isa = PBXGroup;
 			children = (
-				0943560B1E582B9000C252F4 /* Photo Helper */,
-				094356081E58261700C252F4 /* Views */,
-				01D461211E581E5D00C25DC4 /* Models */,
 				01D4611E1E581E0500C25DC4 /* Networking */,
 				01D461241E581E9700C25DC4 /* Services */,
+				01D461211E581E5D00C25DC4 /* Models */,
+				0943560B1E582B9000C252F4 /* Photo Helper */,
+				094356081E58261700C252F4 /* Views */,
 				094355F61E581D5800C252F4 /* AppDelegate.swift */,
 				094355FA1E581D5800C252F4 /* Main.storyboard */,
 				094355FD1E581D5800C252F4 /* Assets.xcassets */,
