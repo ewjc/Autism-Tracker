@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		018FAE2E1E5820FC0049F5E2 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 018FAE2D1E5820FC0049F5E2 /* Event.swift */; };
+		018FAE301E5848DC0049F5E2 /* JSONKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 018FAE2F1E5848DC0049F5E2 /* JSONKeys.swift */; };
 		01D461201E581E0E00C25DC4 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01D4611F1E581E0E00C25DC4 /* Router.swift */; };
 		01D461231E581E6A00C25DC4 /* Provider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01D461221E581E6A00C25DC4 /* Provider.swift */; };
 		01D461261E581EA200C25DC4 /* EventService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01D461251E581EA200C25DC4 /* EventService.swift */; };
@@ -23,6 +24,7 @@
 
 /* Begin PBXFileReference section */
 		018FAE2D1E5820FC0049F5E2 /* Event.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
+		018FAE2F1E5848DC0049F5E2 /* JSONKeys.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONKeys.swift; sourceTree = "<group>"; };
 		01D4611F1E581E0E00C25DC4 /* Router.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		01D461221E581E6A00C25DC4 /* Provider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Provider.swift; sourceTree = "<group>"; };
 		01D461251E581EA200C25DC4 /* EventService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventService.swift; sourceTree = "<group>"; };
@@ -57,6 +59,7 @@
 			children = (
 				01D4611F1E581E0E00C25DC4 /* Router.swift */,
 				01D461221E581E6A00C25DC4 /* Provider.swift */,
+				018FAE2F1E5848DC0049F5E2 /* JSONKeys.swift */,
 			);
 			name = Networking;
 			sourceTree = "<group>";
@@ -98,11 +101,11 @@
 		094355F51E581D5800C252F4 /* Autism-Tracker */ = {
 			isa = PBXGroup;
 			children = (
-				0943560B1E582B9000C252F4 /* Photo Helper */,
-				094356081E58261700C252F4 /* Views */,
-				01D461211E581E5D00C25DC4 /* Models */,
 				01D4611E1E581E0500C25DC4 /* Networking */,
 				01D461241E581E9700C25DC4 /* Services */,
+				01D461211E581E5D00C25DC4 /* Models */,
+				0943560B1E582B9000C252F4 /* Photo Helper */,
+				094356081E58261700C252F4 /* Views */,
 				094355F61E581D5800C252F4 /* AppDelegate.swift */,
 				094355FA1E581D5800C252F4 /* Main.storyboard */,
 				094355FD1E581D5800C252F4 /* Assets.xcassets */,
@@ -271,6 +274,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				01D461231E581E6A00C25DC4 /* Provider.swift in Sources */,
+				018FAE301E5848DC0049F5E2 /* JSONKeys.swift in Sources */,
 				0943560A1E58264D00C252F4 /* UploadEventView.swift in Sources */,
 				094355F91E581D5800C252F4 /* ViewController.swift in Sources */,
 				01D461201E581E0E00C25DC4 /* Router.swift in Sources */,

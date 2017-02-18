@@ -13,7 +13,7 @@ enum Router {
     // Events
     case getAllEvents
     case getEvent(id: String)
-    case createEvent
+    case createEvent(event: Event)
     
 }
 
@@ -60,8 +60,23 @@ extension Router {
 // MARK: - Parameters
 extension Router {
     
-    var parameters: [String: String]? {
-        return nil
+    var parameters: [String: Any]? {
+        switch self {
+        case .createEvent(let event):
+            var dict: [String: Any] = [:]
+            dict[JSONKeys.mood] = event.mood
+            dict[JSONKeys.stressLevel] = event.stressLevel
+            dict[JSONKeys.physicalActivityLevel] = event.physicalActivityLevel
+            dict[JSONKeys.selfHarmLevel] = event.selfHarmLevel
+            dict[JSONKeys.trigger] = event.trigger
+            dict[JSONKeys.resolution] = event.resolution
+            dict[JSONKeys.additionalNotes] = event.additionalNotes
+            dict[JSONKeys.photoURL] = "NO URL"
+            dict[JSONKeys.time] = time
+            return dict
+        default:
+            return nil
+        }
     }
     
 }
