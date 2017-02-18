@@ -35,4 +35,5 @@ class EventsView: UIViewController, UITableViewDelegate, UITableViewDataSource {
         return cell!
     }
 
+    
 }
