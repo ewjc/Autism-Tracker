@@ -10,6 +10,9 @@ import UIKit
 
 class UploadEventView: UIViewController {
     
+    // MARK : Properties
+    var photoTakingHelper: PhotoTakingHelper?
+    
     // MARK : IBOutlets
     @IBOutlet weak var dateLabel: UILabel!
     @IBOutlet weak var stressSlider: UISlider!
@@ -23,6 +26,10 @@ class UploadEventView: UIViewController {
     
     // MARK : IBActions
     @IBAction func addPhotoBtnTapped(_ sender: Any) {
+        print("Add image button tapped")
+        photoTakingHelper = PhotoTakingHelper(viewController: self) { (image: UIImage?) in
+            self.photoImage.image = image!
+        }
     }
     
     @IBAction func trackEventBtnTapped(_ sender: Any) {
