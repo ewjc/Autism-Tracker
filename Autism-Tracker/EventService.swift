@@ -11,7 +11,7 @@ import Alamofire
 class EventService {
     
     // MARK: - Get All Events
-    func getAllEvents(completion: @escaping (([Event]?, Error?) -> Void)) {
+    static func getAllEvents(completion: @escaping (([Event]?, Error?) -> Void)) {
         
         Provider.request(route: .getAllEvents) { (data: Any?, error: Error?) in
             
@@ -41,7 +41,7 @@ class EventService {
     }
     
     // MARK: - Get Event
-    func getEvent(id: String, completion: @escaping ((Event?, Error?) -> Void)) {
+    static func getEvent(id: String, completion: @escaping ((Event?, Error?) -> Void)) {
         
         Provider.request(route: .getEvent(id: id)) { (data: Any?, error: Error?) in
             
@@ -66,7 +66,7 @@ class EventService {
     }
     
     // MARK: - Create Event
-    func createEvent(id: String, mood: String, stressLevel: Int, physicalActivityLevel: Int, selfHarmLevel: Int, trigger: String, resolution: String, additionalNotes: String, photo: Data, time: String, completion: @escaping ((Event?, Error?) -> Void)) {
+    static func createEvent(id: String, mood: String, stressLevel: Int, physicalActivityLevel: Int, selfHarmLevel: Int, trigger: String, resolution: String, additionalNotes: String, photo: UIImage, time: String, completion: @escaping ((Event?, Error?) -> Void)) {
         
         Provider.request(route: .createEvent) { (data: Any?, error: Error?) in
             

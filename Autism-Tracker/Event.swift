@@ -6,7 +6,7 @@
 //  Copyright © 2017 Tawpy. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 class Event {
     
@@ -23,7 +23,7 @@ class Event {
     var resolution: String!
     var additionalNotes: String!
     
-    var photo: Data!
+    var photo: UIImage!
     var time: String!
     
     // MARK: - Init
