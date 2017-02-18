@@ -14,6 +14,8 @@
 		016A72F81E58D99D00AF046D /* CareGiverNewNoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016A72F71E58D99D00AF046D /* CareGiverNewNoteViewController.swift */; };
 		016A72FA1E58DA3900AF046D /* CareGiverNoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016A72F91E58DA3900AF046D /* CareGiverNoteViewController.swift */; };
 		016A72FC1E58DF4700AF046D /* UIColor+Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016A72FB1E58DF4700AF046D /* UIColor+Utilities.swift */; };
+		016A72FE1E58F9E500AF046D /* MicrosoftService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016A72FD1E58F9E500AF046D /* MicrosoftService.swift */; };
+		016A73011E58FDD100AF046D /* ChildEmotionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016A73001E58FDD100AF046D /* ChildEmotionViewController.swift */; };
 		018FAE2E1E5820FC0049F5E2 /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = 018FAE2D1E5820FC0049F5E2 /* Note.swift */; };
 		018FAE301E5848DC0049F5E2 /* JSONKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 018FAE2F1E5848DC0049F5E2 /* JSONKeys.swift */; };
 		01D461201E581E0E00C25DC4 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01D4611F1E581E0E00C25DC4 /* Router.swift */; };
@@ -41,6 +43,8 @@
 		016A72F71E58D99D00AF046D /* CareGiverNewNoteViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CareGiverNewNoteViewController.swift; sourceTree = "<group>"; };
 		016A72F91E58DA3900AF046D /* CareGiverNoteViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CareGiverNoteViewController.swift; sourceTree = "<group>"; };
 		016A72FB1E58DF4700AF046D /* UIColor+Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Utilities.swift"; sourceTree = "<group>"; };
+		016A72FD1E58F9E500AF046D /* MicrosoftService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MicrosoftService.swift; sourceTree = "<group>"; };
+		016A73001E58FDD100AF046D /* ChildEmotionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChildEmotionViewController.swift; sourceTree = "<group>"; };
 		018FAE2D1E5820FC0049F5E2 /* Note.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
 		018FAE2F1E5848DC0049F5E2 /* JSONKeys.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONKeys.swift; sourceTree = "<group>"; };
 		01D4611F1E581E0E00C25DC4 /* Router.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
@@ -86,6 +90,14 @@
 			name = CareGiver;
 			sourceTree = "<group>";
 		};
+		016A72FF1E58FBBA00AF046D /* Child */ = {
+			isa = PBXGroup;
+			children = (
+				016A73001E58FDD100AF046D /* ChildEmotionViewController.swift */,
+			);
+			name = Child;
+			sourceTree = "<group>";
+		};
 		01D4611E1E581E0500C25DC4 /* Networking */ = {
 			isa = PBXGroup;
 			children = (
@@ -108,6 +120,7 @@
 			isa = PBXGroup;
 			children = (
 				01D461251E581EA200C25DC4 /* NoteService.swift */,
+				016A72FD1E58F9E500AF046D /* MicrosoftService.swift */,
 			);
 			name = Services;
 			sourceTree = "<group>";
@@ -181,6 +194,7 @@
 		094356081E58261700C252F4 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				016A72FF1E58FBBA00AF046D /* Child */,
 				013144051E58D78B0021720D /* CareGiver */,
 				094355F81E581D5800C252F4 /* ViewController.swift */,
 				094356091E58264D00C252F4 /* NewNoteViewController.swift */,
@@ -345,10 +359,12 @@
 				01E33EE21E58659B00DA2C7D /* UIView+Utilities.swift in Sources */,
 				094355F91E581D5800C252F4 /* ViewController.swift in Sources */,
 				01D461201E581E0E00C25DC4 /* Router.swift in Sources */,
+				016A72FE1E58F9E500AF046D /* MicrosoftService.swift in Sources */,
 				013144071E58D7A00021720D /* CareGiverNotesViewController.swift in Sources */,
 				01D461261E581EA200C25DC4 /* NoteService.swift in Sources */,
 				018FAE2E1E5820FC0049F5E2 /* Note.swift in Sources */,
 				0943560D1E582BB400C252F4 /* PhotoHelper.swift in Sources */,
+				016A73011E58FDD100AF046D /* ChildEmotionViewController.swift in Sources */,
 				094355F71E581D5800C252F4 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

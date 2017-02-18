@@ -6,29 +6,11 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--Emotion-->
-        <scene sceneID="Ilr-au-YHk">
-            <objects>
-                <viewController id="o5Y-PC-TMv" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="A68-TC-lTW"/>
-                        <viewControllerLayoutGuide type="bottom" id="aBj-HB-mYZ"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="ggV-NN-c9u">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Emotion" id="SLy-sn-B6R"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="oKH-pS-Zhh" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2780" y="-106"/>
-        </scene>
-        <!--Photo-->
         <scene sceneID="Xh8-wx-SVo">
             <objects>
                 <viewController id="y7n-ny-8md" sceneMemberID="viewController">
@@ -39,13 +21,65 @@
                     <view key="view" contentMode="scaleToFill" id="ajU-oJ-vOU">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="06x-yL-Ezr">
+                                <rect key="frame" x="20" y="104" width="335" height="434"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="NHR-vW-Ads">
+                                        <rect key="frame" x="22" y="24" width="291" height="291"/>
+                                        <color key="backgroundColor" red="0.60784313725490191" green="0.60784313725490191" blue="0.60784313725490191" alpha="0.089999999999999997" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="NHR-vW-Ads" secondAttribute="height" id="0Y5-dT-dZZ"/>
+                                        </constraints>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JuO-El-p6t">
+                                        <rect key="frame" x="21.5" y="23.5" width="291" height="291"/>
+                                        <state key="normal" title="Tap to take a photo">
+                                            <color key="titleColor" red="0.28627450980392155" green="0.56470588235294117" blue="0.88627450980392153" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BOJ-Ne-p9m">
+                                        <rect key="frame" x="16" y="339" width="303" height="49"/>
+                                        <attributedString key="attributedText">
+                                            <fragment content="Take a photo of someone to determine his or her emotion">
+                                                <attributes>
+                                                    <color key="NSColor" red="0.28627450980392155" green="0.56470588235294117" blue="0.88627450980392153" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <font key="NSFont" metaFont="system" size="17"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="8" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="JuO-El-p6t" firstAttribute="height" secondItem="NHR-vW-Ads" secondAttribute="height" id="G7c-6E-Umz"/>
+                                    <constraint firstItem="NHR-vW-Ads" firstAttribute="top" secondItem="06x-yL-Ezr" secondAttribute="top" constant="24" id="KU7-eO-nTm"/>
+                                    <constraint firstItem="JuO-El-p6t" firstAttribute="centerX" secondItem="NHR-vW-Ads" secondAttribute="centerX" id="NrL-ng-xxv"/>
+                                    <constraint firstItem="JuO-El-p6t" firstAttribute="width" secondItem="NHR-vW-Ads" secondAttribute="width" id="Z98-Ry-fc9"/>
+                                    <constraint firstItem="JuO-El-p6t" firstAttribute="centerY" secondItem="NHR-vW-Ads" secondAttribute="centerY" id="cDs-x0-LVf"/>
+                                    <constraint firstItem="BOJ-Ne-p9m" firstAttribute="top" secondItem="NHR-vW-Ads" secondAttribute="bottom" constant="24" id="ck7-hn-ljI"/>
+                                    <constraint firstItem="BOJ-Ne-p9m" firstAttribute="leading" secondItem="06x-yL-Ezr" secondAttribute="leading" constant="16" id="epA-Ki-DFR"/>
+                                    <constraint firstAttribute="trailing" secondItem="BOJ-Ne-p9m" secondAttribute="trailing" constant="16" id="qch-HR-1gh"/>
+                                    <constraint firstItem="NHR-vW-Ads" firstAttribute="leading" secondItem="06x-yL-Ezr" secondAttribute="leading" constant="22" id="x47-Tt-tTV"/>
+                                    <constraint firstAttribute="trailing" secondItem="NHR-vW-Ads" secondAttribute="trailing" constant="22" id="xsk-v8-hhW"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.94117647058823528" green="0.94117647058823528" blue="0.94117647058823528" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="5Dp-q4-0tV" firstAttribute="top" secondItem="06x-yL-Ezr" secondAttribute="bottom" constant="80" id="3Hi-Sy-82R"/>
+                            <constraint firstAttribute="trailing" secondItem="06x-yL-Ezr" secondAttribute="trailing" constant="20" id="mHo-fB-AHz"/>
+                            <constraint firstItem="06x-yL-Ezr" firstAttribute="top" secondItem="RQm-AH-sZg" secondAttribute="bottom" constant="40" id="psk-gu-9Ra"/>
+                            <constraint firstItem="06x-yL-Ezr" firstAttribute="leading" secondItem="ajU-oJ-vOU" secondAttribute="leading" constant="20" id="xQG-tW-EMA"/>
+                        </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Photo" id="RsJ-7q-faf"/>
+                    <navigationItem key="navigationItem" title="Emotion" id="p5x-kx-kYs"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Glu-4f-FI1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2780" y="-760"/>
+            <point key="canvasLocation" x="3684" y="-436.73163418290858"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="ldD-Pe-FQj">
@@ -57,13 +91,31 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>
                     <connections>
-                        <segue destination="y7n-ny-8md" kind="relationship" relationship="viewControllers" id="Ari-I7-NIe"/>
-                        <segue destination="o5Y-PC-TMv" kind="relationship" relationship="viewControllers" id="YdP-Kw-yYn"/>
+                        <segue destination="xub-5U-SDh" kind="relationship" relationship="viewControllers" id="Ari-I7-NIe"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ao7-ol-S85" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1828" y="-435"/>
+        </scene>
+        <!--Photo-->
+        <scene sceneID="Rar-tA-46z">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="xub-5U-SDh" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Photo" id="RsJ-7q-faf"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="niY-m1-GR1">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="y7n-ny-8md" kind="relationship" relationship="rootViewController" id="F5n-wG-WOi"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BEa-Yf-66m" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2744.8000000000002" y="-436.73163418290858"/>
         </scene>
     </scenes>
 </document>
