@@ -154,10 +154,13 @@
                     <tabBarItem key="tabBarItem" title="Home" image="Home" selectedImage="Home" id="PlD-Nl-Rym"/>
                     <navigationItem key="navigationItem" title="Behavior Tracking" id="vg2-CV-d6H"/>
                     <connections>
+                        <outlet property="activityLevelSlider" destination="8kU-dW-3su" id="axH-kd-IB0"/>
                         <outlet property="additionalNotesTextField" destination="xwc-2W-cZH" id="AZj-qv-TGq"/>
+                        <outlet property="dateLabel" destination="1MJ-Iw-kPk" id="uaB-xv-LBh"/>
                         <outlet property="photoImage" destination="Ea3-GP-Kra" id="fI1-tu-qVE"/>
                         <outlet property="resolutionTextField" destination="c9S-X6-vJR" id="PSW-0i-C9n"/>
                         <outlet property="selfHarmSlider" destination="8kU-dW-3su" id="vPW-Jv-YT0"/>
+                        <outlet property="stressSlider" destination="j1N-a4-V9Y" id="zoo-2R-rT8"/>
                         <outlet property="triggerTextField" destination="IDx-km-sBQ" id="HSM-LL-3MY"/>
                     </connections>
                 </viewController>

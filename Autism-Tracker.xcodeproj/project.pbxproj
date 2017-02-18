@@ -17,6 +17,7 @@
 		094355FE1E581D5800C252F4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 094355FD1E581D5800C252F4 /* Assets.xcassets */; };
 		094356011E581D5800C252F4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 094355FF1E581D5800C252F4 /* LaunchScreen.storyboard */; };
 		0943560A1E58264D00C252F4 /* UploadEventView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 094356091E58264D00C252F4 /* UploadEventView.swift */; };
+		0943560D1E582BB400C252F4 /* PhotoHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0943560C1E582BB400C252F4 /* PhotoHelper.swift */; };
 		FC506228A3AC336E1A33225F /* Pods_Autism_Tracker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C73195EB3246455E91E3824A /* Pods_Autism_Tracker.framework */; };
 /* End PBXBuildFile section */
 
@@ -33,6 +34,7 @@
 		094356001E581D5800C252F4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		094356021E581D5800C252F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		094356091E58264D00C252F4 /* UploadEventView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UploadEventView.swift; sourceTree = "<group>"; };
+		0943560C1E582BB400C252F4 /* PhotoHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoHelper.swift; sourceTree = "<group>"; };
 		4F2586110B3851C22E62261F /* Pods-Autism-Tracker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Autism-Tracker.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Autism-Tracker/Pods-Autism-Tracker.debug.xcconfig"; sourceTree = "<group>"; };
 		A3CDC8437534C6C0083A680D /* Pods-Autism-Tracker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Autism-Tracker.release.xcconfig"; path = "Pods/Target Support Files/Pods-Autism-Tracker/Pods-Autism-Tracker.release.xcconfig"; sourceTree = "<group>"; };
 		C73195EB3246455E91E3824A /* Pods_Autism_Tracker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Autism_Tracker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -96,6 +98,7 @@
 		094355F51E581D5800C252F4 /* Autism-Tracker */ = {
 			isa = PBXGroup;
 			children = (
+				0943560B1E582B9000C252F4 /* Photo Helper */,
 				094356081E58261700C252F4 /* Views */,
 				01D461211E581E5D00C25DC4 /* Models */,
 				01D4611E1E581E0500C25DC4 /* Networking */,
@@ -116,6 +119,14 @@
 				094356091E58264D00C252F4 /* UploadEventView.swift */,
 			);
 			name = Views;
+			sourceTree = "<group>";
+		};
+		0943560B1E582B9000C252F4 /* Photo Helper */ = {
+			isa = PBXGroup;
+			children = (
+				0943560C1E582BB400C252F4 /* PhotoHelper.swift */,
+			);
+			name = "Photo Helper";
 			sourceTree = "<group>";
 		};
 		553581135CE1D847EE83EA41 /* Pods */ = {
@@ -265,6 +276,7 @@
 				01D461201E581E0E00C25DC4 /* Router.swift in Sources */,
 				01D461261E581EA200C25DC4 /* EventService.swift in Sources */,
 				018FAE2E1E5820FC0049F5E2 /* Event.swift in Sources */,
+				0943560D1E582BB400C252F4 /* PhotoHelper.swift in Sources */,
 				094355F71E581D5800C252F4 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
