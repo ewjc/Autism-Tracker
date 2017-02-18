@@ -30,10 +30,10 @@
             </objects>
             <point key="canvasLocation" x="38" y="139"/>
         </scene>
-        <!--Behavior Tracking-->
+        <!--Upload Event View-->
         <scene sceneID="8Fw-Dt-uF4">
             <objects>
-                <viewController id="vV7-AM-VRw" customClass="UploadEventView" customModule="Autism_Tracker" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="vV7-AM-VRw" userLabel="Upload Event View" customClass="UploadEventView" customModule="Autism_Tracker" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="6Jy-Al-f5X"/>
                         <viewControllerLayoutGuide type="bottom" id="ZuE-gM-DWh"/>
@@ -103,7 +103,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Track Event"/>
                                 <connections>
-                                    <action selector="trackEventClicked:" destination="vV7-AM-VRw" eventType="touchUpInside" id="sIq-sS-EIY"/>
+                                    <action selector="trackEventBtnTapped:" destination="vV7-AM-VRw" eventType="touchUpInside" id="GzW-yc-eny"/>
                                 </connections>
                             </button>
                             <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="1" maxValue="10" translatesAutoresizingMaskIntoConstraints="NO" id="Bzd-TQ-954">
@@ -141,23 +141,24 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Add Photo"/>
                                 <connections>
-                                    <action selector="addImage:" destination="vV7-AM-VRw" eventType="touchUpInside" id="yxG-eM-rFR"/>
+                                    <action selector="addPhotoBtnTapped:" destination="vV7-AM-VRw" eventType="touchUpInside" id="zIL-5n-xB9"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ea3-GP-Kra">
+                                <rect key="frame" x="65" y="414" width="244" height="165"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Home" image="Home" selectedImage="Home" id="PlD-Nl-Rym"/>
                     <navigationItem key="navigationItem" title="Behavior Tracking" id="vg2-CV-d6H"/>
                     <connections>
-                        <outlet property="activityLevel" destination="Bzd-TQ-954" id="kow-r8-dU4"/>
-                        <outlet property="date" destination="1MJ-Iw-kPk" id="3v0-Bg-1Iw"/>
-                        <outlet property="noteImageView" destination="v4e-3k-14f" id="h62-lG-cbY"/>
-                        <outlet property="notesTextField" destination="xwc-2W-cZH" id="9XY-Ew-2lr"/>
-                        <outlet property="resolutionTextField" destination="c9S-X6-vJR" id="l3A-BJ-eXe"/>
-                        <outlet property="selfHarmLevel" destination="8kU-dW-3su" id="9UC-Ao-1pn"/>
-                        <outlet property="stressLevel" destination="j1N-a4-V9Y" id="OcZ-aH-2AL"/>
-                        <outlet property="triggerTextField" destination="IDx-km-sBQ" id="sC7-Uu-8ue"/>
+                        <outlet property="additionalNotesTextField" destination="xwc-2W-cZH" id="AZj-qv-TGq"/>
+                        <outlet property="photoImage" destination="Ea3-GP-Kra" id="fI1-tu-qVE"/>
+                        <outlet property="resolutionTextField" destination="c9S-X6-vJR" id="PSW-0i-C9n"/>
+                        <outlet property="selfHarmSlider" destination="8kU-dW-3su" id="vPW-Jv-YT0"/>
+                        <outlet property="triggerTextField" destination="IDx-km-sBQ" id="HSM-LL-3MY"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="z0w-uW-IRc" sceneMemberID="firstResponder"/>

@@ -9,10 +9,31 @@
 import UIKit
 
 class UploadEventView: UIViewController {
-
+    
+    // MARK : IBOutlets
+    @IBOutlet weak var dateLabel: UILabel!
+    @IBOutlet weak var stressSlider: UISlider!
+    @IBOutlet weak var activityLevelSlider: UISlider!
+    @IBOutlet weak var selfHarmSlider: UISlider!
+    @IBOutlet weak var triggerTextField: UITextField!
+    @IBOutlet weak var resolutionTextField: UITextField!
+    @IBOutlet weak var additionalNotesTextField: UITextField!
+    @IBOutlet weak var photoImage: UIImageView!
+    
+    
+    // MARK : IBActions
+    @IBAction func addPhotoBtnTapped(_ sender: Any) {
+    }
+    
+    @IBAction func trackEventBtnTapped(_ sender: Any) {
+        
+    }
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
     }
 
 
