@@ -33,7 +33,7 @@ class UploadEventView: UIViewController {
     }
     
     @IBAction func trackEventBtnTapped(_ sender: Any) {
-        
+
     }
     
     
