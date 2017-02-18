@@ -212,7 +212,7 @@
         <!--Note Detailed View-->
         <scene sceneID="tMI-b4-Mmb">
             <objects>
-                <viewController id="rOx-Yd-yJZ" customClass="NoteDetailedView" customModule="Same_Page" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="rOx-Yd-yJZ" customClass="NoteDetailedView" customModule="Autism_Tracker" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="bQo-k5-xqg"/>
                         <viewControllerLayoutGuide type="bottom" id="WEj-57-Ic9"/>
@@ -337,27 +337,15 @@
                     <navigationItem key="navigationItem" id="OB7-uA-yfQ">
                         <barButtonItem key="backBarButtonItem" title="Back" id="Jhc-kj-8pF"/>
                     </navigationItem>
-                    <connections>
-                        <outlet property="activityNumberLabel" destination="e9v-vs-xi8" id="ByK-yF-ES8"/>
-                        <outlet property="additionalNotes" destination="DQp-uJ-OQD" id="hpd-38-CW5"/>
-                        <outlet property="authorLabel" destination="Htk-bK-XWZ" id="ddK-02-GCi"/>
-                        <outlet property="dateLabel" destination="0vg-eF-ZUC" id="rWN-4w-HOI"/>
-                        <outlet property="moodLabel" destination="OT1-j1-5ht" id="L9j-L0-Axl"/>
-                        <outlet property="photoImage" destination="MZV-0w-Di3" id="Il2-P4-o3Y"/>
-                        <outlet property="resolutionLabel" destination="KsH-w4-ePm" id="Egh-91-R1L"/>
-                        <outlet property="selfHarmLabel" destination="CgO-uY-2oE" id="rpl-Eq-5S6"/>
-                        <outlet property="stressNumberLabel" destination="3mZ-6h-bRD" id="cJw-zq-sx2"/>
-                        <outlet property="triggerLabel" destination="vOe-cd-xzi" id="lCc-qV-UpC"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pPA-4h-0ja" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3484" y="-367"/>
+            <point key="canvasLocation" x="4297" y="-312"/>
         </scene>
-        <!--View Notes And GoalsVC-->
+        <!--Events View-->
         <scene sceneID="Kkg-Ls-iSO">
             <objects>
-                <viewController id="lAF-6D-1Xk" customClass="ViewNotesAndGoalsVC" customModule="Same_Page" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="lAF-6D-1Xk" customClass="EventsView" customModule="Autism_Tracker" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="fh7-Yi-xWa"/>
                         <viewControllerLayoutGuide type="bottom" id="ykd-tu-yhH"/>
@@ -371,7 +359,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="117" id="xRg-Ce-OEq" customClass="NoteViewCell" customModule="Same_Page" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="117" id="xRg-Ce-OEq" customClass="NoteViewCell" customModule="Autism_Tracker" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="117"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="xRg-Ce-OEq" id="wbu-xP-ucp">
@@ -390,7 +378,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Mood: Happy" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oXY-GD-ysM">
-                                                    <rect key="frame" x="138" y="29" width="67" height="21"/>
+                                                    <rect key="frame" x="138" y="29" width="159" height="21"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
@@ -412,13 +400,6 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
-                                        <connections>
-                                            <outlet property="moodLabel" destination="oXY-GD-ysM" id="cOV-Zh-bsG"/>
-                                            <outlet property="timeLabel" destination="g0m-hC-FLJ" id="PJf-RC-9i0"/>
-                                            <outlet property="user" destination="MgG-Tj-RZE" id="LHD-JE-6Ak"/>
-                                            <outlet property="userImage" destination="EUw-jU-HBa" id="JuU-Nz-vsF"/>
-                                            <outlet property="userTitleLabel" destination="h5X-Td-ycY" id="pzH-9t-CVo"/>
-                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -429,13 +410,31 @@
                         <nil key="title"/>
                     </navigationItem>
                     <connections>
-                        <outlet property="tableView" destination="wye-ma-dwc" id="PKM-tO-RlV"/>
+                        <outlet property="tableView" destination="wye-ma-dwc" id="cfx-c0-idu"/>
                         <segue destination="rOx-Yd-yJZ" kind="show" id="noV-ud-j05"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KZv-EX-TOJ" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2366" y="-553"/>
+            <point key="canvasLocation" x="3247" y="-555"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Ldq-8D-Ut1">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Nr7-lL-XYt" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="xo0-4R-URC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="lAF-6D-1Xk" kind="relationship" relationship="rootViewController" id="3If-of-DeW"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XYi-Av-vbQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2340" y="-554"/>
         </scene>
     </scenes>
     <resources>
