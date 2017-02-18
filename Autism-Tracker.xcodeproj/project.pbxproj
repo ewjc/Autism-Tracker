@@ -13,6 +13,7 @@
 		013144071E58D7A00021720D /* CareGiverNotesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 013144061E58D7A00021720D /* CareGiverNotesViewController.swift */; };
 		016A72F81E58D99D00AF046D /* CareGiverNewNoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016A72F71E58D99D00AF046D /* CareGiverNewNoteViewController.swift */; };
 		016A72FA1E58DA3900AF046D /* CareGiverNoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016A72F91E58DA3900AF046D /* CareGiverNoteViewController.swift */; };
+		016A72FC1E58DF4700AF046D /* UIColor+Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016A72FB1E58DF4700AF046D /* UIColor+Utilities.swift */; };
 		018FAE2E1E5820FC0049F5E2 /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = 018FAE2D1E5820FC0049F5E2 /* Note.swift */; };
 		018FAE301E5848DC0049F5E2 /* JSONKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 018FAE2F1E5848DC0049F5E2 /* JSONKeys.swift */; };
 		01D461201E581E0E00C25DC4 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01D4611F1E581E0E00C25DC4 /* Router.swift */; };
@@ -39,6 +40,7 @@
 		013144061E58D7A00021720D /* CareGiverNotesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CareGiverNotesViewController.swift; sourceTree = "<group>"; };
 		016A72F71E58D99D00AF046D /* CareGiverNewNoteViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CareGiverNewNoteViewController.swift; sourceTree = "<group>"; };
 		016A72F91E58DA3900AF046D /* CareGiverNoteViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CareGiverNoteViewController.swift; sourceTree = "<group>"; };
+		016A72FB1E58DF4700AF046D /* UIColor+Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Utilities.swift"; sourceTree = "<group>"; };
 		018FAE2D1E5820FC0049F5E2 /* Note.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
 		018FAE2F1E5848DC0049F5E2 /* JSONKeys.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONKeys.swift; sourceTree = "<group>"; };
 		01D4611F1E581E0E00C25DC4 /* Router.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
@@ -130,6 +132,7 @@
 		01E33EE01E58653100DA2C7D /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				016A72FB1E58DF4700AF046D /* UIColor+Utilities.swift */,
 				01E33EE11E58659B00DA2C7D /* UIView+Utilities.swift */,
 			);
 			name = Extensions;
@@ -337,6 +340,7 @@
 				01E33EDD1E5862B700DA2C7D /* NoteTableViewCell.swift in Sources */,
 				09BE52E41E585A2F00A7C6A6 /* NotesViewController.swift in Sources */,
 				018FAE301E5848DC0049F5E2 /* JSONKeys.swift in Sources */,
+				016A72FC1E58DF4700AF046D /* UIColor+Utilities.swift in Sources */,
 				0943560A1E58264D00C252F4 /* NewNoteViewController.swift in Sources */,
 				01E33EE21E58659B00DA2C7D /* UIView+Utilities.swift in Sources */,
 				094355F91E581D5800C252F4 /* ViewController.swift in Sources */,

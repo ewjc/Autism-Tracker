@@ -24,7 +24,20 @@ class CareGiverNotesViewController: UIViewController {
         setupRefreshControl()
         setupTableView()
         setupEvents()
+        styleSetup()
     }
+}
+
+// MARK: - Style
+extension CareGiverNotesViewController {
+    
+    func styleSetup() {
+        navigationController?.navigationBar.barTintColor = UIColor.brandBlue
+        navigationController?.navigationBar.isTranslucent = false
+        
+        tabBarController?.tabBar.isTranslucent = false
+    }
+    
 }
 
 // MARK: - Events
