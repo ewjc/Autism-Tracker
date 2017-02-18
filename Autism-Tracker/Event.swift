@@ -13,18 +13,18 @@ class Event {
     // MARK: - Instace Vars
     var id: String!
     
-    var mood: String
-    var stressLevel: Int
+    var mood: String!
+    var stressLevel: Int!
     
-    var physicalActivityLevel: Int
-    var selfHarmLevel: Int
+    var physicalActivityLevel: Int!
+    var selfHarmLevel: Int!
     
-    var trigger: String
-    var resolution: String
-    var additionalNotes: String
+    var trigger: String!
+    var resolution: String!
+    var additionalNotes: String!
     
-    var photo: Data
-    var time: String
+    var photo: Data!
+    var time: String!
     
     // MARK: - Init
     init?(data: [String: Any]) {
