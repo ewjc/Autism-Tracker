@@ -27,6 +27,10 @@ class Event {
     var time: String!
     
     // MARK: - Init
+    init() {
+        
+    }
+    
     init?(data: [String: Any]) {
         
         // TODO: Add stuff

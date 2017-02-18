@@ -12,6 +12,9 @@ class UploadEventView: UIViewController {
     
     // MARK : Properties
     var photoTakingHelper: PhotoTakingHelper?
+    let dateFunc = Date()
+    let calendar = Calendar.current
+    let formatter = DateFormatter()
     
     // MARK : IBOutlets
     @IBOutlet weak var dateLabel: UILabel!
@@ -33,6 +36,25 @@ class UploadEventView: UIViewController {
     }
     
     @IBAction func trackEventBtnTapped(_ sender: Any) {
+        
+        let event = Event()
+        event.mood = "happy"
+        event.time = dateLabel.text
+        event.photo = photoImage.image
+        event.physicalActivityLevel = Int(activityLevelSlider.value)
+        event.trigger = triggerTextField.text
+        event.resolution = resolutionTextField.text
+        event.stressLevel = Int(stressSlider.value)
+        event.additionalNotes = additionalNotesTextField.text
+        
+        EventService.createEvent(event: event) { (event: Event?, error: Error?) in
+            //
+        }
+        
+        let alertMessage = "Your behavior has successfully been tracked!"
+        let alert = UIAlertController(title: "Succes", message: alertMessage, preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+        self.present(alert, animated: true, completion: nil)
 
     }
     
@@ -40,6 +62,16 @@ class UploadEventView: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        //MARK: DATE
+        formatter.dateFormat = "MM/dd/yyyy"
+        let result = formatter.string(from: dateFunc)
+        
+        var components = calendar.dateComponents([.hour, .minute], from: dateFunc)
+        if components.hour! > 12 {
+            components.hour = components.hour! - 12
+        }
+        dateLabel.text = ("Date: \(result) at \(components.hour!):\(components.minute!)")
         
     }
 
