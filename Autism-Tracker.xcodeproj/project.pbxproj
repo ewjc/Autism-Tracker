@@ -7,14 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		01D461201E581E0E00C25DC4 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01D4611F1E581E0E00C25DC4 /* Router.swift */; };
+		01D461231E581E6A00C25DC4 /* Provider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01D461221E581E6A00C25DC4 /* Provider.swift */; };
+		01D461261E581EA200C25DC4 /* EventService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01D461251E581EA200C25DC4 /* EventService.swift */; };
 		094355F71E581D5800C252F4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 094355F61E581D5800C252F4 /* AppDelegate.swift */; };
 		094355F91E581D5800C252F4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 094355F81E581D5800C252F4 /* ViewController.swift */; };
 		094355FC1E581D5800C252F4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 094355FA1E581D5800C252F4 /* Main.storyboard */; };
 		094355FE1E581D5800C252F4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 094355FD1E581D5800C252F4 /* Assets.xcassets */; };
 		094356011E581D5800C252F4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 094355FF1E581D5800C252F4 /* LaunchScreen.storyboard */; };
+		FC506228A3AC336E1A33225F /* Pods_Autism_Tracker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C73195EB3246455E91E3824A /* Pods_Autism_Tracker.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		01D4611F1E581E0E00C25DC4 /* Router.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		01D461221E581E6A00C25DC4 /* Provider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Provider.swift; sourceTree = "<group>"; };
+		01D461251E581EA200C25DC4 /* EventService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventService.swift; sourceTree = "<group>"; };
 		094355F31E581D5800C252F4 /* Autism-Tracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Autism-Tracker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		094355F61E581D5800C252F4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		094355F81E581D5800C252F4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +29,9 @@
 		094355FD1E581D5800C252F4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		094356001E581D5800C252F4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		094356021E581D5800C252F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4F2586110B3851C22E62261F /* Pods-Autism-Tracker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Autism-Tracker.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Autism-Tracker/Pods-Autism-Tracker.debug.xcconfig"; sourceTree = "<group>"; };
+		A3CDC8437534C6C0083A680D /* Pods-Autism-Tracker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Autism-Tracker.release.xcconfig"; path = "Pods/Target Support Files/Pods-Autism-Tracker/Pods-Autism-Tracker.release.xcconfig"; sourceTree = "<group>"; };
+		C73195EB3246455E91E3824A /* Pods_Autism_Tracker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Autism_Tracker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +39,44 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FC506228A3AC336E1A33225F /* Pods_Autism_Tracker.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		01D4611E1E581E0500C25DC4 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				01D4611F1E581E0E00C25DC4 /* Router.swift */,
+				01D461221E581E6A00C25DC4 /* Provider.swift */,
+			);
+			name = Networking;
+			sourceTree = "<group>";
+		};
+		01D461211E581E5D00C25DC4 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		01D461241E581E9700C25DC4 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				01D461251E581EA200C25DC4 /* EventService.swift */,
+			);
+			name = Services;
+			sourceTree = "<group>";
+		};
 		094355EA1E581D5800C252F4 = {
 			isa = PBXGroup;
 			children = (
 				094355F51E581D5800C252F4 /* Autism-Tracker */,
 				094355F41E581D5800C252F4 /* Products */,
+				553581135CE1D847EE83EA41 /* Pods */,
+				91E70BA5719E9CA831A118F1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,6 +91,9 @@
 		094355F51E581D5800C252F4 /* Autism-Tracker */ = {
 			isa = PBXGroup;
 			children = (
+				01D461211E581E5D00C25DC4 /* Models */,
+				01D4611E1E581E0500C25DC4 /* Networking */,
+				01D461241E581E9700C25DC4 /* Services */,
 				094355F61E581D5800C252F4 /* AppDelegate.swift */,
 				094355F81E581D5800C252F4 /* ViewController.swift */,
 				094355FA1E581D5800C252F4 /* Main.storyboard */,
@@ -64,6 +104,23 @@
 			path = "Autism-Tracker";
 			sourceTree = "<group>";
 		};
+		553581135CE1D847EE83EA41 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4F2586110B3851C22E62261F /* Pods-Autism-Tracker.debug.xcconfig */,
+				A3CDC8437534C6C0083A680D /* Pods-Autism-Tracker.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		91E70BA5719E9CA831A118F1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C73195EB3246455E91E3824A /* Pods_Autism_Tracker.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +128,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 094356051E581D5800C252F4 /* Build configuration list for PBXNativeTarget "Autism-Tracker" */;
 			buildPhases = (
+				32EB115C1A6228539CDF57D9 /* [CP] Check Pods Manifest.lock */,
 				094355EF1E581D5800C252F4 /* Sources */,
 				094355F01E581D5800C252F4 /* Frameworks */,
 				094355F11E581D5800C252F4 /* Resources */,
+				586F7DAB75C83BC5D0D62A85 /* [CP] Embed Pods Frameworks */,
+				E4CD7E84D91F89595AB67A84 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -132,12 +192,63 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		32EB115C1A6228539CDF57D9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		586F7DAB75C83BC5D0D62A85 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Autism-Tracker/Pods-Autism-Tracker-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E4CD7E84D91F89595AB67A84 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Autism-Tracker/Pods-Autism-Tracker-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		094355EF1E581D5800C252F4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				01D461231E581E6A00C25DC4 /* Provider.swift in Sources */,
 				094355F91E581D5800C252F4 /* ViewController.swift in Sources */,
+				01D461201E581E0E00C25DC4 /* Router.swift in Sources */,
+				01D461261E581EA200C25DC4 /* EventService.swift in Sources */,
 				094355F71E581D5800C252F4 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -257,6 +368,7 @@
 		};
 		094356061E581D5800C252F4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4F2586110B3851C22E62261F /* Pods-Autism-Tracker.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 37UFE54W7P;
@@ -270,6 +382,7 @@
 		};
 		094356071E581D5800C252F4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A3CDC8437534C6C0083A680D /* Pods-Autism-Tracker.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 37UFE54W7P;
@@ -300,6 +413,7 @@
 				094356071E581D5800C252F4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
