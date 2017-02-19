@@ -54,6 +54,7 @@ extension UpdateChildStatusView {
     }
     
     func setupNeuraEvents() {
+        
         // Create indexes
         for event in eventArray {
             
