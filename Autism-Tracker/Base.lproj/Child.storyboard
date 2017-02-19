@@ -13,7 +13,7 @@
         <!--Emotion-->
         <scene sceneID="Xh8-wx-SVo">
             <objects>
-                <viewController id="y7n-ny-8md" sceneMemberID="viewController">
+                <viewController id="y7n-ny-8md" customClass="ChildEmotionViewController" customModule="Autism_Tracker" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="RQm-AH-sZg"/>
                         <viewControllerLayoutGuide type="bottom" id="5Dp-q4-0tV"/>
@@ -23,7 +23,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="06x-yL-Ezr">
-                                <rect key="frame" x="20" y="104" width="335" height="434"/>
+                                <rect key="frame" x="20" y="104" width="335" height="474"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="NHR-vW-Ads">
                                         <rect key="frame" x="22" y="24" width="291" height="291"/>
@@ -37,6 +37,9 @@
                                         <state key="normal" title="Tap to take a photo">
                                             <color key="titleColor" red="0.28627450980392155" green="0.56470588235294117" blue="0.88627450980392153" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="takePhotoAction:" destination="y7n-ny-8md" eventType="touchUpInside" id="0Xv-RQ-xZ2"/>
+                                        </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BOJ-Ne-p9m">
                                         <rect key="frame" x="16" y="339" width="303" height="49"/>
@@ -69,13 +72,18 @@
                         </subviews>
                         <color key="backgroundColor" red="0.94117647058823528" green="0.94117647058823528" blue="0.94117647058823528" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="5Dp-q4-0tV" firstAttribute="top" secondItem="06x-yL-Ezr" secondAttribute="bottom" constant="80" id="3Hi-Sy-82R"/>
+                            <constraint firstItem="5Dp-q4-0tV" firstAttribute="top" secondItem="06x-yL-Ezr" secondAttribute="bottom" constant="40" id="3Hi-Sy-82R"/>
                             <constraint firstAttribute="trailing" secondItem="06x-yL-Ezr" secondAttribute="trailing" constant="20" id="mHo-fB-AHz"/>
                             <constraint firstItem="06x-yL-Ezr" firstAttribute="top" secondItem="RQm-AH-sZg" secondAttribute="bottom" constant="40" id="psk-gu-9Ra"/>
                             <constraint firstItem="06x-yL-Ezr" firstAttribute="leading" secondItem="ajU-oJ-vOU" secondAttribute="leading" constant="20" id="xQG-tW-EMA"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Emotion" id="p5x-kx-kYs"/>
+                    <connections>
+                        <outlet property="bodyLabel" destination="BOJ-Ne-p9m" id="LIa-v1-t6X"/>
+                        <outlet property="pictureImageView" destination="NHR-vW-Ads" id="82Y-1t-Seh"/>
+                        <outlet property="takePhotoButton" destination="JuO-El-p6t" id="BLv-FB-XwB"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Glu-4f-FI1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
