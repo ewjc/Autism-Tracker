@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="4Yy-zN-K9l">
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1217" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="4Yy-zN-K9l">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -75,7 +75,7 @@
                                         <rect key="frame" x="0.0" y="28" width="375" height="349"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="wLd-lq-pOj" id="A9V-vE-npo">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="348.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="349"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Trigger : XYX" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SYb-Qu-4tg">
@@ -172,7 +172,7 @@
                                         <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="fjh-0w-zff" id="QD5-1i-hGF">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Status" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="25l-89-Mzs">
@@ -270,46 +270,6 @@
                                         <color key="textColor" red="0.13333333333333333" green="0.13333333333333333" blue="0.13333333333333333" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d7H-zz-lqp">
-                                        <rect key="frame" x="31" y="249" width="41" height="55"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="36"/>
-                                        <state key="normal" title="😁"/>
-                                        <connections>
-                                            <action selector="didTapMoodButtonWithSender:" destination="ssf-I1-oBj" eventType="touchUpInside" id="SUt-pt-b96"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oWF-o1-LYj">
-                                        <rect key="frame" x="94" y="249" width="41" height="55"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="36"/>
-                                        <state key="normal" title="😲"/>
-                                        <connections>
-                                            <action selector="didTapMoodButtonWithSender:" destination="ssf-I1-oBj" eventType="touchUpInside" id="nD7-s0-ykz"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c5O-Zd-eDf">
-                                        <rect key="frame" x="157" y="249" width="41" height="55"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="36"/>
-                                        <state key="normal" title="😐"/>
-                                        <connections>
-                                            <action selector="didTapMoodButtonWithSender:" destination="ssf-I1-oBj" eventType="touchUpInside" id="BXE-cf-LHj"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wti-E9-5HX">
-                                        <rect key="frame" x="220" y="249" width="41" height="55"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="36"/>
-                                        <state key="normal" title="😠"/>
-                                        <connections>
-                                            <action selector="didTapMoodButtonWithSender:" destination="ssf-I1-oBj" eventType="touchUpInside" id="OEE-RB-F9p"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xAn-hv-phE">
-                                        <rect key="frame" x="283" y="249" width="41" height="55"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="36"/>
-                                        <state key="normal" title="😢"/>
-                                        <connections>
-                                            <action selector="didTapMoodButtonWithSender:" destination="ssf-I1-oBj" eventType="touchUpInside" id="JCH-cV-oOY"/>
-                                        </connections>
-                                    </button>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AzI-kR-ggO" customClass="customDragView" customModule="Autism_Tracker" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="304" width="375" height="61"/>
                                         <constraints>
@@ -343,47 +303,84 @@
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="02 / 19 / 17" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="895-BW-ARY">
-                                        <rect key="frame" x="301" y="4" width="70" height="17"/>
+                                        <rect key="frame" x="301.5" y="4" width="69.5" height="17"/>
                                         <fontDescription key="fontDescription" type="system" weight="light" pointSize="14"/>
                                         <color key="textColor" red="0.13333333333333333" green="0.13333333333333333" blue="0.13333333333333333" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="Olh-Eq-Kdt">
+                                        <rect key="frame" x="53" y="249" width="269" height="55"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d7H-zz-lqp">
+                                                <rect key="frame" x="0.0" y="0.0" width="41" height="55"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                                                <state key="normal" title="😁"/>
+                                                <connections>
+                                                    <action selector="didTapMoodButtonWithSender:" destination="ssf-I1-oBj" eventType="touchUpInside" id="SUt-pt-b96"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oWF-o1-LYj">
+                                                <rect key="frame" x="57" y="0.0" width="41" height="55"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                                                <state key="normal" title="😲"/>
+                                                <connections>
+                                                    <action selector="didTapMoodButtonWithSender:" destination="ssf-I1-oBj" eventType="touchUpInside" id="nD7-s0-ykz"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c5O-Zd-eDf">
+                                                <rect key="frame" x="114" y="0.0" width="41" height="55"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                                                <state key="normal" title="😐"/>
+                                                <connections>
+                                                    <action selector="didTapMoodButtonWithSender:" destination="ssf-I1-oBj" eventType="touchUpInside" id="BXE-cf-LHj"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wti-E9-5HX">
+                                                <rect key="frame" x="171" y="0.0" width="41" height="55"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                                                <state key="normal" title="😠"/>
+                                                <connections>
+                                                    <action selector="didTapMoodButtonWithSender:" destination="ssf-I1-oBj" eventType="touchUpInside" id="OEE-RB-F9p"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xAn-hv-phE">
+                                                <rect key="frame" x="228" y="0.0" width="41" height="55"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                                                <state key="normal" title="😢"/>
+                                                <connections>
+                                                    <action selector="didTapMoodButtonWithSender:" destination="ssf-I1-oBj" eventType="touchUpInside" id="JCH-cV-oOY"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstItem="d7H-zz-lqp" firstAttribute="top" secondItem="ccR-K6-PVc" secondAttribute="bottom" constant="8" id="0ku-gn-b6Q"/>
                                     <constraint firstItem="Mgs-SZ-BLV" firstAttribute="top" secondItem="fFC-Jg-Lr4" secondAttribute="bottom" constant="4" id="4yW-fa-KoG"/>
                                     <constraint firstItem="jih-sz-xyC" firstAttribute="leading" secondItem="uLe-oL-yXh" secondAttribute="leading" id="B0c-4Y-MIh"/>
                                     <constraint firstItem="EQ5-9D-OzI" firstAttribute="leading" secondItem="Rzw-Id-5Pa" secondAttribute="leading" id="Ddm-7Q-XVg"/>
                                     <constraint firstItem="EQ5-9D-OzI" firstAttribute="top" secondItem="Rzw-Id-5Pa" secondAttribute="bottom" constant="8" id="HqS-US-waY"/>
                                     <constraint firstItem="Rzw-Id-5Pa" firstAttribute="top" secondItem="AzI-kR-ggO" secondAttribute="bottom" constant="8" id="KXV-Mt-Uf5"/>
                                     <constraint firstItem="Rzw-Id-5Pa" firstAttribute="trailing" secondItem="AzI-kR-ggO" secondAttribute="trailing" id="M3Q-Ez-tBh"/>
-                                    <constraint firstItem="AzI-kR-ggO" firstAttribute="top" secondItem="d7H-zz-lqp" secondAttribute="bottom" id="NlS-oI-BtY"/>
+                                    <constraint firstItem="AzI-kR-ggO" firstAttribute="top" secondItem="Olh-Eq-Kdt" secondAttribute="bottom" id="MPP-FS-eRs"/>
                                     <constraint firstItem="fFC-Jg-Lr4" firstAttribute="leading" secondItem="jWh-lL-PRm" secondAttribute="leading" constant="14" id="NyZ-LM-wJr"/>
                                     <constraint firstItem="ccR-K6-PVc" firstAttribute="top" secondItem="Mgs-SZ-BLV" secondAttribute="bottom" constant="8" id="O1s-d0-2gi"/>
-                                    <constraint firstItem="oWF-o1-LYj" firstAttribute="centerY" secondItem="d7H-zz-lqp" secondAttribute="centerY" id="PfO-tM-LzM"/>
                                     <constraint firstItem="uLe-oL-yXh" firstAttribute="top" secondItem="895-BW-ARY" secondAttribute="bottom" constant="15" id="QWO-SV-dSM"/>
                                     <constraint firstItem="9Vv-90-h3t" firstAttribute="leading" secondItem="uLe-oL-yXh" secondAttribute="trailing" constant="8" id="YE0-s7-MU6"/>
+                                    <constraint firstItem="Olh-Eq-Kdt" firstAttribute="top" secondItem="ccR-K6-PVc" secondAttribute="bottom" constant="8" id="ZD5-mj-hgd"/>
                                     <constraint firstItem="Oov-Fm-7LA" firstAttribute="trailing" secondItem="9Vv-90-h3t" secondAttribute="trailing" id="b1k-oV-RiU"/>
                                     <constraint firstItem="9Vv-90-h3t" firstAttribute="centerY" secondItem="uLe-oL-yXh" secondAttribute="centerY" id="b4I-Px-oGb"/>
                                     <constraint firstItem="NNd-WJ-7QN" firstAttribute="top" secondItem="EQ5-9D-OzI" secondAttribute="bottom" constant="18" id="bUW-Vb-n9W"/>
-                                    <constraint firstItem="xAn-hv-phE" firstAttribute="leading" secondItem="Wti-E9-5HX" secondAttribute="trailing" constant="22" id="c1a-VE-XZM"/>
                                     <constraint firstItem="AzI-kR-ggO" firstAttribute="leading" secondItem="jWh-lL-PRm" secondAttribute="leading" id="cWe-Y1-tuF"/>
-                                    <constraint firstItem="c5O-Zd-eDf" firstAttribute="leading" secondItem="oWF-o1-LYj" secondAttribute="trailing" constant="22" id="eUY-An-SAj"/>
                                     <constraint firstItem="Mgs-SZ-BLV" firstAttribute="trailing" secondItem="Oov-Fm-7LA" secondAttribute="trailing" id="edp-2r-c1e"/>
                                     <constraint firstItem="Rzw-Id-5Pa" firstAttribute="leading" secondItem="AzI-kR-ggO" secondAttribute="leading" id="elj-we-rop"/>
                                     <constraint firstItem="Oov-Fm-7LA" firstAttribute="centerY" secondItem="jih-sz-xyC" secondAttribute="centerY" id="ffM-W7-jEl"/>
                                     <constraint firstItem="fFC-Jg-Lr4" firstAttribute="top" secondItem="jih-sz-xyC" secondAttribute="bottom" constant="20" id="g43-f6-7ns"/>
-                                    <constraint firstItem="d7H-zz-lqp" firstAttribute="leading" secondItem="jWh-lL-PRm" secondAttribute="leading" constant="31" id="hJ9-eN-2Xv"/>
                                     <constraint firstAttribute="bottom" secondItem="NNd-WJ-7QN" secondAttribute="bottom" constant="18" id="joa-3a-gMq"/>
+                                    <constraint firstItem="Olh-Eq-Kdt" firstAttribute="centerX" secondItem="jWh-lL-PRm" secondAttribute="centerX" id="k7Q-JO-SSR"/>
                                     <constraint firstItem="ccR-K6-PVc" firstAttribute="leading" secondItem="jWh-lL-PRm" secondAttribute="leading" constant="13" id="kmY-GJ-yH6"/>
                                     <constraint firstItem="NNd-WJ-7QN" firstAttribute="centerX" secondItem="jWh-lL-PRm" secondAttribute="centerX" id="mz8-BS-OAj"/>
-                                    <constraint firstItem="xAn-hv-phE" firstAttribute="centerY" secondItem="Wti-E9-5HX" secondAttribute="centerY" id="nro-9v-COH"/>
-                                    <constraint firstItem="oWF-o1-LYj" firstAttribute="leading" secondItem="d7H-zz-lqp" secondAttribute="trailing" constant="22" id="piG-cg-59h"/>
-                                    <constraint firstItem="Wti-E9-5HX" firstAttribute="centerY" secondItem="c5O-Zd-eDf" secondAttribute="centerY" id="rCo-bv-Oev"/>
                                     <constraint firstItem="jih-sz-xyC" firstAttribute="top" secondItem="uLe-oL-yXh" secondAttribute="bottom" constant="20" id="rJ6-75-9fO"/>
                                     <constraint firstItem="Oov-Fm-7LA" firstAttribute="leading" secondItem="jih-sz-xyC" secondAttribute="trailing" constant="8" id="rak-eH-kl1"/>
-                                    <constraint firstItem="c5O-Zd-eDf" firstAttribute="centerY" secondItem="oWF-o1-LYj" secondAttribute="centerY" id="ueZ-yh-5NZ"/>
-                                    <constraint firstItem="Wti-E9-5HX" firstAttribute="leading" secondItem="c5O-Zd-eDf" secondAttribute="trailing" constant="22" id="woK-cD-k4H"/>
                                     <constraint firstItem="uLe-oL-yXh" firstAttribute="leading" secondItem="jWh-lL-PRm" secondAttribute="leading" constant="13" id="z22-mg-TWb"/>
                                     <constraint firstItem="EQ5-9D-OzI" firstAttribute="trailing" secondItem="Rzw-Id-5Pa" secondAttribute="trailing" id="z2D-jM-zZ1"/>
                                     <constraint firstItem="895-BW-ARY" firstAttribute="top" secondItem="jWh-lL-PRm" secondAttribute="top" constant="4" id="zTZ-BL-waF"/>

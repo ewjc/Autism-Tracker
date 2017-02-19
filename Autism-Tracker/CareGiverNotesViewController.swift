@@ -143,6 +143,16 @@ extension CareGiverNotesViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "NoteTableViewCell") as! NoteTableViewCell
+        let note = notes[indexPath.section]
+        
+        cell.triggerLabel.text = "Trigger: \(note.trigger!)"
+        cell.resolutionLabel.text = "Resolution: \(note.resolution!)"
+        
+        cell.activityLevelLabel.text = "\(note.physicalActivityLevel!) / 10"
+        cell.selfHarmLevelLabel.text = "\(note.selfHarmLevel!) / 10"
+        cell.stressLevelLabel.text = "\(note.stressLevel!) / 10"
+        cell.moodLevelLabel.text = "\(note.mood!)"
+        
         return cell
     }
     

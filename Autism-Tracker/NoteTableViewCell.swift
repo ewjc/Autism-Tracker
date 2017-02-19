@@ -11,8 +11,12 @@ import UIKit
 class NoteTableViewCell: UITableViewCell {
     
     // MARK: - Subviews
-//  @IBOutlet weak
-    @IBOutlet weak var dateLabel: UILabel!
+    @IBOutlet weak var activityLevelLabel: UILabel!
+    @IBOutlet weak var selfHarmLevelLabel: UILabel!
+    @IBOutlet weak var stressLevelLabel: UILabel!
+    @IBOutlet weak var moodLevelLabel: UILabel!
+    @IBOutlet weak var triggerLabel: UILabel!
+    @IBOutlet weak var resolutionLabel: UILabel!
     
     // MARK: - View Lifecycle
     override func awakeFromNib() {
