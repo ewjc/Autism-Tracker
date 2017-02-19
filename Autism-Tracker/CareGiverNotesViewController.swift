@@ -18,6 +18,10 @@ class CareGiverNotesViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     var refreshControl = UIRefreshControl()
     
+    @IBAction func cancalBarAction(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
+        self.dismiss(animated: true, completion: nil)
+    }
     // MARK: - View Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,16 +31,29 @@ class CareGiverNotesViewController: UIViewController {
         setupEvents()
         styleSetup()
     }
-
-  //MARK: - Navigation
-  func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-    if segue.identifier == "SegueToNoteDetailView"{
-      if let destinationVC = segue.destination as? NoteDetailViewController{
-        destinationVC.theNote = notes[selectedIndex]
-      }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        // Unhighlight the rows
+        if let indexPath = tableView.indexPathForSelectedRow {
+            tableView.deselectRow(at: indexPath, animated: animated)
+        }
     }
-  }
-
+    
+    
+    //MARK: - Navigation
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "SegueToNoteDetailView"{
+            
+            if let destinationVC = segue.destination as? NoteDetailViewController{
+                destinationVC.theNote = notes[selectedIndex]
+            }
+        }
+    }
+    
+    
+    
 }
 
 // MARK: - Style
@@ -57,7 +74,7 @@ extension CareGiverNotesViewController {
     func setupEvents() {
         
         NoteService.getAllNotes { [weak self] (notes: [Note]?, error: Error?) in
-          
+            
             // Error
             if let error = error {
                 print("An error occured when trying to get events from server. \(error)")
@@ -122,12 +139,12 @@ extension CareGiverNotesViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
         return section == tableView.numberOfSections - 1 ? 10: 5
     }
-  
-  func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-    selectedIndex = indexPath.row
-    self.performSegue(withIdentifier: "SegueToNoteDetailView", sender: nil)
-  }
-  
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        selectedIndex = indexPath.section
+        self.performSegue(withIdentifier: "SegueToNoteDetailView", sender: nil)
+    }
+    
 }
 
 // MARK: - Table View Data Source
@@ -151,9 +168,27 @@ extension CareGiverNotesViewController: UITableViewDataSource {
         cell.activityLevelLabel.text = "\(note.physicalActivityLevel!) / 10"
         cell.selfHarmLevelLabel.text = "\(note.selfHarmLevel!) / 10"
         cell.stressLevelLabel.text = "\(note.stressLevel!) / 10"
-        cell.moodLevelLabel.text = "\(note.mood!)"
+        cell.moodLevelLabel.text = "\(convertMoodTextToEmoji(text: note.mood!))"
         
         return cell
     }
+    
+    func convertMoodTextToEmoji(text: String) -> String{
+        switch text{
+        case "Happy":
+            return "😁"
+        case "Shocked":
+            return "😲"
+        case "Neutral":
+            return "😐"
+        case "Angry":
+            return "😠"
+        case "Sad":
+            return "😢"
+        default:
+            return ""
+        }
+    }
+    
     
 }

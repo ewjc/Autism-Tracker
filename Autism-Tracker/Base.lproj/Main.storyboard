@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1217" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -22,15 +22,17 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="36" translatesAutoresizingMaskIntoConstraints="NO" id="RA8-fu-EFk">
-                                <rect key="frame" x="16" y="98" width="343" height="471"/>
+                                <rect key="frame" x="16" y="182.5" width="343" height="302"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="116-BI-uLs">
                                         <rect key="frame" x="0.0" y="0.0" width="343" height="133"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="133" id="3qi-1H-cX1"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="35"/>
-                                        <state key="normal" title="Care Reciever"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <state key="normal" title="Care Reciever">
+                                            <color key="titleColor" red="0.29019607843137252" green="0.56470588235294117" blue="0.88627450980392153" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
                                         <connections>
                                             <segue destination="q9W-gp-oKA" kind="presentation" id="ZX1-mM-LqN"/>
                                         </connections>
@@ -40,21 +42,12 @@
                                         <constraints>
                                             <constraint firstAttribute="height" constant="133" id="Y0L-ok-Jic"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="35"/>
-                                        <state key="normal" title="Care Givers"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <state key="normal" title="Care Givers">
+                                            <color key="titleColor" red="0.29019607843137252" green="0.56470588235294117" blue="0.88627450980392153" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
                                         <connections>
                                             <segue destination="Tcs-wY-4uN" kind="presentation" id="yBB-1H-wFf"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gg3-bU-RbZ">
-                                        <rect key="frame" x="0.0" y="338" width="343" height="133"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="133" id="woL-H6-0VU"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                        <state key="normal" title="Parents / Guardian"/>
-                                        <connections>
-                                            <segue destination="RVg-QG-9KA" kind="presentation" id="15J-ha-FZK"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -62,9 +55,9 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ccO-zt-OTS">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="64"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Autism Tracker" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GDp-TD-Hx9">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="64"/>
-                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="24"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Assist ASD" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GDp-TD-Hx9">
+                                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -75,7 +68,7 @@
                                     <constraint firstAttribute="bottom" secondItem="GDp-TD-Hx9" secondAttribute="bottom" id="IJ4-Mb-uxf"/>
                                     <constraint firstItem="GDp-TD-Hx9" firstAttribute="leading" secondItem="ccO-zt-OTS" secondAttribute="leading" id="Spd-Tf-ssu"/>
                                     <constraint firstAttribute="trailing" secondItem="GDp-TD-Hx9" secondAttribute="trailing" id="UaJ-dp-qWe"/>
-                                    <constraint firstItem="GDp-TD-Hx9" firstAttribute="top" secondItem="ccO-zt-OTS" secondAttribute="top" id="p0p-1S-eu2"/>
+                                    <constraint firstItem="GDp-TD-Hx9" firstAttribute="top" secondItem="ccO-zt-OTS" secondAttribute="top" constant="20" id="p0p-1S-eu2"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -93,7 +86,6 @@
                     <connections>
                         <outlet property="careGiverButton" destination="swn-Z2-0AB" id="HO5-0B-NqX"/>
                         <outlet property="careReceiverButton" destination="116-BI-uLs" id="qgL-Kk-EV3"/>
-                        <outlet property="therapistParentButton" destination="gg3-bU-RbZ" id="t5S-io-fpd"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
