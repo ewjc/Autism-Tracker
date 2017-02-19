@@ -10,9 +10,9 @@ import Foundation
 
 class MicrosoftService {
     
-    static func getEmotion(imageData: Data, completion: @escaping (String) -> Void) {
+    static func getEmotion(imageURL: String, completion: @escaping (String) -> Void) {
         
-        Provider.request(route: .getEmotion(imageData: imageData)) { (data: Any?, error: Error?) in
+        Provider.request(route: .getEmotion(imageURL: imageURL)) { (data: Any?, error: Error?) in
             
             // Error
             if let error = error {

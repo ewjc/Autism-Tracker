@@ -22,39 +22,80 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="36" translatesAutoresizingMaskIntoConstraints="NO" id="RA8-fu-EFk">
-                                <rect key="frame" x="155" y="215.5" width="66" height="164"/>
+                                <rect key="frame" x="38" y="111.5" width="300" height="372"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="116-BI-uLs">
-                                        <rect key="frame" x="0.0" y="0.0" width="66" height="32"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                        <state key="normal" title="Child"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="300" height="100"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="100" id="3qi-1H-cX1"/>
+                                            <constraint firstAttribute="width" constant="300" id="roI-Pp-mGg"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                        <state key="normal" title="Care Reciever"/>
                                         <connections>
                                             <segue destination="q9W-gp-oKA" kind="presentation" id="ZX1-mM-LqN"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="swn-Z2-0AB">
-                                        <rect key="frame" x="0.0" y="68" width="66" height="30"/>
-                                        <state key="normal" title="Caregiver"/>
+                                        <rect key="frame" x="0.0" y="136" width="300" height="100"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="300" id="VKl-pV-u59"/>
+                                            <constraint firstAttribute="height" constant="100" id="Y0L-ok-Jic"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                        <state key="normal" title="Care Givers"/>
                                         <connections>
                                             <segue destination="Tcs-wY-4uN" kind="presentation" id="yBB-1H-wFf"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gg3-bU-RbZ">
-                                        <rect key="frame" x="0.0" y="134" width="66" height="30"/>
-                                        <state key="normal" title="Therapist"/>
+                                        <rect key="frame" x="0.0" y="272" width="300" height="100"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="300" id="COm-0n-wrG"/>
+                                            <constraint firstAttribute="height" constant="100" id="woL-H6-0VU"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                        <state key="normal" title="Parents / Guardian"/>
                                         <connections>
                                             <segue destination="RVg-QG-9KA" kind="presentation" id="15J-ha-FZK"/>
                                         </connections>
                                     </button>
                                 </subviews>
                             </stackView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ccO-zt-OTS">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="64"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Autism Tracker" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GDp-TD-Hx9">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="64"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="24"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.28627450980392155" green="0.56470588235294117" blue="0.88627450980392153" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="64" id="86d-H4-gPG"/>
+                                    <constraint firstAttribute="bottom" secondItem="GDp-TD-Hx9" secondAttribute="bottom" id="IJ4-Mb-uxf"/>
+                                    <constraint firstItem="GDp-TD-Hx9" firstAttribute="leading" secondItem="ccO-zt-OTS" secondAttribute="leading" id="Spd-Tf-ssu"/>
+                                    <constraint firstAttribute="trailing" secondItem="GDp-TD-Hx9" secondAttribute="trailing" id="UaJ-dp-qWe"/>
+                                    <constraint firstItem="GDp-TD-Hx9" firstAttribute="top" secondItem="ccO-zt-OTS" secondAttribute="top" id="p0p-1S-eu2"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="ccO-zt-OTS" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="580-ZU-rUf"/>
+                            <constraint firstItem="ccO-zt-OTS" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="GKP-Cs-8tG"/>
+                            <constraint firstAttribute="trailing" secondItem="ccO-zt-OTS" secondAttribute="trailing" id="TuD-hU-ikO"/>
                             <constraint firstItem="RA8-fu-EFk" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-36" id="el7-Yx-LTN"/>
                             <constraint firstItem="RA8-fu-EFk" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="yZE-If-Gs5"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="careGiverButton" destination="swn-Z2-0AB" id="HO5-0B-NqX"/>
+                        <outlet property="careReceiverButton" destination="116-BI-uLs" id="qgL-Kk-EV3"/>
+                        <outlet property="therapistParentButton" destination="gg3-bU-RbZ" id="t5S-io-fpd"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
