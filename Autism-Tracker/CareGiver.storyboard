@@ -196,21 +196,33 @@
                                         <rect key="frame" x="31" y="248" width="41" height="55"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="36"/>
                                         <state key="normal" title="😁"/>
+                                        <connections>
+                                            <action selector="didTapMoodButtonWithSender:" destination="ssf-I1-oBj" eventType="touchUpInside" id="SUt-pt-b96"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oWF-o1-LYj">
                                         <rect key="frame" x="94" y="248" width="41" height="55"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="36"/>
                                         <state key="normal" title="😲"/>
+                                        <connections>
+                                            <action selector="didTapMoodButtonWithSender:" destination="ssf-I1-oBj" eventType="touchUpInside" id="nD7-s0-ykz"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c5O-Zd-eDf">
                                         <rect key="frame" x="157" y="248" width="41" height="55"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="36"/>
                                         <state key="normal" title="😐"/>
+                                        <connections>
+                                            <action selector="didTapMoodButtonWithSender:" destination="ssf-I1-oBj" eventType="touchUpInside" id="BXE-cf-LHj"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wti-E9-5HX">
                                         <rect key="frame" x="220" y="248" width="41" height="55"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="36"/>
                                         <state key="normal" title="😠"/>
+                                        <connections>
+                                            <action selector="didTapMoodButtonWithSender:" destination="ssf-I1-oBj" eventType="touchUpInside" id="OEE-RB-F9p"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xAn-hv-phE">
                                         <rect key="frame" x="283" y="248" width="41" height="55"/>
@@ -219,21 +231,21 @@
                                     </button>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AzI-kR-ggO" customClass="customDragView" customModule="Autism_Tracker" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="303" width="375" height="61"/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="61" id="cUi-HX-IeG"/>
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Rzw-Id-5Pa" customClass="customDragView" customModule="Autism_Tracker" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="372" width="375" height="61"/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="61" id="98b-5x-Mx3"/>
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EQ5-9D-OzI" customClass="customDragView" customModule="Autism_Tracker" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="441" width="375" height="61"/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="61" id="igd-qY-wBZ"/>
                                         </constraints>

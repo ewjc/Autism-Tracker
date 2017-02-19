@@ -25,13 +25,49 @@ class CareGiverNewNoteViewController: UIViewController {
   
   @IBOutlet weak var saveButton : UIButton!
   
+  
+  //MARK: - IBActions
   @IBAction func saveNote(sender: UIButton){
     print("SAVE THE NOTE")
+    
+    print("activity \(activityLevel.getCurrentValue())")
+    print("self harm \(selfHarmLevel.getCurrentValue())")
+    print("Stress \(stressLevel.getCurrentValue())")
     dismiss(animated: true, completion: nil)
+  }
+  
+  @IBAction func didTapMoodButton(sender : UIButton){
+    print("Yeah we tapped a mood")
+    happyButton.backgroundColor = .clear
+    shockedButton.backgroundColor = .clear
+    neutralButton.backgroundColor = .clear
+    angryButton.backgroundColor = .clear
+    sadButton.backgroundColor = .clear
+    
+    switch sender.tag{
+    case 0:
+      selectedMood = "Happy"
+      happyButton.backgroundColor = .yellow
+    case 1:
+      selectedMood = "Shocked"
+      shockedButton.backgroundColor = .yellow
+    case 2:
+      selectedMood = "Neutral"
+      neutralButton.backgroundColor = .yellow
+    case 3:
+      selectedMood = "Angry"
+      angryButton.backgroundColor = .yellow
+    case 4:
+      selectedMood = "Sad"
+      sadButton.backgroundColor = .yellow
+    default:
+      print("Yikes")
+    }
   }
   
   
   // MARK: - Instance Vars
+  var selectedMood = ""
   
   // MARK: - Subviews
   @IBOutlet weak var cancelBarButtonItem: UIBarButtonItem!
@@ -45,6 +81,31 @@ class CareGiverNewNoteViewController: UIViewController {
   // MARK: - View Lifecycle
   override func viewDidLoad() {
     super.viewDidLoad()
+    cleanupUI()
+    happyButton.tag = 0
+    shockedButton.tag = 1
+    neutralButton.tag = 2
+    angryButton.tag = 3
+    sadButton.tag = 4
+    
+  }
+  
+  // MARK: - Helpers
+  func cleanupUI(){
+    saveButton.layer.cornerRadius = 10
+    saveButton.clipsToBounds = true
+
+    
+    happyButton.titleLabel?.textAlignment = .center
+    shockedButton.titleLabel?.textAlignment = .center
+    neutralButton.titleLabel?.textAlignment = .center
+    angryButton.titleLabel?.textAlignment = .center
+    sadButton.titleLabel?.textAlignment = .center
+    
+    activityLevel.addCrappySlider()
+    stressLevel.addCrappySlider()
+    selfHarmLevel.addCrappySlider()
+    
   }
   
 }
