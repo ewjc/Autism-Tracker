@@ -48,7 +48,7 @@
                     </navigationItem>
                     <connections>
                         <outlet property="tableView" destination="18i-iL-jNI" id="vM0-iK-TwP"/>
-                        <segue destination="1q6-QX-QB4" kind="show" id="EaJ-Jl-ETV"/>
+                        <segue destination="1q6-QX-QB4" kind="show" identifier="SegueToNoteDetailView" id="EaJ-Jl-ETV"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8zT-l1-zGD" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -58,7 +58,7 @@
         <!--Note-->
         <scene sceneID="5ep-xu-rvl">
             <objects>
-                <viewController id="1q6-QX-QB4" sceneMemberID="viewController">
+                <viewController id="1q6-QX-QB4" customClass="NoteDetailViewController" customModule="Autism_Tracker" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Qsi-Jl-e0X"/>
                         <viewControllerLayoutGuide type="bottom" id="ZAD-kF-iJZ"/>
@@ -66,13 +66,35 @@
                     <view key="view" contentMode="scaleToFill" id="R1D-xd-HAo">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="349" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="gh6-b7-iEV">
+                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="349" id="wLd-lq-pOj">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="349"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="wLd-lq-pOj" id="A9V-vE-npo">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="348"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="gh6-b7-iEV" firstAttribute="leading" secondItem="R1D-xd-HAo" secondAttribute="leading" id="Uzb-DB-DsJ"/>
+                            <constraint firstItem="ZAD-kF-iJZ" firstAttribute="top" secondItem="gh6-b7-iEV" secondAttribute="bottom" id="eij-M0-4PY"/>
+                            <constraint firstItem="gh6-b7-iEV" firstAttribute="top" secondItem="Qsi-Jl-e0X" secondAttribute="bottom" id="hRK-lC-EKG"/>
+                            <constraint firstAttribute="trailing" secondItem="gh6-b7-iEV" secondAttribute="trailing" id="ozL-2G-rlu"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Note" id="Gah-Sp-Rk7"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2Ch-xL-wA4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3798" y="328"/>
+            <point key="canvasLocation" x="3797.5999999999999" y="327.88605697151428"/>
         </scene>
         <!--Update Child Status View-->
         <scene sceneID="LI9-Ji-3s9">
