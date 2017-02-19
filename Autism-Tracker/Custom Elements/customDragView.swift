@@ -75,6 +75,66 @@ class customDragView: UIView {
     
   }
   
+  func addPopulatedData(tag: Int, min: Int, max: Int, data: Int){
+    var titleText : String = ""
+    self.min = Double(min)
+    self.max = Double(max)
+    var maskColor : UIColor = .clear
+    switch tag{
+    case 0:
+      titleText = "Activity Level"
+      maskColor = UIColor.niceGreen
+    case 1:
+      titleText = "Self Harm"
+      maskColor = UIColor.niceRed
+    case 2:
+      titleText = "Stress"
+      maskColor = UIColor.niceBlue
+    default:
+      print("Yikes, yell at Alex for not mathing right")
+    }
+    
+    
+    let label = UILabel(frame: CGRect(x: 13.0, y: 0.0, width: 100.0, height: 20.0))
+    label.text = titleText
+    label.font = label.font.withSize(15)
+    label.minimumScaleFactor = 0.5
+    label.textColor = UIColor.steelBlue
+    self.addSubview(label)
+    
+    scoreLabel.frame = CGRect(x: self.bounds.width - 23 - 52, y: 0, width: 52.0, height: 18)
+    print(scoreLabel.frame)
+    scoreLabel.text = "\(Int(min)) of \(Int(max))"
+    scoreLabel.font = label.font.withSize(15)
+    scoreLabel.minimumScaleFactor = 0.5
+    scoreLabel.lineBreakMode = .byClipping
+    scoreLabel.textColor = UIColor.steelBlue
+    self.addSubview(scoreLabel)
+    
+    let fullTubeView = UIView(frame: CGRect(x: 13, y: 22.0, width: self.bounds.width-26.0, height: 21.0))
+    fullTubeView.backgroundColor = UIColor.niceGray
+    fullTubeView.layer.cornerRadius = 21.0 / 2.0
+    
+    self.addSubview(fullTubeView)
+    
+    fillView.backgroundColor = maskColor
+    
+    let percent = Double(data) / Double(max)
+    let area = percent * Double((self.bounds.width-26.0))
+   
+    fillView.frame = CGRect(x: 0, y: 0, width: area, height: 21.0)
+    fillView.layer.cornerRadius = 21.0 / 2.0
+    
+    let range: Double = Double(max) - Double(min)
+    let relativeValue = range * percent
+    let result : Double = Double(min) + relativeValue
+    scoreLabel.text = "\(Int(result)) of \(Int(max))"
+    
+    
+    fullTubeView.addSubview(fillView)
+    self.isUserInteractionEnabled = false
+  }
+  
   override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
     if let touch = touches.first {
       let location = touch.location(in: self)

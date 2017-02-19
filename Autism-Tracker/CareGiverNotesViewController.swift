@@ -28,14 +28,18 @@ class CareGiverNotesViewController: UIViewController {
         styleSetup()
     }
 
-  //MARK: - Navigation
-  func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+  
+    //MARK: - Navigation
+  override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
     if segue.identifier == "SegueToNoteDetailView"{
+      
       if let destinationVC = segue.destination as? NoteDetailViewController{
         destinationVC.theNote = notes[selectedIndex]
       }
     }
   }
+
+
 
 }
 
@@ -124,7 +128,7 @@ extension CareGiverNotesViewController: UITableViewDelegate {
     }
   
   func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-    selectedIndex = indexPath.row
+    selectedIndex = indexPath.section
     self.performSegue(withIdentifier: "SegueToNoteDetailView", sender: nil)
   }
   
@@ -151,9 +155,27 @@ extension CareGiverNotesViewController: UITableViewDataSource {
         cell.activityLevelLabel.text = "\(note.physicalActivityLevel!) / 10"
         cell.selfHarmLevelLabel.text = "\(note.selfHarmLevel!) / 10"
         cell.stressLevelLabel.text = "\(note.stressLevel!) / 10"
-        cell.moodLevelLabel.text = "\(note.mood!)"
+      cell.moodLevelLabel.text = "\(convertMoodTextToEmoji(text: note.mood!))"
         
         return cell
     }
-    
+  
+  func convertMoodTextToEmoji(text: String) -> String{
+    switch text{
+    case "Happy":
+      return "😁"
+    case "Shocked":
+      return "😲"
+    case "Neutral":
+      return "😐"
+    case "Angry":
+      return "😠"
+    case "Sad":
+      return "😢"
+    default:
+      return ""
+    }
+  }
+
+  
 }
