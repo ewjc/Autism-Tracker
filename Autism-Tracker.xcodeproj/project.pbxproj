@@ -284,7 +284,7 @@
 				TargetAttributes = {
 					094355F21E581D5800C252F4 = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = P2AA55448J;
+						DevelopmentTeam = 44VHEK9HHH;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -539,7 +539,7 @@
 			baseConfigurationReference = 4F2586110B3851C22E62261F /* Pods-Autism-Tracker.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = P2AA55448J;
+				DEVELOPMENT_TEAM = 44VHEK9HHH;
 				INFOPLIST_FILE = "Autism-Tracker/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -554,7 +554,7 @@
 			baseConfigurationReference = A3CDC8437534C6C0083A680D /* Pods-Autism-Tracker.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = P2AA55448J;
+				DEVELOPMENT_TEAM = 44VHEK9HHH;
 				INFOPLIST_FILE = "Autism-Tracker/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

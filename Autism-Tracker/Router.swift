@@ -27,7 +27,6 @@ extension Router {
         switch self {
         case .getAllNotes, .createNote, .getNote:
             return "https://autism-tracker-server.appspot.com"
-//            return "http://localhost:9080"
         case .getEmotion:
             return "https://westus.api.cognitive.microsoft.com"
         }
@@ -80,7 +79,7 @@ extension Router {
             dict[JSONKeys.resolution] = note.resolution
             dict[JSONKeys.additionalNotes] = note.additionalNotes
             dict[JSONKeys.photoURL] = "https://avatars0.githubusercontent.com/u/6567880?v=3&s=400"
-            dict[JSONKeys.time] = time
+            dict[JSONKeys.time] = note.time
             return dict
         case .getEmotion(let imageURL):
             return ["url": "https://avatars0.githubusercontent.com/u/6567880?v=3&s=400"]
@@ -96,6 +95,8 @@ extension Router {
     
     var headers: [String: String]? {
         switch self {
+        case .createNote:
+            return ["Content-Type": "application/x-www-form-urlencoded"]
         case .getEmotion:
             return ["Ocp-Apim-Subscription-Key": "987595b243524947add847c7d6a673b5",
                     "Content-Type": "application/json"]
