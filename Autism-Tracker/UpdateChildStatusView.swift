@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import NeuraSDK
+
 
 class UpdateChildStatusView: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
@@ -17,13 +19,14 @@ class UpdateChildStatusView: UIViewController, UITableViewDelegate, UITableViewD
     override func viewDidLoad() {
         super.viewDidLoad()
         
-//        for index in 0..<eventArray.count {
-//            let newSubscription = NSubscription(eventName: eventArray[index],
-//                                                identifier: "subscription unique identifier",
-//                                                webhookId: "UpdateStatus")
-//            NeuraSDK.shared.add(newSubscription) { result in
-//            }
-//        }
+        for index in 0..<eventArray.count {
+            let newSubscription = NSubscription(eventName: eventArray[index],
+                                                identifier: "subscription unique identifier",
+                                                webhookId: "UpdateStatus")
+            NeuraSDK.shared.add(newSubscription) { result in
+            }
+        }
+
         tableView.delegate = self
         tableView.dataSource = self
         tableView.reloadData()

@@ -27,6 +27,7 @@ extension Router {
         switch self {
         case .getAllNotes, .createNote, .getNote:
             return "https://autism-tracker-server.appspot.com"
+//            return "http://localhost:9080"
         case .getEmotion:
             return "https://westus.api.cognitive.microsoft.com"
         }
@@ -78,7 +79,7 @@ extension Router {
             dict[JSONKeys.trigger] = note.trigger
             dict[JSONKeys.resolution] = note.resolution
             dict[JSONKeys.additionalNotes] = note.additionalNotes
-            dict[JSONKeys.photoURL] = "NO_URL"
+            dict[JSONKeys.photoURL] = "https://avatars0.githubusercontent.com/u/6567880?v=3&s=400"
             dict[JSONKeys.time] = time
             return dict
         case .getEmotion(let imageURL):

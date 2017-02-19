@@ -18,6 +18,7 @@
 		016A73011E58FDD100AF046D /* ChildEmotionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016A73001E58FDD100AF046D /* ChildEmotionViewController.swift */; };
 		018FAE2E1E5820FC0049F5E2 /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = 018FAE2D1E5820FC0049F5E2 /* Note.swift */; };
 		018FAE301E5848DC0049F5E2 /* JSONKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 018FAE2F1E5848DC0049F5E2 /* JSONKeys.swift */; };
+		019D26A71E5934D10098746F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 019D26A61E5934D10098746F /* ViewController.swift */; };
 		01A037F81E59183A00ADBB4F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 01A037F71E59183A00ADBB4F /* GoogleService-Info.plist */; };
 		01D461201E581E0E00C25DC4 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01D4611F1E581E0E00C25DC4 /* Router.swift */; };
 		01D461231E581E6A00C25DC4 /* Provider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01D461221E581E6A00C25DC4 /* Provider.swift */; };
@@ -54,6 +55,7 @@
 		016A73001E58FDD100AF046D /* ChildEmotionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChildEmotionViewController.swift; sourceTree = "<group>"; };
 		018FAE2D1E5820FC0049F5E2 /* Note.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
 		018FAE2F1E5848DC0049F5E2 /* JSONKeys.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONKeys.swift; sourceTree = "<group>"; };
+		019D26A61E5934D10098746F /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		01A037F71E59183A00ADBB4F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		01D4611F1E581E0E00C25DC4 /* Router.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		01D461221E581E6A00C25DC4 /* Provider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Provider.swift; sourceTree = "<group>"; };
@@ -213,6 +215,7 @@
 			isa = PBXGroup;
 			children = (
 				FA14E6121E5950F500D15E2D /* ViewController.swift */,
+        0fffb6a832db8f3f569e18fadff927c834a6d90b
 				016A72FF1E58FBBA00AF046D /* Child */,
 				013144051E58D78B0021720D /* CareGiver */,
 				094355F81E581D5800C252F4 /* UpdateChildStatusView.swift */,
@@ -400,6 +403,7 @@
 				FA27DC4A1E593E4800781E68 /* NoteDetailViewController.swift in Sources */,
 				0943560D1E582BB400C252F4 /* PhotoHelper.swift in Sources */,
 				016A73011E58FDD100AF046D /* ChildEmotionViewController.swift in Sources */,
+				019D26A71E5934D10098746F /* ViewController.swift in Sources */,
 				FA27DC441E59203400781E68 /* customDragView.swift in Sources */,
 				094355F71E581D5800C252F4 /* AppDelegate.swift in Sources */,
 			);

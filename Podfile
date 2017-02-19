@@ -11,5 +11,6 @@ target 'Autism-Tracker' do
   pod 'Firebase/Database'
   pod 'Firebase/Storage'
   pod 'Firebase/Auth'
+  pod 'NeuraSDKFramework', '~> 3.0'
 
 end

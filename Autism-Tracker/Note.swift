@@ -40,7 +40,7 @@ class Note {
         self.resolution = resolution
         self.additionalNotes = additionalNotes
         self.photo = photo
-        self.time = time
+        self.time = "FUCK THIS"
     }
     
     init?(data: [String: Any]) {
