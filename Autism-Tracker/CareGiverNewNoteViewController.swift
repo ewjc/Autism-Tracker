@@ -9,6 +9,7 @@
 import UIKit
 
 class CareGiverNewNoteViewController: UIViewController, UITextFieldDelegate, UITextViewDelegate {
+    
   //MARK: - IBOutlets
   @IBOutlet weak var triggerTextField : UITextField!
   @IBOutlet weak var resolutionTextField : UITextField!

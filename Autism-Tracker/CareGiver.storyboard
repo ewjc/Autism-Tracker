@@ -271,7 +271,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" directionalLockEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jWh-lL-PRm">
-                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Trigger:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uLe-oL-yXh">
                                         <rect key="frame" x="13" y="36" width="56.5" height="19.5"/>
@@ -492,7 +492,7 @@
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="635"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="FBg-R7-D3m" id="thh-48-qCp">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="634"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="635"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Trigger:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YVi-SE-HAD">
@@ -666,6 +666,10 @@
                     <navigationItem key="navigationItem" title="New Note" id="pgU-RK-1sV"/>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="375" height="800"/>
+                    <connections>
+                        <outlet property="resolutionTextField" destination="AoI-hh-vng" id="1DM-y6-9wp"/>
+                        <outlet property="triggerTextField" destination="2oI-jT-02e" id="EJd-LZ-vAt"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JeQ-Bv-EHQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -701,7 +705,7 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="YNJ-uo-1C8" kind="relationship" relationship="rootViewController" id="Hzs-Bx-cGK"/>
+                        <segue destination="ssf-I1-oBj" kind="relationship" relationship="rootViewController" id="QTI-ed-Oph"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="S9S-Dz-ZSG" userLabel="First Responder" sceneMemberID="firstResponder"/>
