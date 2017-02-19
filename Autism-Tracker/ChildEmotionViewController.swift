@@ -49,6 +49,10 @@ extension ChildEmotionViewController {
         
         photoTakingHelper = PhotoTakingHelper(viewController: self) { (image: UIImage?) in
             if let image = image {
+                
+                self.pictureImageView.image = image
+                self.takePhotoButton.isHidden = true
+                
                 let base64image = self.base64EncodeImage(image)
                 self.createRequest(with: base64image)
             }

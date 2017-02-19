@@ -62,15 +62,25 @@
                                         </attributedString>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FfY-i5-2wn">
+                                        <rect key="frame" x="8" y="507" width="44" height="44"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="44" id="gc8-IC-AQn"/>
+                                            <constraint firstAttribute="height" constant="44" id="nRc-4I-0Jk"/>
+                                        </constraints>
+                                        <state key="normal" title="Redo"/>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="FfY-i5-2wn" secondAttribute="bottom" constant="8" id="F5E-JU-cIT"/>
                                     <constraint firstItem="JuO-El-p6t" firstAttribute="height" secondItem="NHR-vW-Ads" secondAttribute="height" id="G7c-6E-Umz"/>
                                     <constraint firstItem="NHR-vW-Ads" firstAttribute="top" secondItem="06x-yL-Ezr" secondAttribute="top" constant="24" id="KU7-eO-nTm"/>
                                     <constraint firstItem="JuO-El-p6t" firstAttribute="centerX" secondItem="NHR-vW-Ads" secondAttribute="centerX" id="NrL-ng-xxv"/>
                                     <constraint firstItem="JuO-El-p6t" firstAttribute="width" secondItem="NHR-vW-Ads" secondAttribute="width" id="Z98-Ry-fc9"/>
                                     <constraint firstItem="JuO-El-p6t" firstAttribute="centerY" secondItem="NHR-vW-Ads" secondAttribute="centerY" id="cDs-x0-LVf"/>
                                     <constraint firstItem="BOJ-Ne-p9m" firstAttribute="top" secondItem="NHR-vW-Ads" secondAttribute="bottom" constant="24" id="ck7-hn-ljI"/>
+                                    <constraint firstItem="FfY-i5-2wn" firstAttribute="leading" secondItem="06x-yL-Ezr" secondAttribute="leading" constant="8" id="e4g-9f-3nW"/>
                                     <constraint firstItem="BOJ-Ne-p9m" firstAttribute="leading" secondItem="06x-yL-Ezr" secondAttribute="leading" constant="16" id="epA-Ki-DFR"/>
                                     <constraint firstAttribute="trailing" secondItem="BOJ-Ne-p9m" secondAttribute="trailing" constant="16" id="qch-HR-1gh"/>
                                     <constraint firstItem="NHR-vW-Ads" firstAttribute="leading" secondItem="06x-yL-Ezr" secondAttribute="leading" constant="22" id="x47-Tt-tTV"/>

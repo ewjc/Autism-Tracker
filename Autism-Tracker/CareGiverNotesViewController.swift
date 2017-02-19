@@ -27,6 +27,15 @@ class CareGiverNotesViewController: UIViewController {
         setupEvents()
         styleSetup()
     }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        // Unhighlight the rows
+        if let indexPath = tableView.indexPathForSelectedRow {
+            tableView.deselectRow(at: indexPath, animated: animated)
+        }
+    }
 
   
     //MARK: - Navigation
