@@ -21,8 +21,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         FIRApp.configure()
         
         // UI Navigation Bar
-        UIApplication.shared.statusBarStyle = UIStatusBarStyle.lightContent
-        
+        UIApplication.shared.statusBarStyle = .lightContent
+      
         UINavigationBar.appearance().barTintColor = UIColor.brandBlue
         UINavigationBar.appearance().tintColor = UIColor.white
         UINavigationBar.appearance().titleTextAttributes = [NSForegroundColorAttributeName : UIColor.white]

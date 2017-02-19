@@ -12,6 +12,7 @@ class NotesViewController: UIViewController {
     
     // MARK: - Instance Vars
     var notes: [Note] = []
+    var selectedIndex = -1
     
     // MARK: - Subviews
     @IBOutlet weak var tableView: UITableView!
@@ -25,6 +26,15 @@ class NotesViewController: UIViewController {
         setupTableView()
         setupEvents()
     }
+
+  func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+    if segue.identifier == "SegueToNoteDetailView"{
+      if let destinationVC = segue.destination as? NoteDetailViewController{
+        destinationVC.theNote = notes[selectedIndex]
+    }
+  }
+  }
+  
 }
 
 // MARK: - Events
@@ -98,6 +108,11 @@ extension NotesViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
         return section == tableView.numberOfSections - 1 ? 10: 5
     }
+  
+  func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+    selectedIndex = indexPath.row
+    self.performSegue(withIdentifier: "SegueToNoteDetailView", sender: nil)
+  }
     
 }
 
