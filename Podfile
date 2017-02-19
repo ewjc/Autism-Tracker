@@ -7,6 +7,7 @@ target 'Autism-Tracker' do
 
   # Pods for Autism-Tracker
   pod 'Alamofire'
+  pod ‘SwiftyJSON’
   pod 'Firebase', '~> 3.11.1'
   pod 'Firebase/Database'
   pod 'Firebase/Storage'

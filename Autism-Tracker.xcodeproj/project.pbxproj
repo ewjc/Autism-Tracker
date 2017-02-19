@@ -27,6 +27,8 @@
 		01E33EDF1E5862C100DA2C7D /* NoteTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 01E33EDE1E5862C100DA2C7D /* NoteTableViewCell.xib */; };
 		01E33EE21E58659B00DA2C7D /* UIView+Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01E33EE11E58659B00DA2C7D /* UIView+Utilities.swift */; };
 		093E6DA61E591A8E003F7C2E /* UpdateStatusTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 093E6DA51E591A8E003F7C2E /* UpdateStatusTVC.swift */; };
+		093E6DA81E59AB25003F7C2E /* ImageRecognizeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 093E6DA71E59AB25003F7C2E /* ImageRecognizeVC.swift */; };
+		093E6DAA1E59B30A003F7C2E /* GoogleService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 093E6DA91E59B30A003F7C2E /* GoogleService.swift */; };
 		094355F71E581D5800C252F4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 094355F61E581D5800C252F4 /* AppDelegate.swift */; };
 		094355F91E581D5800C252F4 /* UpdateChildStatusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 094355F81E581D5800C252F4 /* UpdateChildStatusView.swift */; };
 		094355FC1E581D5800C252F4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 094355FA1E581D5800C252F4 /* Main.storyboard */; };
@@ -63,6 +65,8 @@
 		01E33EDE1E5862C100DA2C7D /* NoteTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NoteTableViewCell.xib; sourceTree = "<group>"; };
 		01E33EE11E58659B00DA2C7D /* UIView+Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Utilities.swift"; sourceTree = "<group>"; };
 		093E6DA51E591A8E003F7C2E /* UpdateStatusTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UpdateStatusTVC.swift; sourceTree = "<group>"; };
+		093E6DA71E59AB25003F7C2E /* ImageRecognizeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageRecognizeVC.swift; sourceTree = "<group>"; };
+		093E6DA91E59B30A003F7C2E /* GoogleService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoogleService.swift; sourceTree = "<group>"; };
 		094355F31E581D5800C252F4 /* Autism-Tracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Autism-Tracker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		094355F61E581D5800C252F4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		094355F81E581D5800C252F4 /* UpdateChildStatusView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateChildStatusView.swift; sourceTree = "<group>"; };
@@ -135,6 +139,7 @@
 			children = (
 				01D461251E581EA200C25DC4 /* NoteService.swift */,
 				016A72FD1E58F9E500AF046D /* MicrosoftService.swift */,
+				093E6DA91E59B30A003F7C2E /* GoogleService.swift */,
 			);
 			name = Services;
 			sourceTree = "<group>";
@@ -213,6 +218,7 @@
 			isa = PBXGroup;
 			children = (
 				019D26A61E5934D10098746F /* ViewController.swift */,
+				093E6DA71E59AB25003F7C2E /* ImageRecognizeVC.swift */,
 				016A72FF1E58FBBA00AF046D /* Child */,
 				013144051E58D78B0021720D /* CareGiver */,
 				094355F81E581D5800C252F4 /* UpdateChildStatusView.swift */,
@@ -284,7 +290,7 @@
 				TargetAttributes = {
 					094355F21E581D5800C252F4 = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = 44VHEK9HHH;
+						DevelopmentTeam = RN596T8M84;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -395,12 +401,14 @@
 				016A72FE1E58F9E500AF046D /* MicrosoftService.swift in Sources */,
 				013144071E58D7A00021720D /* CareGiverNotesViewController.swift in Sources */,
 				01D461261E581EA200C25DC4 /* NoteService.swift in Sources */,
+				093E6DAA1E59B30A003F7C2E /* GoogleService.swift in Sources */,
 				018FAE2E1E5820FC0049F5E2 /* Note.swift in Sources */,
 				FA27DC461E5938F400781E68 /* CareGiverNoteTableViewCell.swift in Sources */,
 				FA27DC4A1E593E4800781E68 /* NoteDetailViewController.swift in Sources */,
 				0943560D1E582BB400C252F4 /* PhotoHelper.swift in Sources */,
 				016A73011E58FDD100AF046D /* ChildEmotionViewController.swift in Sources */,
 				019D26A71E5934D10098746F /* ViewController.swift in Sources */,
+				093E6DA81E59AB25003F7C2E /* ImageRecognizeVC.swift in Sources */,
 				094355F71E581D5800C252F4 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -539,7 +547,7 @@
 			baseConfigurationReference = 4F2586110B3851C22E62261F /* Pods-Autism-Tracker.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 44VHEK9HHH;
+				DEVELOPMENT_TEAM = RN596T8M84;
 				INFOPLIST_FILE = "Autism-Tracker/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -554,7 +562,7 @@
 			baseConfigurationReference = A3CDC8437534C6C0083A680D /* Pods-Autism-Tracker.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 44VHEK9HHH;
+				DEVELOPMENT_TEAM = RN596T8M84;
 				INFOPLIST_FILE = "Autism-Tracker/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

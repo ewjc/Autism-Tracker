@@ -22,7 +22,6 @@ class UpdateChildStatusView: UIViewController {
     // MARK: - View Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         setupNeura()
     }
     
@@ -76,7 +75,6 @@ extension UpdateChildStatusView {
             }
         }
     }
-    
 }
 
 // MARK: - Table View
