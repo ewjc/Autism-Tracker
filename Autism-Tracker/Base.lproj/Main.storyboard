@@ -46,7 +46,7 @@
                                             <segue destination="Tcs-wY-4uN" kind="presentation" id="yBB-1H-wFf"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gg3-bU-RbZ">
+                                    <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gg3-bU-RbZ">
                                         <rect key="frame" x="0.0" y="338" width="343" height="133"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="133" id="woL-H6-0VU"/>

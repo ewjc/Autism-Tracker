@@ -24,7 +24,7 @@ class CareGiverNotesViewController: UIViewController {
         
         setupRefreshControl()
         setupTableView()
-       // setupEvents()
+        setupEvents()
         styleSetup()
     }
 

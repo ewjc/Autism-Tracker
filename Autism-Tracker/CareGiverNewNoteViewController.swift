@@ -8,7 +8,6 @@
 
 import UIKit
 
-<<<<<<< HEAD
 class CareGiverNewNoteViewController: UIViewController, UITextFieldDelegate, UITextViewDelegate {
   //MARK: - IBOutlets
   @IBOutlet weak var triggerTextField : UITextField!
@@ -30,30 +29,6 @@ class CareGiverNewNoteViewController: UIViewController, UITextFieldDelegate, UIT
   //MARK: - IBActions
   @IBAction func saveNote(sender: UIButton){
     print("SAVE THE NOTE")
-=======
-class CareGiverNewNoteViewController: UIViewController {
->>>>>>> 0fffb6a832db8f3f569e18fadff927c834a6d90b
-    
-    //MARK: - IBOutlets
-    @IBOutlet weak var triggerTextField : UITextField!
-    @IBOutlet weak var resolutionTextField : UITextField!
-    @IBOutlet weak var notesTextArea : UITextView!
-    @IBOutlet weak var happyButton : UIButton!
-    @IBOutlet weak var shockedButton : UIButton!
-    @IBOutlet weak var neutralButton : UIButton!
-    @IBOutlet weak var angryButton : UIButton!
-    @IBOutlet weak var sadButton : UIButton!
-    
-    @IBOutlet weak var activityLevel : customDragView!
-    @IBOutlet weak var selfHarmLevel : customDragView!
-    @IBOutlet weak var stressLevel : customDragView!
-    
-    @IBOutlet weak var saveButton : UIButton!
-    
-    //MARK: - IBActions
-    @IBAction func saveNote(sender: UIButton){
-        print("SAVE THE NOTE")
-        
         print("activity \(activityLevel.getCurrentValue())")
         print("self harm \(selfHarmLevel.getCurrentValue())")
         print("Stress \(stressLevel.getCurrentValue())")
@@ -74,25 +49,23 @@ class CareGiverNewNoteViewController: UIViewController {
         switch sender.tag{
         case 0:
             selectedMood = "Happy"
-            happyButton.backgroundColor = .yellow
+            happyButton.backgroundColor = UIColor.brandBlue
         case 1:
             selectedMood = "Shocked"
-            shockedButton.backgroundColor = .yellow
+            shockedButton.backgroundColor = UIColor.brandBlue
         case 2:
             selectedMood = "Neutral"
-            neutralButton.backgroundColor = .yellow
+            neutralButton.backgroundColor = UIColor.brandBlue
         case 3:
             selectedMood = "Angry"
-            angryButton.backgroundColor = .yellow
+            angryButton.backgroundColor = UIColor.brandBlue
         case 4:
             selectedMood = "Sad"
-            sadButton.backgroundColor = .yellow
+            sadButton.backgroundColor = UIColor.brandBlue
         default:
             print("Yikes")
         }
     }
-<<<<<<< HEAD
-  }
   
   
   // MARK: - Instance Vars
@@ -119,14 +92,7 @@ class CareGiverNewNoteViewController: UIViewController {
     triggerTextField.delegate = self
     resolutionTextField.delegate = self
     notesTextArea.delegate = self
-=======
->>>>>>> 0fffb6a832db8f3f569e18fadff927c834a6d90b
-    
-    
-    // MARK: - Instance Vars
-    var selectedMood = ""
-    
-<<<<<<< HEAD
+
     activityLevel.addData(tag:  0, min: 0, max: 10.0)
     stressLevel.addData(tag:  1, min: 0, max: 10.0)
     selfHarmLevel.addData(tag:  2, min: 0, max: 10.0)
@@ -150,31 +116,6 @@ class CareGiverNewNoteViewController: UIViewController {
     return true
   }
 
-
-  
-}
-
-=======
-    // MARK: - Subviews
-    @IBOutlet weak var cancelBarButtonItem: UIBarButtonItem!
-    
-    // MARK: - Subview Actions
-    @IBAction func cancelBarButtonAction(_ sender: Any) {
-        dismiss(animated: true, completion: nil)
-        dismiss(animated: true, completion: nil)
-    }
-    
-    // MARK: - View Lifecycle
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        cleanupUI()
-        happyButton.tag = 0
-        shockedButton.tag = 1
-        neutralButton.tag = 2
-        angryButton.tag = 3
-        sadButton.tag = 4
-    }
-    
     // MARK: - Helpers
     func cleanupUI(){
         saveButton.layer.cornerRadius = 10
@@ -185,10 +126,32 @@ class CareGiverNewNoteViewController: UIViewController {
         neutralButton.titleLabel?.textAlignment = .center
         angryButton.titleLabel?.textAlignment = .center
         sadButton.titleLabel?.textAlignment = .center
-        
-        activityLevel.addCrappySlider()
-        stressLevel.addCrappySlider()
-        selfHarmLevel.addCrappySlider()
+      
+      happyButton.titleEdgeInsets = UIEdgeInsets(top: 0, left: 3, bottom: 0, right: 0)
+      happyButton.titleLabel?.minimumScaleFactor = 0.5
+      happyButton.titleLabel?.lineBreakMode = .byWordWrapping
+      happyButton.layer.cornerRadius = happyButton.frame.width / 2.0
+      
+      shockedButton.titleEdgeInsets = UIEdgeInsets(top: 0, left: 3, bottom: 0, right: 0)
+      shockedButton.titleLabel?.minimumScaleFactor = 0.5
+      shockedButton.titleLabel?.lineBreakMode = .byWordWrapping
+      shockedButton.layer.cornerRadius = shockedButton.frame.width / 2.0
+      
+      neutralButton.titleEdgeInsets = UIEdgeInsets(top: 0, left: 3, bottom: 0, right: 0)
+      neutralButton.titleLabel?.minimumScaleFactor = 0.5
+      neutralButton.titleLabel?.lineBreakMode = .byWordWrapping
+      neutralButton.layer.cornerRadius = neutralButton.frame.width / 2.0
+      
+      angryButton.titleEdgeInsets = UIEdgeInsets(top: 0, left: 3, bottom: 0, right: 0)
+      angryButton.titleLabel?.minimumScaleFactor = 0.5
+      angryButton.titleLabel?.lineBreakMode = .byWordWrapping
+      angryButton.layer.cornerRadius = angryButton.frame.width / 2.0
+      
+      sadButton.titleEdgeInsets = UIEdgeInsets(top: 0, left: 3, bottom: 0, right: 0)
+      sadButton.titleLabel?.minimumScaleFactor = 0.5
+      sadButton.titleLabel?.lineBreakMode = .byWordWrapping
+      sadButton.layer.cornerRadius = sadButton.frame.width / 2.0
+      
     }
     
 }
@@ -217,7 +180,3 @@ extension CareGiverNewNoteViewController {
     }
     
 }
-
-
-
->>>>>>> 0fffb6a832db8f3f569e18fadff927c834a6d90b
