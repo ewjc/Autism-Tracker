@@ -24,8 +24,9 @@
 		01E33EDD1E5862B700DA2C7D /* NoteTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01E33EDC1E5862B700DA2C7D /* NoteTableViewCell.swift */; };
 		01E33EDF1E5862C100DA2C7D /* NoteTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 01E33EDE1E5862C100DA2C7D /* NoteTableViewCell.xib */; };
 		01E33EE21E58659B00DA2C7D /* UIView+Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01E33EE11E58659B00DA2C7D /* UIView+Utilities.swift */; };
+		093E6DA61E591A8E003F7C2E /* UpdateStatusTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 093E6DA51E591A8E003F7C2E /* UpdateStatusTVC.swift */; };
 		094355F71E581D5800C252F4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 094355F61E581D5800C252F4 /* AppDelegate.swift */; };
-		094355F91E581D5800C252F4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 094355F81E581D5800C252F4 /* ViewController.swift */; };
+		094355F91E581D5800C252F4 /* UpdateChildStatusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 094355F81E581D5800C252F4 /* UpdateChildStatusView.swift */; };
 		094355FC1E581D5800C252F4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 094355FA1E581D5800C252F4 /* Main.storyboard */; };
 		094355FE1E581D5800C252F4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 094355FD1E581D5800C252F4 /* Assets.xcassets */; };
 		094356011E581D5800C252F4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 094355FF1E581D5800C252F4 /* LaunchScreen.storyboard */; };
@@ -54,9 +55,10 @@
 		01E33EDC1E5862B700DA2C7D /* NoteTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoteTableViewCell.swift; sourceTree = "<group>"; };
 		01E33EDE1E5862C100DA2C7D /* NoteTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NoteTableViewCell.xib; sourceTree = "<group>"; };
 		01E33EE11E58659B00DA2C7D /* UIView+Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Utilities.swift"; sourceTree = "<group>"; };
+		093E6DA51E591A8E003F7C2E /* UpdateStatusTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UpdateStatusTVC.swift; sourceTree = "<group>"; };
 		094355F31E581D5800C252F4 /* Autism-Tracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Autism-Tracker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		094355F61E581D5800C252F4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		094355F81E581D5800C252F4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		094355F81E581D5800C252F4 /* UpdateChildStatusView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateChildStatusView.swift; sourceTree = "<group>"; };
 		094355FB1E581D5800C252F4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		094355FD1E581D5800C252F4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		094356001E581D5800C252F4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -199,9 +201,10 @@
 			children = (
 				016A72FF1E58FBBA00AF046D /* Child */,
 				013144051E58D78B0021720D /* CareGiver */,
-				094355F81E581D5800C252F4 /* ViewController.swift */,
+				094355F81E581D5800C252F4 /* UpdateChildStatusView.swift */,
 				094356091E58264D00C252F4 /* NewNoteViewController.swift */,
 				09BE52E31E585A2F00A7C6A6 /* NotesViewController.swift */,
+				093E6DA51E591A8E003F7C2E /* UpdateStatusTVC.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -366,9 +369,10 @@
 				09BE52E41E585A2F00A7C6A6 /* NotesViewController.swift in Sources */,
 				018FAE301E5848DC0049F5E2 /* JSONKeys.swift in Sources */,
 				016A72FC1E58DF4700AF046D /* UIColor+Utilities.swift in Sources */,
+				093E6DA61E591A8E003F7C2E /* UpdateStatusTVC.swift in Sources */,
 				0943560A1E58264D00C252F4 /* NewNoteViewController.swift in Sources */,
 				01E33EE21E58659B00DA2C7D /* UIView+Utilities.swift in Sources */,
-				094355F91E581D5800C252F4 /* ViewController.swift in Sources */,
+				094355F91E581D5800C252F4 /* UpdateChildStatusView.swift in Sources */,
 				01D461201E581E0E00C25DC4 /* Router.swift in Sources */,
 				016A72FE1E58F9E500AF046D /* MicrosoftService.swift in Sources */,
 				013144071E58D7A00021720D /* CareGiverNotesViewController.swift in Sources */,

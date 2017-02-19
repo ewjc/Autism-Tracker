@@ -16,7 +16,7 @@ enum Router {
     case createNote(note: Note)
     
     // Image Recognition
-    case getEmotion
+    case getEmotion(imageData: Data)
     
 }
 
@@ -55,9 +55,9 @@ extension Router {
     
     var method: Alamofire.HTTPMethod {
         switch self {
-        case .getAllNotes, .getNote, .getEmotion:
+        case .getAllNotes, .getNote:
             return .get
-        case .createNote:
+        case .createNote, .getEmotion:
             return .post
         }
     }
@@ -81,8 +81,8 @@ extension Router {
             dict[JSONKeys.photoURL] = "NO_URL"
             dict[JSONKeys.time] = time
             return dict
-        case .getEmotion:
-            return ["url": "https://avatars0.githubusercontent.com/u/6567880?v=3&s=400"]
+        case .getEmotion(let imageData):
+            return ["data": imageData]
         default:
             return nil
         }
@@ -96,7 +96,8 @@ extension Router {
     var headers: [String: String]? {
         switch self {
         case .getEmotion:
-            return ["Ocp-Apim-Subscription-Key": "987595b243524947add847c7d6a673b5"]
+            return ["Ocp-Apim-Subscription-Key": "987595b243524947add847c7d6a673b5",
+                    "Content-Type": "application/json"]
         default:
             return nil
         }
