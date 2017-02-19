@@ -35,7 +35,7 @@
 		0943560A1E58264D00C252F4 /* NewNoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 094356091E58264D00C252F4 /* NewNoteViewController.swift */; };
 		0943560D1E582BB400C252F4 /* PhotoHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0943560C1E582BB400C252F4 /* PhotoHelper.swift */; };
 		09BE52E41E585A2F00A7C6A6 /* NotesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09BE52E31E585A2F00A7C6A6 /* NotesViewController.swift */; };
-		FA27DC441E59203400781E68 /* customDragView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA27DC431E59203400781E68 /* customDragView.swift */; };
+		FA14E6141E599E5D00D15E2D /* customDragView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA27DC431E59203400781E68 /* customDragView.swift */; };
 		FA27DC461E5938F400781E68 /* CareGiverNoteTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA27DC451E5938F400781E68 /* CareGiverNoteTableViewCell.swift */; };
 		FA27DC481E59391800781E68 /* CareGiverNoteCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA27DC471E59391800781E68 /* CareGiverNoteCell.xib */; };
 		FA27DC4A1E593E4800781E68 /* NoteDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA27DC491E593E4800781E68 /* NoteDetailViewController.swift */; };
@@ -383,6 +383,7 @@
 				016A72FA1E58DA3900AF046D /* CareGiverNoteViewController.swift in Sources */,
 				01D461231E581E6A00C25DC4 /* Provider.swift in Sources */,
 				01E33EDD1E5862B700DA2C7D /* NoteTableViewCell.swift in Sources */,
+				FA14E6141E599E5D00D15E2D /* customDragView.swift in Sources */,
 				09BE52E41E585A2F00A7C6A6 /* NotesViewController.swift in Sources */,
 				018FAE301E5848DC0049F5E2 /* JSONKeys.swift in Sources */,
 				016A72FC1E58DF4700AF046D /* UIColor+Utilities.swift in Sources */,
@@ -400,7 +401,6 @@
 				0943560D1E582BB400C252F4 /* PhotoHelper.swift in Sources */,
 				016A73011E58FDD100AF046D /* ChildEmotionViewController.swift in Sources */,
 				019D26A71E5934D10098746F /* ViewController.swift in Sources */,
-				FA27DC441E59203400781E68 /* customDragView.swift in Sources */,
 				094355F71E581D5800C252F4 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -541,6 +541,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = RN596T8M84;
 				INFOPLIST_FILE = "Autism-Tracker/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.tawpy.Autism-Tracker";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -555,6 +556,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = RN596T8M84;
 				INFOPLIST_FILE = "Autism-Tracker/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.tawpy.Autism-Tracker";
 				PRODUCT_NAME = "$(TARGET_NAME)";

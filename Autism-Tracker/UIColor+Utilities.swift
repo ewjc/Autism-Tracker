@@ -28,5 +28,11 @@ extension UIColor {
     
     // MARK: Brand Colors
     static let brandBlue = UIColor(hex: 0x4A90E2)
+    static let steelBlue = UIColor(hex: 0xA2ABBF)
+  
+    static let niceGreen = UIColor(hex: 0x3BDE86)
+    static let niceBlue = UIColor(hex: 0x60CDFF)
+    static let niceRed = UIColor(hex: 0xFF6260)
+    static let niceGray = UIColor(hex: 0xF2F3F3)
     
 }

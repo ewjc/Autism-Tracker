@@ -31,7 +31,7 @@ class NoteService {
             var notes: [Note] = []
             for noteData in data {
                 if let note = Note(data: noteData) {
-                    notes.append(note)
+                    notes.insert(note, at: 0)
                 }
             }
 

@@ -11,11 +11,12 @@ import UIKit
 class NoteTableViewCell: UITableViewCell {
     
     // MARK: - Subviews
-    @IBOutlet weak var pictureImageView: UIImageView!
-    @IBOutlet weak var moodLabel: UILabel!
-    @IBOutlet weak var notesLabel: UILabel!
-    @IBOutlet weak var usernameLabel: UILabel!
-    @IBOutlet weak var dateLabel: UILabel!
+    @IBOutlet weak var activityLevelLabel: UILabel!
+    @IBOutlet weak var selfHarmLevelLabel: UILabel!
+    @IBOutlet weak var stressLevelLabel: UILabel!
+    @IBOutlet weak var moodLevelLabel: UILabel!
+    @IBOutlet weak var triggerLabel: UILabel!
+    @IBOutlet weak var resolutionLabel: UILabel!
     
     // MARK: - View Lifecycle
     override func awakeFromNib() {
@@ -24,9 +25,7 @@ class NoteTableViewCell: UITableViewCell {
     
     override func layoutSubviews() {
         super.layoutSubviews()
-        
-        pictureImageView.layer.borderColor = UIColor.lightGray.cgColor
-        pictureImageView.layer.borderWidth = 0.5
+      
     }
     
     override func prepareForReuse() {
