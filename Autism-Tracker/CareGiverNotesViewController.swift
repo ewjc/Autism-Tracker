@@ -12,6 +12,7 @@ class CareGiverNotesViewController: UIViewController {
     
     // MARK: - Instance Vars
     var notes: [Note] = []
+    var selectedIndex = -1
     
     // MARK: - Subviews
     @IBOutlet weak var tableView: UITableView!
@@ -23,9 +24,19 @@ class CareGiverNotesViewController: UIViewController {
         
         setupRefreshControl()
         setupTableView()
-        setupEvents()
+       // setupEvents()
         styleSetup()
     }
+
+  //MARK: - Navigation
+  func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+    if segue.identifier == "SegueToNoteDetailView"{
+      if let destinationVC = segue.destination as? NoteDetailViewController{
+        destinationVC.theNote = notes[selectedIndex]
+      }
+    }
+  }
+
 }
 
 // MARK: - Style
@@ -46,7 +57,7 @@ extension CareGiverNotesViewController {
     func setupEvents() {
         
         NoteService.getAllNotes { [weak self] (notes: [Note]?, error: Error?) in
-            
+          
             // Error
             if let error = error {
                 print("An error occured when trying to get events from server. \(error)")
@@ -111,7 +122,12 @@ extension CareGiverNotesViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
         return section == tableView.numberOfSections - 1 ? 10: 5
     }
-    
+  
+  func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+    selectedIndex = indexPath.row
+    self.performSegue(withIdentifier: "SegueToNoteDetailView", sender: nil)
+  }
+  
 }
 
 // MARK: - Table View Data Source

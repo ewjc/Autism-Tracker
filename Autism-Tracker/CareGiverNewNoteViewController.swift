@@ -8,7 +8,7 @@
 
 import UIKit
 
-class CareGiverNewNoteViewController: UIViewController {
+class CareGiverNewNoteViewController: UIViewController, UITextFieldDelegate, UITextViewDelegate {
   //MARK: - IBOutlets
   @IBOutlet weak var triggerTextField : UITextField!
   @IBOutlet weak var resolutionTextField : UITextField!
@@ -87,6 +87,9 @@ class CareGiverNewNoteViewController: UIViewController {
     neutralButton.tag = 2
     angryButton.tag = 3
     sadButton.tag = 4
+    triggerTextField.delegate = self
+    resolutionTextField.delegate = self
+    notesTextArea.delegate = self
     
   }
   
@@ -102,10 +105,30 @@ class CareGiverNewNoteViewController: UIViewController {
     angryButton.titleLabel?.textAlignment = .center
     sadButton.titleLabel?.textAlignment = .center
     
-    activityLevel.addCrappySlider()
-    stressLevel.addCrappySlider()
-    selfHarmLevel.addCrappySlider()
+    activityLevel.addData(tag:  0, min: 0, max: 10.0)
+    stressLevel.addData(tag:  1, min: 0, max: 10.0)
+    selfHarmLevel.addData(tag:  2, min: 0, max: 10.0)
     
   }
   
+  
+  //MARK: - Close keyboard
+  func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+    // Delegate method
+    // Called when 'return' key pressed. return NO to ignore.
+    textField.resignFirstResponder()
+    return true
+  }
+  
+  func textView(_ textView: UITextView, shouldChangeTextIn range: NSRange, replacementText text: String) -> Bool {
+    if (text == "\n") {
+      textView.resignFirstResponder()
+      return false
+    }
+    return true
+  }
+
+
+  
 }
+

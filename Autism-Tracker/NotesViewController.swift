@@ -9,127 +9,113 @@
 import UIKit
 
 class NotesViewController: UIViewController {
+  
+  // MARK: - Instance Vars
+  var notes: [Note] = []
+  
+  // MARK: - Subviews
+  @IBOutlet weak var tableView: UITableView!
+  var refreshControl = UIRefreshControl()
+  
+  // MARK: - View Lifecycle
+  override func viewDidLoad() {
+    super.viewDidLoad()
     
-    // MARK: - Instance Vars
-    var notes: [Note] = []
-    var selectedIndex = -1
-    
-    // MARK: - Subviews
-    @IBOutlet weak var tableView: UITableView!
-    var refreshControl = UIRefreshControl()
-    
-    // MARK: - View Lifecycle
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
-        setupRefreshControl()
-        setupTableView()
-        setupEvents()
-    }
-
-  func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-    if segue.identifier == "SegueToNoteDetailView"{
-      if let destinationVC = segue.destination as? NoteDetailViewController{
-        destinationVC.theNote = notes[selectedIndex]
-    }
-  }
+    setupRefreshControl()
+    setupTableView()
+    setupEvents()
   }
   
 }
 
 // MARK: - Events
 extension NotesViewController {
+  
+  func setupEvents() {
     
-    func setupEvents() {
-        
-        NoteService.getAllNotes { [weak self] (notes: [Note]?, error: Error?) in
-            
-            // Error
-            if let error = error {
-                print("An error occured when trying to get events from server. \(error)")
-                return
-            }
-            
-            // If no events, return error
-            guard let notes = notes else {
-                print("An error occured when trying to get events from server.")
-                return
-            }
-            
-            // Set events
-            self?.notes = notes
-            
-            // Reload table view and end refreshing
-            self?.tableView.reloadData()
-            self?.refreshControl.endRefreshing()
-        }
-        
+    NoteService.getAllNotes { [weak self] (notes: [Note]?, error: Error?) in
+      
+      // Error
+      if let error = error {
+        print("An error occured when trying to get events from server. \(error)")
+        return
+      }
+      
+      // If no events, return error
+      guard let notes = notes else {
+        print("An error occured when trying to get events from server.")
+        return
+      }
+      
+      // Set events
+      self?.notes = notes
+      
+      // Reload table view and end refreshing
+      self?.tableView.reloadData()
+      self?.refreshControl.endRefreshing()
     }
     
+  }
+  
 }
 
 // MARK: - Refresh Control
 extension NotesViewController {
-    
-    func setupRefreshControl() {
-        refreshControl.addTarget(self, action: #selector(setupEvents), for: .valueChanged)
-    }
-    
+  
+  func setupRefreshControl() {
+    refreshControl.addTarget(self, action: #selector(setupEvents), for: .valueChanged)
+  }
+  
 }
 
 // MARK: - Table View
 extension NotesViewController {
+  
+  func setupTableView() {
     
-    func setupTableView() {
-        
-        // Add refresh control
-        tableView.addSubview(refreshControl)
-        
-        // Register cells
-        tableView.register(NoteTableViewCell.hsf_nib(), forCellReuseIdentifier: "NoteTableViewCell")
-        
-        // Set row height
-        tableView.estimatedRowHeight = 400
-        tableView.rowHeight = UITableViewAutomaticDimension
-        
-        // Style
-        tableView.separatorColor = UIColor.clear
-    }
+    // Add refresh control
+    tableView.addSubview(refreshControl)
     
+    // Register cells
+    tableView.register(NoteTableViewCell.hsf_nib(), forCellReuseIdentifier: "NoteTableViewCell")
+    
+    // Set row height
+    tableView.estimatedRowHeight = 400
+    tableView.rowHeight = UITableViewAutomaticDimension
+    
+    // Style
+    tableView.separatorColor = UIColor.clear
+  }
+  
 }
 
 // MARK: - Table View Delegate
 extension NotesViewController: UITableViewDelegate {
-    
-    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-        return section == 0 ? 10 : 5
-    }
-    
-    func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
-        return section == tableView.numberOfSections - 1 ? 10: 5
-    }
   
-  func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-    selectedIndex = indexPath.row
-    self.performSegue(withIdentifier: "SegueToNoteDetailView", sender: nil)
+  func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+    return section == 0 ? 10 : 5
   }
-    
+  
+  func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
+    return section == tableView.numberOfSections - 1 ? 10: 5
+  }
+  
 }
 
 // MARK: - Table View Data Source
 extension NotesViewController: UITableViewDataSource {
-    
-    func numberOfSections(in tableView: UITableView) -> Int {
-        return notes.count
-    }
-    
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1
-    }
-    
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "NoteTableViewCell") as! NoteTableViewCell
-        return cell
-    }
-    
+  
+  func numberOfSections(in tableView: UITableView) -> Int {
+    return notes.count
+  }
+  
+  func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    return 1
+  }
+  
+  func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    let cell = tableView.dequeueReusableCell(withIdentifier: "NoteTableViewCell") as! NoteTableViewCell
+    return cell
+  }
+  
 }

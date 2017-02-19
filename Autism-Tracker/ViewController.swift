@@ -32,11 +32,10 @@ class ViewController: UIViewController {
         
         for button in [careReceiverButton, careGiverButton, therapistParentButton] {
             button?.layer.borderColor = UIColor.brandBlue.cgColor
-            button?.layer.borderWidth = 5
-            button?.layer.cornerRadius = 5
+            button?.layer.borderWidth = 2
+            button?.layer.cornerRadius = 10
             button?.clipsToBounds = true
         }
-        
     }
 
 

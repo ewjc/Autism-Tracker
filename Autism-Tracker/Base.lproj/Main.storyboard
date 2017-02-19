@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1217" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -22,39 +22,36 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="36" translatesAutoresizingMaskIntoConstraints="NO" id="RA8-fu-EFk">
-                                <rect key="frame" x="38" y="111.5" width="300" height="372"/>
+                                <rect key="frame" x="16" y="98" width="343" height="471"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="116-BI-uLs">
-                                        <rect key="frame" x="0.0" y="0.0" width="300" height="100"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="343" height="133"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="100" id="3qi-1H-cX1"/>
-                                            <constraint firstAttribute="width" constant="300" id="roI-Pp-mGg"/>
+                                            <constraint firstAttribute="height" constant="133" id="3qi-1H-cX1"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="35"/>
                                         <state key="normal" title="Care Reciever"/>
                                         <connections>
                                             <segue destination="q9W-gp-oKA" kind="presentation" id="ZX1-mM-LqN"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="swn-Z2-0AB">
-                                        <rect key="frame" x="0.0" y="136" width="300" height="100"/>
+                                        <rect key="frame" x="0.0" y="169" width="343" height="133"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="300" id="VKl-pV-u59"/>
-                                            <constraint firstAttribute="height" constant="100" id="Y0L-ok-Jic"/>
+                                            <constraint firstAttribute="height" constant="133" id="Y0L-ok-Jic"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="35"/>
                                         <state key="normal" title="Care Givers"/>
                                         <connections>
                                             <segue destination="Tcs-wY-4uN" kind="presentation" id="yBB-1H-wFf"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gg3-bU-RbZ">
-                                        <rect key="frame" x="0.0" y="272" width="300" height="100"/>
+                                        <rect key="frame" x="0.0" y="338" width="343" height="133"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="300" id="COm-0n-wrG"/>
-                                            <constraint firstAttribute="height" constant="100" id="woL-H6-0VU"/>
+                                            <constraint firstAttribute="height" constant="133" id="woL-H6-0VU"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                         <state key="normal" title="Parents / Guardian"/>
                                         <connections>
                                             <segue destination="RVg-QG-9KA" kind="presentation" id="15J-ha-FZK"/>
@@ -84,10 +81,12 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstAttribute="trailing" secondItem="RA8-fu-EFk" secondAttribute="trailing" constant="16" id="2Xl-LU-LRK"/>
                             <constraint firstItem="ccO-zt-OTS" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="580-ZU-rUf"/>
                             <constraint firstItem="ccO-zt-OTS" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="GKP-Cs-8tG"/>
+                            <constraint firstItem="RA8-fu-EFk" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="16" id="Hdz-x2-D6s"/>
                             <constraint firstAttribute="trailing" secondItem="ccO-zt-OTS" secondAttribute="trailing" id="TuD-hU-ikO"/>
-                            <constraint firstItem="RA8-fu-EFk" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-36" id="el7-Yx-LTN"/>
+                            <constraint firstItem="RA8-fu-EFk" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="el7-Yx-LTN"/>
                             <constraint firstItem="RA8-fu-EFk" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="yZE-If-Gs5"/>
                         </constraints>
                     </view>
