@@ -74,7 +74,6 @@ extension UpdateChildStatusView {
             }
         }
     }
-    
 }
 
 // MARK: - Table View
