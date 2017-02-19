@@ -25,22 +25,6 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Autism-Tracker/MicrosoftService.swift"
-            timestampString = "509156178.00187"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "17"
-            endingLineNumber = "17"
-            landmarkName = "getEmotion(imageURL:completion:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
             filePath = "Autism-Tracker/ChildEmotionViewController.swift"
             timestampString = "509156510.84307"
             startingColumnNumber = "9223372036854775807"
@@ -74,12 +58,12 @@
                   moduleName = "Autism-Tracker"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/Nick/Documents/GitHub/Autism-Tracker/Autism-Tracker/Provider.swift"
-                  timestampString = "509158628.969763"
+                  timestampString = "509164257.137477"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "22"
                   endingLineNumber = "22"
-                  offsetFromSymbolStart = "464">
+                  offsetFromSymbolStart = "599">
                </Location>
                <Location
                   shouldBeEnabled = "Yes"
@@ -89,12 +73,12 @@
                   moduleName = "Autism-Tracker"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/Nick/Documents/GitHub/Autism-Tracker/Autism-Tracker/Provider.swift"
-                  timestampString = "509158628.971369"
+                  timestampString = "509164257.139316"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "24"
                   endingLineNumber = "24"
-                  offsetFromSymbolStart = "28">
+                  offsetFromSymbolStart = "23">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -122,12 +106,12 @@
                   moduleName = "Autism-Tracker"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/Nick/Documents/GitHub/Autism-Tracker/Autism-Tracker/Provider.swift"
-                  timestampString = "509158628.975358"
+                  timestampString = "509164257.143552"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "27"
                   endingLineNumber = "27"
-                  offsetFromSymbolStart = "236">
+                  offsetFromSymbolStart = "273">
                </Location>
                <Location
                   shouldBeEnabled = "Yes"
@@ -137,12 +121,12 @@
                   moduleName = "Autism-Tracker"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/Nick/Documents/GitHub/Autism-Tracker/Autism-Tracker/Provider.swift"
-                  timestampString = "509158628.97703"
+                  timestampString = "509164257.145722"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "27"
                   endingLineNumber = "27"
-                  offsetFromSymbolStart = "276">
+                  offsetFromSymbolStart = "317">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -153,13 +137,77 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Autism-Tracker/MicrosoftService.swift"
-            timestampString = "509157957.816456"
+            filePath = "Autism-Tracker/NoteService.swift"
+            timestampString = "509164026.514987"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "24"
-            endingLineNumber = "24"
-            landmarkName = "getEmotion(imageURL:completion:)"
+            startingLineNumber = "71"
+            endingLineNumber = "71"
+            landmarkName = "createNote(note:completion:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "static Autism_Tracker.NoteService.createNote (note : Autism_Tracker.Note, completion : (Swift.Optional&lt;Autism_Tracker.Note&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "Autism-Tracker"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Nick/Documents/GitHub/Autism-Tracker/Autism-Tracker/NoteService.swift"
+                  timestampString = "509164257.156139"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "71"
+                  endingLineNumber = "71"
+                  offsetFromSymbolStart = "35">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "static Autism_Tracker.NoteService.(createNote (note : Autism_Tracker.Note, completion : (Swift.Optional&lt;Autism_Tracker.Note&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; ()) -&gt; ()).(closure #1)"
+                  moduleName = "Autism-Tracker"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Nick/Documents/GitHub/Autism-Tracker/Autism-Tracker/NoteService.swift"
+                  timestampString = "509164257.159482"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "74"
+                  endingLineNumber = "74"
+                  offsetFromSymbolStart = "27">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Autism-Tracker/NoteService.swift"
+            timestampString = "509164028.453449"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "74"
+            endingLineNumber = "74"
+            landmarkName = "createNote(note:completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Autism-Tracker/CareGiverNewNoteViewController.swift"
+            timestampString = "509164334.678149"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "130"
+            endingLineNumber = "130"
+            landmarkName = "sendToServer()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
