@@ -22,15 +22,6 @@ class UpdateChildStatusView: UIViewController {
     // MARK: - View Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-<<<<<<< HEAD
-        for index in 0..<eventArray.count {
-            let newSubscription = NSubscription(eventName: eventArray[index],
-                                                identifier: "subscription unique identifier",
-                                                webhookId: "UpdateStatus")
-            NeuraSDK.shared.add(newSubscription) { result in
-        
-=======
         setupNeura()
     }
     
@@ -80,7 +71,6 @@ extension UpdateChildStatusView {
         NeuraSDK.shared.getSubscriptionsList() { result in
             if result.success {
                 print(result.subscriptions)
->>>>>>> abc368a6e201c384cd7dccfb5d6eaa8bb41c6391
             }
         }
     }
