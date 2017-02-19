@@ -53,7 +53,7 @@ class Note {
         self.resolution = data[JSONKeys.resolution] as! String
         self.additionalNotes = data[JSONKeys.additionalNotes] as! String
 //        self.photo = data[JSONKeys.photo]
-        self.time = data[JSONKeys.time] as! String
+//        self.time = data[JSONKeys.time] as! String
     }
     
 }
