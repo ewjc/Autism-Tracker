@@ -32,6 +32,7 @@
 		0943560A1E58264D00C252F4 /* NewNoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 094356091E58264D00C252F4 /* NewNoteViewController.swift */; };
 		0943560D1E582BB400C252F4 /* PhotoHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0943560C1E582BB400C252F4 /* PhotoHelper.swift */; };
 		09BE52E41E585A2F00A7C6A6 /* NotesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09BE52E31E585A2F00A7C6A6 /* NotesViewController.swift */; };
+		FA27DC441E59203400781E68 /* customDragView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA27DC431E59203400781E68 /* customDragView.swift */; };
 		FC506228A3AC336E1A33225F /* Pods_Autism_Tracker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C73195EB3246455E91E3824A /* Pods_Autism_Tracker.framework */; };
 /* End PBXBuildFile section */
 
@@ -66,6 +67,7 @@
 		4F2586110B3851C22E62261F /* Pods-Autism-Tracker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Autism-Tracker.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Autism-Tracker/Pods-Autism-Tracker.debug.xcconfig"; sourceTree = "<group>"; };
 		A3CDC8437534C6C0083A680D /* Pods-Autism-Tracker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Autism-Tracker.release.xcconfig"; path = "Pods/Target Support Files/Pods-Autism-Tracker/Pods-Autism-Tracker.release.xcconfig"; sourceTree = "<group>"; };
 		C73195EB3246455E91E3824A /* Pods_Autism_Tracker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Autism_Tracker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA27DC431E59203400781E68 /* customDragView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = customDragView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -172,6 +174,7 @@
 		094355F51E581D5800C252F4 /* Autism-Tracker */ = {
 			isa = PBXGroup;
 			children = (
+				FA27DC421E591EC200781E68 /* Custom Elements */,
 				01D4611E1E581E0500C25DC4 /* Networking */,
 				01D461241E581E9700C25DC4 /* Services */,
 				01D461211E581E5D00C25DC4 /* Models */,
@@ -218,6 +221,14 @@
 				C73195EB3246455E91E3824A /* Pods_Autism_Tracker.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FA27DC421E591EC200781E68 /* Custom Elements */ = {
+			isa = PBXGroup;
+			children = (
+				FA27DC431E59203400781E68 /* customDragView.swift */,
+			);
+			path = "Custom Elements";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -365,6 +376,7 @@
 				018FAE2E1E5820FC0049F5E2 /* Note.swift in Sources */,
 				0943560D1E582BB400C252F4 /* PhotoHelper.swift in Sources */,
 				016A73011E58FDD100AF046D /* ChildEmotionViewController.swift in Sources */,
+				FA27DC441E59203400781E68 /* customDragView.swift in Sources */,
 				094355F71E581D5800C252F4 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
