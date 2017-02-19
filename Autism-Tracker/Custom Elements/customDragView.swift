@@ -14,6 +14,7 @@ class customDragView: UIView {
   var min: Double = 0
   var max: Double = 10
   var fillView : UIView = UIView()
+  let scoreLabel: UILabel = UILabel()
   
   init(frame: CGRect, title: String, maxValue : Int){
     super.init(frame: frame)
@@ -50,6 +51,15 @@ class customDragView: UIView {
     label.textColor = UIColor.steelBlue
     self.addSubview(label)
     
+    scoreLabel.frame = CGRect(x: self.bounds.width - 23 - 52, y: 0, width: 52.0, height: 18)
+    print(scoreLabel.frame)
+    scoreLabel.text = "\(Int(min)) of \(Int(max))"
+    scoreLabel.font = label.font.withSize(15)
+    scoreLabel.minimumScaleFactor = 0.5
+    scoreLabel.lineBreakMode = .byClipping
+    scoreLabel.textColor = UIColor.steelBlue
+    self.addSubview(scoreLabel)
+    
     let fullTubeView = UIView(frame: CGRect(x: 13, y: 22.0, width: self.bounds.width-26.0, height: 39.0))
     fullTubeView.backgroundColor = UIColor.niceGray
     fullTubeView.layer.cornerRadius = 39.0 / 2.0
@@ -69,6 +79,7 @@ class customDragView: UIView {
     if let touch = touches.first {
       let location = touch.location(in: self)
       print("Location: \(location)")
+      percentage = Double(location.x) / Double(fillView.superview!.frame.width) * 100.0
       setView(x : location.x, y: location.y)
       
     }
@@ -77,7 +88,7 @@ class customDragView: UIView {
     if let touch = touches.first {
       let location = touch.location(in: self)
       print("Location: \(location)")
-      
+      percentage = Double(location.x) / Double(fillView.superview!.frame.width) * 100.0
       setView(x : location.x, y: location.y)
     }
   }
@@ -99,7 +110,8 @@ class customDragView: UIView {
   }
   
   func setView(x : CGFloat, y: CGFloat){
-    
+  
+    scoreLabel.text = "\(Int(getCurrentValue())) of \(Int(max))"
     var width = x - 13
     if width < 0{
       width = 0
