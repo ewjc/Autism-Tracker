@@ -22,7 +22,6 @@
 //        super.viewDidLoad()
 //    }
 //    
-//    
 //}
 //
 //extension ImageRecognizeVC {
@@ -86,91 +85,91 @@
 //        })
 //}
 //
-//    extension ImageRecognizeVC {
-//        func base64EncodeImage(_ image: UIImage) -> String {
-//            var imagedata = UIImagePNGRepresentation(image)
-//            
-//            // Resize the image if it exceeds the 2MB API limit
-//            if (imagedata?.count > 2097152) {
-//                let oldSize: CGSize = image.size
-//                let newSize: CGSize = CGSize(width: 800, height: oldSize.height / oldSize.width * 800)
-//                imagedata = resizeImage(newSize, image: image)
-//            }
-//            
-//            return imagedata!.base64EncodedString(options: .endLineWithCarriageReturn)
+//extension ImageRecognizeVC {
+//    func base64EncodeImage(_ image: UIImage) -> String {
+//        var imagedata = UIImagePNGRepresentation(image)
+//        
+//        // Resize the image if it exceeds the 2MB API limit
+//        if (imagedata?.count > 2097152) {
+//            let oldSize: CGSize = image.size
+//            let newSize: CGSize = CGSize(width: 800, height: oldSize.height / oldSize.width * 800)
+//            imagedata = resizeImage(newSize, image: image)
 //        }
 //        
-//        func createRequest(with imageBase64: String) {
-//            // Create our request URL
-//            
-//            var request = URLRequest(url: googleURL)
-//            request.httpMethod = "POST"
-//            request.addValue("application/json", forHTTPHeaderField: "Content-Type")
-//            request.addValue(Bundle.main.bundleIdentifier ?? "", forHTTPHeaderField: "X-Ios-Bundle-Identifier")
-//            
-//            // Build our API request
-//            let jsonRequest = [
-//                "requests": [
-//                    "image": [
-//                        "content": imageBase64
+//        return imagedata!.base64EncodedString(options: .endLineWithCarriageReturn)
+//    }
+//    
+//    func createRequest(with imageBase64: String) {
+//        // Create our request URL
+//        
+//        var request = URLRequest(url: googleURL)
+//        request.httpMethod = "POST"
+//        request.addValue("application/json", forHTTPHeaderField: "Content-Type")
+//        request.addValue(Bundle.main.bundleIdentifier ?? "", forHTTPHeaderField: "X-Ios-Bundle-Identifier")
+//        
+//        // Build our API request
+//        let jsonRequest = [
+//            "requests": [
+//                "image": [
+//                    "content": imageBase64
+//                ],
+//                "features": [
+//                    [
+//                        "type": "LABEL_DETECTION",
+//                        "maxResults": 10
 //                    ],
-//                    "features": [
-//                        [
-//                            "type": "LABEL_DETECTION",
-//                            "maxResults": 10
-//                        ],
-//                        [
-//                            "type": "FACE_DETECTION",
-//                            "maxResults": 10
-//                        ]
+//                    [
+//                        "type": "FACE_DETECTION",
+//                        "maxResults": 10
 //                    ]
 //                ]
 //            ]
-//            let jsonObject = JSON(jsonDictionary: jsonRequest)
-//            guard let data = try? jsonObject.rawData() else {
+//        ]
+//        let jsonObject = JSON(jsonDictionary: jsonRequest)
+//        guard let data = try? jsonObject.rawData() else {
+//            return
+//        }
+//        request.httpBody = data
+//        DispatchQueue.global().async { self.runRequestOnBackgroundThread(request) }
+//    }
+//    
+//    func runRequestOnBackgroundThread(_ request: URLRequest) {
+//        
+//        let task: URLSessionDataTask = session.dataTask(with: request) { (data, response, error) in
+//            guard let data = data, error == nil else {
+//                print(error?.localizedDescription ?? "")
 //                return
 //            }
-//            request.httpBody = data
-//            DispatchQueue.global().async { self.runRequestOnBackgroundThread(request) }
+//            
+//            self.analyzeResults(data)
 //        }
 //        
-//        func runRequestOnBackgroundThread(_ request: URLRequest) {
-//            
-//            let task: URLSessionDataTask = session.dataTask(with: request) { (data, response, error) in
-//                guard let data = data, error == nil else {
-//                    print(error?.localizedDescription ?? "")
-//                    return
-//                }
-//                
-//                self.analyzeResults(data)
-//            }
-//            
-//            task.resume()
-//        }
+//        task.resume()
 //    }
+//}
 //    
 //    
-//    // FIXME: comparison operators with optionals were removed from the Swift Standard Libary.
-//    // Consider refactoring the code to use the non-optional operators.
-//    fileprivate func < <T : Comparable>(lhs: T?, rhs: T?) -> Bool {
-//        switch (lhs, rhs) {
-//        case let (l?, r?):
-//            return l < r
-//        case (nil, _?):
-//            return true
-//        default:
-//            return false
-//        }
-//    }
-//    
-//    // FIXME: comparison operators with optionals were removed from the Swift Standard Libary.
-//    // Consider refactoring the code to use the non-optional operators.
-//    fileprivate func > <T : Comparable>(lhs: T?, rhs: T?) -> Bool {
-//        switch (lhs, rhs) {
-//        case let (l?, r?):
-//            return l > r
-//        default:
-//            return rhs < lhs
-//        }
-//    }
+////    // FIXME: comparison operators with optionals were removed from the Swift Standard Libary.
+////    // Consider refactoring the code to use the non-optional operators.
+////    fileprivate func <<T> : Comparable>(lhs: T?, rhs: T?) -> Bool {
+////        switch (lhs, rhs) {
+////        case let (l?, r?):
+////            return l < r
+////        case (nil, _?):
+////            return true
+////        default:
+////            return false
+////        }
+////    }
+////    
+////    // FIXME: comparison operators with optionals were removed from the Swift Standard Libary.
+////    // Consider refactoring the code to use the non-optional operators.
+////    fileprivate func > <T : Comparable>(lhs: T?, rhs: T?) -> Bool {
+////        switch (lhs, rhs) {
+////        case let (l?, r?):
+////            return l > r
+////        default:
+////            return rhs < lhs
+////        }
+////    }
 //}
