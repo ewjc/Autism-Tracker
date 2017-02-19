@@ -24,6 +24,7 @@ class UpdateChildStatusView: UIViewController, UITableViewDelegate, UITableViewD
                                                 identifier: "subscription unique identifier",
                                                 webhookId: "UpdateStatus")
             NeuraSDK.shared.add(newSubscription) { result in
+        
             }
         }
 
