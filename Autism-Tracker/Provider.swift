@@ -14,12 +14,13 @@ class Provider {
         
         // Create variables
         let url = route.baseURL + route.path
-        let method = route.method
+        let routeMethod = route.method
         let headers = route.headers
-        let parameters = route.parameters
+        var parameters = route.parameters
+        parameters?["time"] = nil
         
         // Make request
-        Alamofire.request(url, method: method, parameters: parameters, encoding: JSONEncoding.default, headers: headers).validate().responseJSON() { response in
+        Alamofire.request(url, method: route.method, parameters: parameters, encoding: JSONEncoding.default, headers: headers).validate().responseJSON() { response in
             
             switch response.result {
                 
