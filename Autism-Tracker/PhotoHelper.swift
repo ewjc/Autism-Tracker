@@ -23,9 +23,11 @@ class PhotoTakingHelper: NSObject {
         super.init()
         
         // Because we call showPhotoSourceSelection() directly from the initializer, the dialog will be presented as soon as we create an instance of PhotoTakingHelper.
-        if viewController is NewNoteViewController {
-            showPhotoSourceSelection(sender: (viewController as! NewNoteViewController).view)
-        }
+//        if viewController is NewNoteViewController {
+//            showPhotoSourceSelection(sender: (viewController as! NewNoteViewController).view)
+//        }
+        
+        showPhotoSourceSelection(sender: viewController.view)
         
     }
     
@@ -54,6 +56,8 @@ class PhotoTakingHelper: NSObject {
             alertController.popoverPresentationController?.sourceView = viewController.photoImage
             alertController.popoverPresentationController?.sourceRect   = viewController.photoImage.bounds
         }
+        
+        
 
         if let popoverController = alertController.popoverPresentationController {
             popoverController.sourceView = sender

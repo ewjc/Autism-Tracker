@@ -15,6 +15,9 @@ enum Router {
     case getNote(id: String)
     case createNote(note: Note)
     
+    // Image Recognition
+    case getEmotion(imageData: Data)
+    
 }
 
 // MARK: - Base URL
@@ -24,6 +27,8 @@ extension Router {
         switch self {
         case .getAllNotes, .createNote, .getNote:
             return "https://autism-tracker-server.appspot.com"
+        case .getEmotion:
+            return "https://westus.api.cognitive.microsoft.com"
         }
     }
     
@@ -38,6 +43,8 @@ extension Router {
             return "/events"
         case .getNote(let id):
             return "/events\(id)"
+        case .getEmotion:
+            return "/emotion/v1.0/recognize"
         }
     }
     
@@ -50,7 +57,7 @@ extension Router {
         switch self {
         case .getAllNotes, .getNote:
             return .get
-        case .createNote:
+        case .createNote, .getEmotion:
             return .post
         }
     }
@@ -74,6 +81,8 @@ extension Router {
             dict[JSONKeys.photoURL] = "NO_URL"
             dict[JSONKeys.time] = time
             return dict
+        case .getEmotion(let imageData):
+            return ["data": imageData]
         default:
             return nil
         }
@@ -85,7 +94,13 @@ extension Router {
 extension Router {
     
     var headers: [String: String]? {
-        return nil
+        switch self {
+        case .getEmotion:
+            return ["Ocp-Apim-Subscription-Key": "987595b243524947add847c7d6a673b5",
+                    "Content-Type": "application/json"]
+        default:
+            return nil
+        }
     }
     
 }
