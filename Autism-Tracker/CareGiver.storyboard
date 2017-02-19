@@ -1,5 +1,10 @@
+<<<<<<< HEAD
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="4Yy-zN-K9l">
+=======
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1217" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="hho-fX-Pgj">
+>>>>>>> 856b0bab8e52b6f8d8effbc4c40d2655f6954e31
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -67,59 +72,58 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="349" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="gh6-b7-iEV">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="349" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="gh6-b7-iEV">
                                 <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="349" id="wLd-lq-pOj">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="NoteDetailViewCell" rowHeight="349" id="wLd-lq-pOj" customClass="NoteDetailViewCell" customModule="Autism_Tracker" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="349"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="wLd-lq-pOj" id="A9V-vE-npo">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="349"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Trigger : XYX" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SYb-Qu-4tg">
-                                                    <rect key="frame" x="8" y="34" width="97" height="21"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Trigger : XYX" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SYb-Qu-4tg">
+                                                    <rect key="frame" x="8" y="21" width="359" height="26.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Resolution : XYZ" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iOU-Sj-EcX">
+                                                    <rect key="frame" x="8" y="51.5" width="359" height="26.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Notes:" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D5u-hb-LfJ">
+                                                    <rect key="frame" x="8" y="85" width="359" height="19.5"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Resolution : XYZ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iOU-Sj-EcX">
-                                                    <rect key="frame" x="8" y="63" width="120" height="21"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Mood" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jW9-xg-ufP">
+                                                    <rect key="frame" x="19" y="128.5" width="42" height="19.5"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Notes:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D5u-hb-LfJ">
-                                                    <rect key="frame" x="8" y="85" width="48" height="21"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Mood" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jW9-xg-ufP">
-                                                    <rect key="frame" x="8" y="126" width="42" height="21"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vMD-yJ-eW8" customClass="customDragView" customModule="Autism_Tracker" customModuleProvider="target">
-                                                    <rect key="frame" x="8" y="155" width="367" height="50"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <color key="backgroundColor" red="0.58703975866336633" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vMD-yJ-eW8" customClass="customDragView" customModule="Autism_Tracker" customModuleProvider="target">
+                                                    <rect key="frame" x="0.0" y="159" width="375" height="50"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="50" id="ODk-AU-zu6"/>
+                                                    </constraints>
                                                 </view>
-                                                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="385-Ns-lor" customClass="customDragView" customModule="Autism_Tracker" customModuleProvider="target">
-                                                    <rect key="frame" x="8" y="205" width="367" height="52"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <color key="backgroundColor" red="1" green="0.48731435643564358" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="385-Ns-lor" customClass="customDragView" customModule="Autism_Tracker" customModuleProvider="target">
+                                                    <rect key="frame" x="0.0" y="209" width="375" height="50"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="50" id="rKh-3v-j3E"/>
+                                                    </constraints>
                                                 </view>
-                                                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XJk-V7-a9U" customClass="customDragView" customModule="Autism_Tracker" customModuleProvider="target">
-                                                    <rect key="frame" x="0.0" y="258" width="375" height="48"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <color key="backgroundColor" red="1" green="1" blue="0.21060875618811881" alpha="1" colorSpace="calibratedRGB"/>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XJk-V7-a9U" customClass="customDragView" customModule="Autism_Tracker" customModuleProvider="target">
+                                                    <rect key="frame" x="0.0" y="259" width="375" height="50"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="50" id="5Xb-Ph-yr1"/>
+                                                    </constraints>
                                                 </view>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="02 / 18 / 17" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W5g-TA-dlE">
                                                     <rect key="frame" x="296" y="4" width="71" height="17"/>
@@ -129,12 +133,47 @@
                                                 </label>
                                             </subviews>
                                             <constraints>
+                                                <constraint firstItem="XJk-V7-a9U" firstAttribute="top" secondItem="385-Ns-lor" secondAttribute="bottom" id="0cz-Od-zBV"/>
+                                                <constraint firstItem="385-Ns-lor" firstAttribute="top" secondItem="vMD-yJ-eW8" secondAttribute="bottom" id="4Bf-D3-9Hh"/>
+                                                <constraint firstAttribute="bottom" secondItem="XJk-V7-a9U" secondAttribute="bottom" constant="40" id="Bhq-U5-X0q"/>
+                                                <constraint firstItem="SYb-Qu-4tg" firstAttribute="leading" secondItem="A9V-vE-npo" secondAttribute="leading" constant="8" id="CBu-2E-yoY"/>
+                                                <constraint firstAttribute="trailing" secondItem="SYb-Qu-4tg" secondAttribute="trailing" constant="8" id="CHT-RV-gxD"/>
+                                                <constraint firstItem="XJk-V7-a9U" firstAttribute="leading" secondItem="385-Ns-lor" secondAttribute="leading" id="DW6-sz-MYc"/>
+                                                <constraint firstItem="D5u-hb-LfJ" firstAttribute="trailing" secondItem="iOU-Sj-EcX" secondAttribute="trailing" id="FFo-4B-fmB"/>
+                                                <constraint firstItem="jW9-xg-ufP" firstAttribute="top" secondItem="D5u-hb-LfJ" secondAttribute="bottom" constant="24" id="HoJ-a6-jOi"/>
+                                                <constraint firstItem="D5u-hb-LfJ" firstAttribute="top" secondItem="iOU-Sj-EcX" secondAttribute="bottom" constant="7" id="HoN-eX-sDR"/>
+                                                <constraint firstItem="385-Ns-lor" firstAttribute="leading" secondItem="vMD-yJ-eW8" secondAttribute="leading" id="ICM-l6-MpS"/>
+                                                <constraint firstAttribute="trailing" secondItem="iOU-Sj-EcX" secondAttribute="trailing" constant="8" id="QiX-Dh-fUW"/>
+                                                <constraint firstAttribute="trailing" secondItem="vMD-yJ-eW8" secondAttribute="trailing" id="SNK-aC-oYm"/>
+                                                <constraint firstItem="SYb-Qu-4tg" firstAttribute="top" secondItem="A9V-vE-npo" secondAttribute="top" constant="21" id="TOb-Eh-F9p"/>
+                                                <constraint firstItem="iOU-Sj-EcX" firstAttribute="leading" secondItem="SYb-Qu-4tg" secondAttribute="leading" id="YCS-HI-CLG"/>
+                                                <constraint firstItem="vMD-yJ-eW8" firstAttribute="leading" secondItem="A9V-vE-npo" secondAttribute="leading" id="YdK-Hr-XCA"/>
+                                                <constraint firstItem="XJk-V7-a9U" firstAttribute="trailing" secondItem="385-Ns-lor" secondAttribute="trailing" id="ewb-Uy-pvv"/>
+                                                <constraint firstItem="jW9-xg-ufP" firstAttribute="leading" secondItem="A9V-vE-npo" secondAttribute="leading" constant="19" id="gOR-Zo-kTs"/>
                                                 <constraint firstAttribute="trailing" secondItem="W5g-TA-dlE" secondAttribute="trailing" constant="8" id="l3r-3L-UEH"/>
+                                                <constraint firstItem="D5u-hb-LfJ" firstAttribute="leading" secondItem="iOU-Sj-EcX" secondAttribute="leading" id="lpQ-5P-Dde"/>
+                                                <constraint firstItem="iOU-Sj-EcX" firstAttribute="top" secondItem="SYb-Qu-4tg" secondAttribute="bottom" constant="4" id="oJH-IQ-LFr"/>
+                                                <constraint firstItem="vMD-yJ-eW8" firstAttribute="top" secondItem="jW9-xg-ufP" secondAttribute="bottom" constant="8" id="omA-Xr-fI4"/>
                                                 <constraint firstItem="W5g-TA-dlE" firstAttribute="top" secondItem="A9V-vE-npo" secondAttribute="top" constant="4" id="uVW-vV-HWh"/>
+                                                <constraint firstItem="385-Ns-lor" firstAttribute="trailing" secondItem="vMD-yJ-eW8" secondAttribute="trailing" id="vys-bj-mu5"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="activityLevel" destination="vMD-yJ-eW8" id="MRU-mR-gSU"/>
+                                            <outlet property="dateLabel" destination="W5g-TA-dlE" id="7nD-MV-J0L"/>
+                                            <outlet property="moodLabel" destination="jW9-xg-ufP" id="Pxq-DJ-9Gt"/>
+                                            <outlet property="notesLabel" destination="D5u-hb-LfJ" id="pmU-ND-5Tk"/>
+                                            <outlet property="resolutionLabel" destination="iOU-Sj-EcX" id="csI-9B-G4F"/>
+                                            <outlet property="selfHarmLevel" destination="385-Ns-lor" id="bcN-h0-CMU"/>
+                                            <outlet property="stressLevel" destination="XJk-V7-a9U" id="TVe-2U-PhU"/>
+                                            <outlet property="triggerLabel" destination="SYb-Qu-4tg" id="iS0-vD-aOb"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="1q6-QX-QB4" id="7iz-8F-R38"/>
+                                    <outlet property="delegate" destination="1q6-QX-QB4" id="pkO-aG-VbM"/>
+                                </connections>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -146,6 +185,9 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Note" id="Gah-Sp-Rk7"/>
+                    <connections>
+                        <outlet property="theTableView" destination="gh6-b7-iEV" id="CM5-tK-g7g"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2Ch-xL-wA4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -171,7 +213,7 @@
                                         <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="fjh-0w-zff" id="QD5-1i-hGF">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Status" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="25l-89-Mzs">
@@ -260,7 +302,7 @@
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textField>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Hi Eric Wong!  How are you doing today?  Are things well?  I need a huge amount of text here so bear with me" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Mgs-SZ-BLV">
-                                        <rect key="frame" x="15" y="138.5" width="342" height="75"/>
+                                        <rect key="frame" x="11" y="138.5" width="346" height="75"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="75" id="JVS-S3-cvI"/>
@@ -394,7 +436,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="Mgs-SZ-BLV" firstAttribute="leading" secondItem="ck8-Hf-hLa" secondAttribute="leadingMargin" constant="-1" id="1O5-yr-Ar4"/>
+                            <constraint firstItem="Mgs-SZ-BLV" firstAttribute="leading" secondItem="ck8-Hf-hLa" secondAttribute="leadingMargin" constant="-5" id="1O5-yr-Ar4"/>
                             <constraint firstAttribute="trailingMargin" secondItem="895-BW-ARY" secondAttribute="trailing" constant="-12" id="BnA-lw-gDt"/>
                             <constraint firstAttribute="trailingMargin" secondItem="jWh-lL-PRm" secondAttribute="trailing" constant="-16" id="bJq-Zr-178"/>
                             <constraint firstAttribute="trailingMargin" secondItem="9Vv-90-h3t" secondAttribute="trailing" constant="2" id="d2U-9a-sDq"/>
