@@ -24,6 +24,7 @@ class CareGiverNewNoteViewController: UIViewController, UITextFieldDelegate, UIT
   @IBOutlet weak var stressLevel : customDragView!
   
   @IBOutlet weak var saveButton : UIButton!
+    @IBOutlet weak var mainScrollView: UIScrollView!
   
   
   //MARK: - IBActions
@@ -83,6 +84,12 @@ class CareGiverNewNoteViewController: UIViewController, UITextFieldDelegate, UIT
   // MARK: - View Lifecycle
   override func viewDidLoad() {
     super.viewDidLoad()
+    
+    // Setup Scrollview
+    mainScrollView.isDirectionalLockEnabled = true
+    mainScrollView.contentSize = CGSize(width: view.bounds.width, height: mainScrollView.contentSize.height)
+    
+    // Alex set up everything else
     cleanupUI()
     happyButton.tag = 0
     shockedButton.tag = 1

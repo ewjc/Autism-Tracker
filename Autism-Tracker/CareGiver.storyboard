@@ -41,6 +41,11 @@
                     </view>
                     <navigationItem key="navigationItem" title="Notes" id="pDk-80-lxT">
                         <barButtonItem key="backBarButtonItem" title=" " id="tV3-E9-shg"/>
+                        <barButtonItem key="leftBarButtonItem" title="    " id="c2o-zf-cjK">
+                            <connections>
+                                <action selector="cancalBarAction:" destination="jSL-FZ-vp2" id="LyA-aX-lbl"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="tKc-4z-vKX">
                             <connections>
                                 <segue destination="SOr-A2-IG1" kind="presentation" id="vvF-D6-Sfs"/>
@@ -265,7 +270,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jWh-lL-PRm">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" directionalLockEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jWh-lL-PRm">
                                 <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Trigger:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uLe-oL-yXh">
@@ -333,7 +338,7 @@
                                         </constraints>
                                     </view>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NNd-WJ-7QN">
-                                        <rect key="frame" x="127.5" y="550.5" width="120" height="40"/>
+                                        <rect key="frame" x="127.5" y="556.5" width="120" height="40"/>
                                         <color key="backgroundColor" red="0.28627450980392155" green="0.56470588235294117" blue="0.88627450980392153" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="120" id="Ukz-VZ-8wA"/>
@@ -414,7 +419,7 @@
                                     <constraint firstItem="Olh-Eq-Kdt" firstAttribute="top" secondItem="ccR-K6-PVc" secondAttribute="bottom" constant="8" id="ZD5-mj-hgd"/>
                                     <constraint firstItem="Oov-Fm-7LA" firstAttribute="trailing" secondItem="9Vv-90-h3t" secondAttribute="trailing" id="b1k-oV-RiU"/>
                                     <constraint firstItem="9Vv-90-h3t" firstAttribute="centerY" secondItem="uLe-oL-yXh" secondAttribute="centerY" id="b4I-Px-oGb"/>
-                                    <constraint firstItem="NNd-WJ-7QN" firstAttribute="top" secondItem="EQ5-9D-OzI" secondAttribute="bottom" constant="18" id="bUW-Vb-n9W"/>
+                                    <constraint firstItem="NNd-WJ-7QN" firstAttribute="top" secondItem="EQ5-9D-OzI" secondAttribute="bottom" constant="24" id="bUW-Vb-n9W"/>
                                     <constraint firstItem="AzI-kR-ggO" firstAttribute="leading" secondItem="jWh-lL-PRm" secondAttribute="leading" id="cWe-Y1-tuF"/>
                                     <constraint firstItem="Mgs-SZ-BLV" firstAttribute="trailing" secondItem="Oov-Fm-7LA" secondAttribute="trailing" id="edp-2r-c1e"/>
                                     <constraint firstItem="Rzw-Id-5Pa" firstAttribute="leading" secondItem="AzI-kR-ggO" secondAttribute="leading" id="elj-we-rop"/>
@@ -456,6 +461,7 @@
                         <outlet property="angryButton" destination="Wti-E9-5HX" id="IL9-OX-GR0"/>
                         <outlet property="cancelBarButtonItem" destination="x0l-Y9-wk1" id="0uk-HO-DC9"/>
                         <outlet property="happyButton" destination="d7H-zz-lqp" id="Jby-Rr-uAg"/>
+                        <outlet property="mainScrollView" destination="jWh-lL-PRm" id="a3w-Em-LS7"/>
                         <outlet property="neutralButton" destination="c5O-Zd-eDf" id="cYd-cf-bn1"/>
                         <outlet property="notesTextArea" destination="Mgs-SZ-BLV" id="Jl4-vS-p5m"/>
                         <outlet property="resolutionTextField" destination="Oov-Fm-7LA" id="13e-2V-cXc"/>

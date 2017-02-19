@@ -29,7 +29,7 @@
                                         <constraints>
                                             <constraint firstAttribute="height" constant="133" id="3qi-1H-cX1"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                         <state key="normal" title="Care Reciever">
                                             <color key="titleColor" red="0.29019607843137252" green="0.56470588235294117" blue="0.88627450980392153" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
@@ -42,7 +42,7 @@
                                         <constraints>
                                             <constraint firstAttribute="height" constant="133" id="Y0L-ok-Jic"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                         <state key="normal" title="Care Givers">
                                             <color key="titleColor" red="0.29019607843137252" green="0.56470588235294117" blue="0.88627450980392153" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>

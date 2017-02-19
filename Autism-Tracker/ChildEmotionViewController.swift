@@ -28,8 +28,17 @@ class ChildEmotionViewController: UIViewController {
     @IBOutlet weak var bodyLabel: UILabel!
     
     // MARK: - Subview Actions
+    @IBAction func backBarAction(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
+        self.dismiss(animated: true, completion: nil)
+    }
     @IBAction func takePhotoAction(_ sender: Any) {
         getPhoto()
+    }
+    @IBAction func redoAction(_ sender: Any) {
+        pictureImageView.image = nil
+        takePhotoButton.isHidden = false
+        bodyLabel.text = "Take a photo of someone to determine his or her emtion"
     }
     
     // MARK: - View Lifecycle
@@ -118,6 +127,9 @@ extension ChildEmotionViewController {
             
             print("FINALLY DOING SOMETHING HERE")
             print("Surprise: \(surprise), Angry: \(angry), Joyful: \(joyful), Sad: \(sad)")
+            
+            self.bodyLabel.text = "Surprise: \(surprise), Angry: \(angry), Joyful: \(joyful), Sad: \(sad)"
+            
         })
     }
     

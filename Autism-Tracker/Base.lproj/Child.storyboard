@@ -69,6 +69,9 @@
                                             <constraint firstAttribute="height" constant="44" id="nRc-4I-0Jk"/>
                                         </constraints>
                                         <state key="normal" title="Redo"/>
+                                        <connections>
+                                            <action selector="redoAction:" destination="y7n-ny-8md" eventType="touchUpInside" id="C2f-8i-fgr"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -101,7 +104,13 @@
                             <constraint firstItem="06x-yL-Ezr" firstAttribute="leading" secondItem="ajU-oJ-vOU" secondAttribute="leading" constant="20" id="xQG-tW-EMA"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Emotion" id="p5x-kx-kYs"/>
+                    <navigationItem key="navigationItem" title="Emotion" id="p5x-kx-kYs">
+                        <barButtonItem key="leftBarButtonItem" title="   " id="MEH-So-HPf">
+                            <connections>
+                                <action selector="backBarAction:" destination="y7n-ny-8md" id="PVU-3W-xOF"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="bodyLabel" destination="BOJ-Ne-p9m" id="LIa-v1-t6X"/>
                         <outlet property="pictureImageView" destination="NHR-vW-Ads" id="82Y-1t-Seh"/>
