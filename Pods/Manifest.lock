@@ -48,6 +48,7 @@ PODS:
     - GoogleToolboxForMac/NSString+URLArguments (= 2.1.1)
   - GoogleToolboxForMac/NSString+URLArguments (2.1.1)
   - GTMSessionFetcher/Core (1.1.8)
+  - NeuraSDKFramework (3.0.0)
 
 DEPENDENCIES:
   - Alamofire
@@ -55,6 +56,7 @@ DEPENDENCIES:
   - Firebase/Auth
   - Firebase/Database
   - Firebase/Storage
+  - NeuraSDKFramework (~> 3.0)
 
 SPEC CHECKSUMS:
   Alamofire: 856a113053a7bc9cbe5d6367a555d773fc5cfef7
@@ -69,7 +71,8 @@ SPEC CHECKSUMS:
   GoogleSymbolUtilities: 631ee17048aa5e9ab133470d768ea997a5ef9b96
   GoogleToolboxForMac: 8e329f1b599f2512c6b10676d45736bcc2cbbeb0
   GTMSessionFetcher: 6f8d8b28b7e345549ac471071608170b31cb4977
+  NeuraSDKFramework: 894b6e7cc21d7219ab13bfa8bf6eb8a4afea0d26
 
-PODFILE CHECKSUM: 2a307658e0d9ff400f16f8ed8ec565da0b374d89
+PODFILE CHECKSUM: d1ffa7307f6a97f47c4c25ad57ca861dca2aef55
 
-COCOAPODS: 1.1.0.rc.2
+COCOAPODS: 1.1.1
