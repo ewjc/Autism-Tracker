@@ -16,7 +16,7 @@ enum Router {
     case createNote(note: Note)
     
     // Image Recognition
-    case getEmotion(imageData: Data)
+    case getEmotion(imageURL: String)
     
 }
 
@@ -81,8 +81,8 @@ extension Router {
             dict[JSONKeys.photoURL] = "NO_URL"
             dict[JSONKeys.time] = time
             return dict
-        case .getEmotion(let imageData):
-            return ["data": imageData]
+        case .getEmotion(let imageURL):
+            return ["url": "https://avatars0.githubusercontent.com/u/6567880?v=3&s=400"]
         default:
             return nil
         }

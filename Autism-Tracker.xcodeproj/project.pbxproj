@@ -18,6 +18,7 @@
 		016A73011E58FDD100AF046D /* ChildEmotionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016A73001E58FDD100AF046D /* ChildEmotionViewController.swift */; };
 		018FAE2E1E5820FC0049F5E2 /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = 018FAE2D1E5820FC0049F5E2 /* Note.swift */; };
 		018FAE301E5848DC0049F5E2 /* JSONKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 018FAE2F1E5848DC0049F5E2 /* JSONKeys.swift */; };
+		01A037F81E59183A00ADBB4F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 01A037F71E59183A00ADBB4F /* GoogleService-Info.plist */; };
 		01D461201E581E0E00C25DC4 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01D4611F1E581E0E00C25DC4 /* Router.swift */; };
 		01D461231E581E6A00C25DC4 /* Provider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01D461221E581E6A00C25DC4 /* Provider.swift */; };
 		01D461261E581EA200C25DC4 /* NoteService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01D461251E581EA200C25DC4 /* NoteService.swift */; };
@@ -52,6 +53,7 @@
 		016A73001E58FDD100AF046D /* ChildEmotionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChildEmotionViewController.swift; sourceTree = "<group>"; };
 		018FAE2D1E5820FC0049F5E2 /* Note.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
 		018FAE2F1E5848DC0049F5E2 /* JSONKeys.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONKeys.swift; sourceTree = "<group>"; };
+		01A037F71E59183A00ADBB4F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		01D4611F1E581E0E00C25DC4 /* Router.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		01D461221E581E6A00C25DC4 /* Provider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Provider.swift; sourceTree = "<group>"; };
 		01D461251E581EA200C25DC4 /* NoteService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoteService.swift; sourceTree = "<group>"; };
@@ -200,6 +202,7 @@
 				094355FD1E581D5800C252F4 /* Assets.xcassets */,
 				094355FF1E581D5800C252F4 /* LaunchScreen.storyboard */,
 				094356021E581D5800C252F4 /* Info.plist */,
+				01A037F71E59183A00ADBB4F /* GoogleService-Info.plist */,
 			);
 			path = "Autism-Tracker";
 			sourceTree = "<group>";
@@ -307,6 +310,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				013144041E58D61E0021720D /* Therapist.storyboard in Resources */,
+				01A037F81E59183A00ADBB4F /* GoogleService-Info.plist in Resources */,
 				01E33EDF1E5862C100DA2C7D /* NoteTableViewCell.xib in Resources */,
 				013144011E58D5F70021720D /* CareGiver.storyboard in Resources */,
 				013143FF1E58D5340021720D /* Child.storyboard in Resources */,
